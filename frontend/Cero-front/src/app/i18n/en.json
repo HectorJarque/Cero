@@ -2,15 +2,49 @@
   "header": {
     "logo": "Logo",
     "nav": {
-      "nav1": "Navigation 1",
-      "nav2": "Navigation 2",
-      "nav3": "Navigation 3",
-      "nav4": "Navigation 4"
-    },
-    "year": "Example of year header"
+      "home": "Home",
+      "examples": "Examples"
+    }
   },
   "footer": {
     "brand": "Brand",
-    "year": "Example of year footer"
+    "copyright": "© 2026",
+    "home": "Home"
+  },
+  "home": {
+    "examples": "Portfolio Examples",
+    "description": "Different types of projects to fit every website",
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Professional portfolio example"
+    },
+    "informative": {
+      "title": "Informative Website",
+      "description": "Local business or company"
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Online product store"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "description": "Administrative panel"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "News and articles"
+    },
+    "landing": {
+      "title": "Landing Page",
+      "description": "Lead generation page"
+    },
+    "reservations": {
+      "title": "Reservations",
+      "description": "Hotel, restaurant, or appointment booking system"
+    },
+    "saas": {
+      "title": "SaaS",
+      "description": "Online application"
+    }
   }
 }

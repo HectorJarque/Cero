@@ -2,15 +2,49 @@
   "header": {
     "logo": "Logotipo",
     "nav": {
-      "nav1": "Navegación 1",
-      "nav2": "Navegación 2",
-      "nav3": "Navegación 3",
-      "nav4": "Navegación 4"
-    },
-    "year": "Año de ejemplo header"
+      "home": "Inicio",
+      "examples": "Ejemplos"
+    }
   },
   "footer": {
     "brand": "Marca",
-    "year": "Año de ejemplo footer"
+    "copyright": "© 2026",
+    "home": "Inicio"
+  },
+  "home": {
+    "examples": "Ejemplos de portfolio",
+    "description": "Diferentes tipos de proyectos para ajustarse a cada web",
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Portfolio profesional de muestra"
+    },
+    "informative": {
+      "title": "Web informativa",
+      "description": "Empresa o negocio local"
+    },
+    "ecommerce": {
+      "title": "Ecommerce",
+      "description": "Tienda online de productos"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "description": "Panel administrativo"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Noticias y artículos"
+    },
+    "landing": {
+      "title": "Landing Page",
+      "description": "Página de captación"
+    },
+    "reservations": {
+      "title": "Reservas",
+      "description": "Hotel, restaurante o sistema de citas"
+    },
+    "saas": {
+      "title": "SaaS",
+      "description": "Aplicación online"
+    }
   }
 }
