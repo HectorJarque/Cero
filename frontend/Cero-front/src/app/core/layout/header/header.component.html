@@ -1,33 +1,27 @@
-<!-- Esto es el header, lo que sale arriba en una web -->
-<div class="header-entero">
+<header class="header-entero">
   <div class="header-alineacion">
 
-    <div class="logo-hueco">
-      <div class="logo-image">
-        <img src="/img/logo.png" alt="Logo">
-      </div>
+    <a routerLink="/" class="logo-hueco">
+      <img ngSrc="/img/logo.png" alt="Logo" height="768" width="927">
+      <span>{{ 'header.logo' | translate }}</span>
+    </a>
 
-      <div class="logo-text">
-        <div>{{ 'header.logo' | translate }}</div>
-      </div>
-    </div>
+    <nav class="navegacion">
+      <a routerLink="/">
+        {{ 'header.nav.home' | translate }}
+      </a>
 
-    <div class="navegacion">
-      <div>{{ 'header.nav.nav1' | translate }}</div>
-      <div>{{ 'header.nav.nav2' | translate }}</div>
-      <div>{{ 'header.nav.nav3' | translate }}</div>
-      <div>{{ 'header.nav.nav4' | translate }}</div>
-    </div>
+      <a routerLink="/">
+        {{ 'header.nav.examples' | translate }}
+      </a>
+    </nav>
 
-    <div class="anyo">
-      <div>{{ 'header.year' | translate }}</div>
-    </div>
-
-    <div class="idioma">
-      <button type="button" (click)="toggleLanguage()">
-        {{ currentLang === 'es' ? 'EN' : 'ES' }}
-      </button>
-    </div>
+    <button
+      type="button"
+      class="idioma-btn"
+      (click)="toggleLanguage()">
+      {{ currentLang === 'es' ? 'ES' : 'EN' }}
+    </button>
 
   </div>
-</div>
+</header>

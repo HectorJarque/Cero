@@ -1,21 +1,17 @@
-<!-- Esto es el footer, lo que sale abajo en una web -->
-<div class="footer-entero">
+<footer class="footer-entero">
   <div class="footer-alineacion">
 
     <div class="marca">
-      <div>{{ 'footer.brand' | translate }}</div>
+      {{ 'footer.brand' | translate }}
     </div>
 
-    <div class="navegacion">
-      <div>{{ 'header.nav.nav1' | translate }}</div>
-      <div>{{ 'header.nav.nav2' | translate }}</div>
-      <div>{{ 'header.nav.nav3' | translate }}</div>
-      <div>{{ 'header.nav.nav4' | translate }}</div>
+    <div class="copyright">
+      © 2026
     </div>
 
-    <div class="anyo">
-      <div>{{ 'footer.year' | translate }}</div>
-    </div>
+    <a routerLink="/">
+      {{ 'footer.home' | translate }}
+    </a>
 
   </div>
-</div>
+</footer>

@@ -1,46 +1,33 @@
-/* Contenedor principal del footer */
+/* FOOTER */
+
 .footer-entero {
-  background-color: #333;
-  color: white;
-  padding: 15px 30px;
+  width: 100%;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
 }
 
-/* Alineación interna */
 .footer-alineacion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-/* Navegación */
-.navegacion {
-  display: flex;
-  gap: 20px;
-}
-
-.navegacion div {
-  cursor: pointer;
-}
-
-/* Marca */
 .marca {
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* Año */
-.anyo {
-  font-size: 0.9rem;
+.copyright {
+  color: #6b7280;
 }
 
 @media (max-width: 768px) {
   .footer-alineacion {
     flex-direction: column;
-    gap: 15px;
     text-align: center;
-  }
-
-  .navegacion {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }

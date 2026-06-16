@@ -1,11 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
 import { Lang, TranslationService } from '../../services/translation.service';
+import { RouterLink } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, RouterLink, NgOptimizedImage],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
