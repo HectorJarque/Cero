@@ -1,0 +1,16 @@
+{
+  "header": {
+    "logo": "Logotipo",
+    "nav": {
+      "nav1": "Navegación 1",
+      "nav2": "Navegación 2",
+      "nav3": "Navegación 3",
+      "nav4": "Navegación 4"
+    },
+    "year": "Año de ejemplo header"
+  },
+  "footer": {
+    "brand": "Marca",
+    "year": "Año de ejemplo footer"
+  }
+}

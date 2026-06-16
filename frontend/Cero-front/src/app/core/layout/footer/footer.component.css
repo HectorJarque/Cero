@@ -1,0 +1,46 @@
+/* Contenedor principal del footer */
+.footer-entero {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+}
+
+/* Alineación interna */
+.footer-alineacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navegación */
+.navegacion {
+  display: flex;
+  gap: 20px;
+}
+
+.navegacion div {
+  cursor: pointer;
+}
+
+/* Marca */
+.marca {
+  font-weight: bold;
+}
+
+/* Año */
+.anyo {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-alineacion {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navegacion {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
