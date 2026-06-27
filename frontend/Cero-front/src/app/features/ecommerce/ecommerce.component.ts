@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './ecommerce.component.html',
   styleUrl: './ecommerce.component.css',
+  standalone: true
 })
 export class EcommerceComponent {}

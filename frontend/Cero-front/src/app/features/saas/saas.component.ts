@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './saas.component.html',
   styleUrl: './saas.component.css',
+  standalone: true
 })
 export class SaasComponent {}

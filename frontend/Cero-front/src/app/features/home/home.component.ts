@@ -10,5 +10,6 @@ import { TranslatePipe } from '../../shared/pipes/translate.pipe';
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
+  standalone: true
 })
 export class HomeComponent {}

@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './informativa.component.html',
   styleUrl: './informativa.component.css',
+  standalone: true
 })
 export class InformativaComponent {}
