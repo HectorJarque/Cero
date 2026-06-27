@@ -1,1 +1,30 @@
-<p>portfolio works!</p>
+<section class="portfolio-entero">
+  <div class="portfolio-alineacion">
+
+    <h2 class="portfolio-titulo">{{ 'portfolio.title' | translate }}</h2>
+    <p class="portfolio-subtitulo">{{ 'portfolio.subtitle' | translate }}</p>
+
+    <div class="proyectos-grid">
+      @for (proyecto of proyectos; track proyecto.id) {
+        <article class="proyecto-tarjeta">
+
+          <div class="proyecto-imagen">
+            <img [ngSrc]="proyecto.img" [alt]="proyecto.titleKey | translate" fill priority="false">
+            <span class="proyecto-sector">{{ proyecto.sectorKey | translate }}</span>
+          </div>
+
+          <div class="proyecto-info">
+            <h3>{{ proyecto.titleKey | translate }}</h3>
+            <p>{{ proyecto.descKey | translate }}</p>
+
+            <a [routerLink]="proyecto.link" class="proyecto-link">
+              {{ 'portfolio.viewDemo' | translate }}
+            </a>
+          </div>
+
+        </article>
+      }
+    </div>
+
+  </div>
+</section>

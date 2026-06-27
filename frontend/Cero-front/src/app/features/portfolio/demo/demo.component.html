@@ -1,0 +1,24 @@
+<section class="demo-entero">
+  <div class="demo-alineacion">
+
+    @if (proyecto()) {
+      <span class="demo-sector">{{ proyecto()!.sectorKey | translate }}</span>
+      <h1>{{ proyecto()!.titleKey | translate }}</h1>
+      <p>{{ proyecto()!.descKey | translate }}</p>
+
+      <div class="demo-aviso">
+        <p>{{ 'demo.placeholder' | translate }}</p>
+      </div>
+
+      <a routerLink="/" class="demo-volver">
+        {{ 'demo.back' | translate }}
+      </a>
+    } @else {
+      <p>{{ 'demo.notFound' | translate }}</p>
+      <a routerLink="/" class="demo-volver">
+        {{ 'demo.back' | translate }}
+      </a>
+    }
+
+  </div>
+</section>

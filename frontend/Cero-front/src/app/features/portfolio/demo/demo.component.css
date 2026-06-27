@@ -1,0 +1,80 @@
+/* DEMO */
+
+.demo-entero {
+  width: 100%;
+  min-height: 60vh;
+  background: #fff;
+}
+
+.demo-alineacion {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.demo-sector {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+
+  border-radius: 999px;
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.demo-alineacion h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.demo-alineacion p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Aviso de placeholder */
+
+.demo-aviso {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 3rem 1.5rem;
+
+  border: 1px dashed #d1d5db;
+  border-radius: 10px;
+  background-color: #fafafa;
+
+  text-align: center;
+}
+
+.demo-aviso p {
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Volver */
+
+.demo-volver {
+  margin-top: 1.5rem;
+
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+
+  transition: background-color 0.2s ease;
+}
+
+.demo-volver:hover {
+  background-color: #f3f4f6;
+}

@@ -13,6 +13,7 @@ import { BlogComponent } from './features/blog/blog.component';
 import { LandingComponent } from './features/landing/landing.component';
 import { SaasComponent } from './features/saas/saas.component';
 import { ReservasComponent } from './features/reservas/reservas.component';
+import { DemoComponent } from './features/portfolio/demo/demo.component';
 
 
 export const routes: Routes = [
@@ -31,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'portfolio',
     component: PortfolioComponent
+  },
+  {
+    path: 'demo/:id',
+    component: DemoComponent
   },
   {
     path: 'informativa',

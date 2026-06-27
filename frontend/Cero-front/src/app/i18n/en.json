@@ -46,5 +46,47 @@
       "title": "SaaS",
       "description": "Online application"
     }
+  },
+  "portfolio": {
+    "title": "Example websites",
+    "subtitle": "This is how good your business website can look",
+    "viewDemo": "View demo",
+    "projects": {
+      "restaurante": {
+        "sector": "Restaurant",
+        "title": "La Mesa de Lola",
+        "description": "Website for restaurants with a digital menu, online table booking and a gallery to whet the appetite."
+      },
+      "clinica": {
+        "sector": "Healthcare",
+        "title": "Vivar Dental Clinic",
+        "description": "A page designed for clinics: book an appointment in two clicks, introduce the doctors and build trust from the first second."
+      },
+      "gimnasio": {
+        "sector": "Fitness",
+        "title": "PowerZone Gym",
+        "description": "A site with pricing, class schedules and a burst of energy that makes visitors want to sign up right away."
+      },
+      "peluqueria": {
+        "sector": "Beauty",
+        "title": "Estudio Marina",
+        "description": "A carefully detailed website for hair and beauty salons, with appointment booking and a service catalogue."
+      },
+      "inmobiliaria": {
+        "sector": "Real estate",
+        "title": "Hogar & Co.",
+        "description": "Property search, listings with photos and direct contact with the agent — built to help you sell faster."
+      },
+      "tienda": {
+        "sector": "Online store",
+        "title": "Naranja Studio",
+        "description": "A simple, fast online store with a product catalogue, cart and integrated payment gateway."
+      }
+    }
+  },
+  "demo": {
+    "placeholder": "Here is where your project, your website, your demo will be shown — whatever you need to present.",
+    "back": "Back to home",
+    "notFound": "We couldn't find this demo."
   }
 }

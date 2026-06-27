@@ -46,5 +46,47 @@
       "title": "SaaS",
       "description": "Aplicación online"
     }
+  },
+  "portfolio": {
+    "title": "Webs de ejemplo",
+    "subtitle": "Así de bien puede quedar la web de tu negocio",
+    "viewDemo": "Ver demo",
+    "projects": {
+      "restaurante": {
+        "sector": "Restauración",
+        "title": "La Mesa de Lola",
+        "description": "Web para restaurante con carta digital, reserva de mesa online y galería de platos para abrir boca."
+      },
+      "clinica": {
+        "sector": "Salud",
+        "title": "Clínica Dental Vivar",
+        "description": "Página pensada para clínicas: pide cita en dos clics, presenta a los doctores y genera confianza desde el primer segundo."
+      },
+      "gimnasio": {
+        "sector": "Deporte",
+        "title": "PowerZone Gym",
+        "description": "Web con tarifas, horarios de clases y un toque de energía para que el visitante quiera apuntarse ya."
+      },
+      "peluqueria": {
+        "sector": "Belleza",
+        "title": "Estudio Marina",
+        "description": "Una web cuidada al detalle para salones de peluquería y estética, con reserva de cita y catálogo de servicios."
+      },
+      "inmobiliaria": {
+        "sector": "Inmobiliaria",
+        "title": "Hogar & Co.",
+        "description": "Buscador de propiedades, fichas con fotos y contacto directo con el agente, todo pensado para vender más rápido."
+      },
+      "tienda": {
+        "sector": "Tienda online",
+        "title": "Naranja Studio",
+        "description": "Tienda online sencilla y rápida, con catálogo de productos, carrito y pasarela de pago integrada."
+      }
+    }
+  },
+  "demo": {
+    "placeholder": "Aquí se mostrará tu proyecto, tu web, tu demo... lo que necesites enseñar.",
+    "back": "Volver al inicio",
+    "notFound": "No hemos encontrado esta demo."
   }
 }
