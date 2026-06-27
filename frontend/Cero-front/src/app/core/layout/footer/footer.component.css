@@ -25,6 +25,22 @@
   color: #6b7280;
 }
 
+.footer-entero a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-entero a:visited {
+  color: inherit;
+}
+
+.footer-entero a:hover {
+  text-decoration: none;
+}
+
+.footer-entero a:active {
+  color: inherit;
+}
+
 @media (max-width: 768px) {
   .footer-alineacion {
     flex-direction: column;
