@@ -1,18 +1,18 @@
 {
   "header": {
-    "logo": "Logotipo",
+    "logo": "Kallik",
     "nav": {
       "home": "Inicio",
       "examples": "Ejemplos"
     }
   },
   "footer": {
-    "brand": "Marca",
+    "brand": "Kallik",
     "copyright": "© 2026",
     "home": "Inicio"
   },
   "home": {
-    "examples": "Ejemplos de portfolio",
+    "examples": "Ejemplos de páginas web",
     "description": "Diferentes tipos de proyectos para ajustarse a cada web",
     "portfolio": {
       "title": "Portfolio",
