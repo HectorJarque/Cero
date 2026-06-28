@@ -88,5 +88,82 @@
     "placeholder": "Aquí se mostrará tu proyecto, tu web, tu demo... lo que necesites enseñar.",
     "back": "Volver al inicio",
     "notFound": "No hemos encontrado esta demo."
+  },
+  "informativa": {
+    "hero": {
+      "tag": "Web informativa",
+      "title": "Fundación Espacio Verde",
+      "subtitle": "Llevamos doce años acercando información sobre el medio ambiente a quien quiera escucharla: vecinos, escuelas, ayuntamientos y cualquier persona curiosa por entender mejor el entorno que la rodea."
+    },
+    "stats": {
+      "anios": "años de actividad",
+      "informes": "informes publicados",
+      "centros": "centros educativos colaboradores"
+    },
+    "about": {
+      "title": "Quiénes somos",
+      "text1": "Todo empezó en 2013 con un grupo de vecinos de Quart de Poblet preocupados por el estado de la huerta y el río cercano. Lo que nació como reuniones informales en un local prestado se convirtió, con el tiempo, en una fundación dedicada a recopilar y compartir información ambiental con rigor y sin prisas.",
+      "text2": "Hoy seguimos con la misma idea de entonces: no vendemos nada ni pedimos donaciones en cada página. Solo ponemos a disposición de quien lo necesite los datos, los informes y los recursos que vamos generando año tras año."
+    },
+    "areas": {
+      "title": "Áreas de información",
+      "intro": "Organizamos nuestro trabajo en cuatro grandes bloques, cada uno con su propia documentación y actualizaciones periódicas.",
+      "biodiversidad": {
+        "title": "Biodiversidad",
+        "description": "Fichas de especies de flora y fauna de la zona, censos anuales y seguimiento del estado de los ecosistemas más próximos a la huerta valenciana."
+      },
+      "climatico": {
+        "title": "Cambio climático",
+        "description": "Series de datos sobre temperatura, lluvias y sequías en la comarca, explicadas de forma que cualquiera pueda entenderlas, sin tecnicismos innecesarios."
+      },
+      "educacion": {
+        "title": "Educación ambiental",
+        "description": "Materiales pensados para el aula: fichas, juegos y guías que utilizan habitualmente los centros educativos con los que colaboramos."
+      },
+      "voluntariado": {
+        "title": "Voluntariado",
+        "description": "Todo lo que hay que saber para echar una mano de forma puntual: plantaciones, limpiezas de ribera y jornadas de recogida de datos."
+      }
+    },
+    "recursos": {
+      "title": "Recursos disponibles",
+      "intro": "Parte de nuestro trabajo consiste en dejar por escrito lo que aprendemos, para que no se pierda y cualquiera pueda consultarlo cuando lo necesite.",
+      "guias": {
+        "title": "Guías divulgativas",
+        "description": "Documentos breves y en lenguaje claro sobre temas concretos: cómo identificar un ave herida, qué hacer ante una ola de calor en el huerto, entre otros."
+      },
+      "informes": {
+        "title": "Informes anuales",
+        "description": "Recopilación de los datos recogidos durante el año, con gráficos sencillos y comparativas respecto a años anteriores."
+      },
+      "charlas": {
+        "title": "Charlas y jornadas",
+        "description": "Calendario de encuentros abiertos al público, normalmente en colegios o en la biblioteca municipal, sobre temas de actualidad ambiental."
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": {
+        "question": "¿Puedo usar vuestros informes para un trabajo escolar?",
+        "answer": "Por supuesto. Toda la información que publicamos es de acceso libre, solo te pedimos que cites la fuente cuando la utilices."
+      },
+      "q2": {
+        "question": "¿Hace falta ser socio para recibir las guías?",
+        "answer": "No, no existe ningún tipo de cuota ni de socio. Cualquier persona puede escribirnos y le enviamos el material que necesite."
+      },
+      "q3": {
+        "question": "¿Con qué frecuencia actualizáis los datos?",
+        "answer": "Los informes anuales se publican cada enero, aunque algunas fichas de especies se revisan en cuanto detectamos cambios relevantes."
+      }
+    },
+    "contact": {
+      "title": "Información de contacto",
+      "intro": "Si tienes dudas sobre cualquiera de nuestros recursos, o simplemente quieres saber más, puedes escribirnos sin compromiso.",
+      "addressLabel": "Dirección:",
+      "address": "Calle del Bosque, 14, Quart de Poblet (Valencia)",
+      "emailLabel": "Email:",
+      "scheduleLabel": "Horario de atención:",
+      "schedule": "Lunes a viernes, de 9:00 a 14:00"
+    }
   }
 }

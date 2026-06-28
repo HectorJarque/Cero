@@ -1,1 +1,98 @@
-<p>informativa works!</p>
+<section class="informativa-entero">
+
+  <!-- Hero -->
+  <div class="informativa-hero">
+    <div class="informativa-alineacion">
+      <span class="informativa-etiqueta">{{ 'informativa.hero.tag' | translate }}</span>
+      <h1>{{ 'informativa.hero.title' | translate }}</h1>
+      <p class="informativa-lead">{{ 'informativa.hero.subtitle' | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Estadísticas -->
+  <div class="informativa-bloque informativa-stats">
+    <div class="informativa-alineacion stats-grid">
+      @for (estadistica of estadisticas; track estadistica.labelKey) {
+        <div class="stat-tarjeta">
+          <span class="stat-valor">{{ estadistica.value }}</span>
+          <span class="stat-label">{{ estadistica.labelKey | translate }}</span>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Quiénes somos -->
+  <div class="informativa-bloque">
+    <div class="informativa-alineacion">
+      <h2>{{ 'informativa.about.title' | translate }}</h2>
+      <p>{{ 'informativa.about.text1' | translate }}</p>
+      <p>{{ 'informativa.about.text2' | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Áreas de información -->
+  <div class="informativa-bloque informativa-bloque--gris">
+    <div class="informativa-alineacion">
+      <h2>{{ 'informativa.areas.title' | translate }}</h2>
+      <p class="informativa-intro">{{ 'informativa.areas.intro' | translate }}</p>
+
+      <div class="areas-grid">
+        @for (area of areas; track area.titleKey) {
+          <div class="area-tarjeta">
+            <span class="area-icono">{{ area.icon }}</span>
+            <h3>{{ area.titleKey | translate }}</h3>
+            <p>{{ area.descKey | translate }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Recursos -->
+  <div class="informativa-bloque">
+    <div class="informativa-alineacion">
+      <h2>{{ 'informativa.recursos.title' | translate }}</h2>
+      <p class="informativa-intro">{{ 'informativa.recursos.intro' | translate }}</p>
+
+      <div class="recursos-lista">
+        @for (recurso of recursos; track recurso.titleKey) {
+          <div class="recurso-fila">
+            <h3>{{ recurso.titleKey | translate }}</h3>
+            <p>{{ recurso.descKey | translate }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Preguntas frecuentes -->
+  <div class="informativa-bloque informativa-bloque--gris">
+    <div class="informativa-alineacion">
+      <h2>{{ 'informativa.faq.title' | translate }}</h2>
+
+      <div class="faq-lista">
+        @for (pregunta of preguntas; track pregunta.questionKey) {
+          <div class="faq-fila">
+            <h3>{{ pregunta.questionKey | translate }}</h3>
+            <p>{{ pregunta.answerKey | translate }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacto -->
+  <div class="informativa-bloque">
+    <div class="informativa-alineacion">
+      <h2>{{ 'informativa.contact.title' | translate }}</h2>
+      <p class="informativa-intro">{{ 'informativa.contact.intro' | translate }}</p>
+
+      <div class="contacto-datos">
+        <p><strong>{{ 'informativa.contact.addressLabel' | translate }}</strong> {{ 'informativa.contact.address' | translate }}</p>
+        <p><strong>{{ 'informativa.contact.emailLabel' | translate }}</strong> info&#64;espacioverde.org</p>
+        <p><strong>{{ 'informativa.contact.scheduleLabel' | translate }}</strong> {{ 'informativa.contact.schedule' | translate }}</p>
+      </div>
+    </div>
+  </div>
+
+</section>

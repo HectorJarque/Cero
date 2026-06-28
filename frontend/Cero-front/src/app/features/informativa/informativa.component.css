@@ -1,0 +1,234 @@
+/* INFORMATIVA */
+
+.informativa-entero {
+  width: 100%;
+  background: #fff;
+}
+
+.informativa-alineacion {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem;
+}
+
+/* Hero */
+
+.informativa-hero {
+  background-color: #eef6f0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.informativa-etiqueta {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+
+  border-radius: 999px;
+  background-color: #d7ebdc;
+  color: #2f6b3f;
+
+  margin-bottom: 1rem;
+}
+
+.informativa-hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.informativa-lead {
+  margin: 0;
+  color: #4b5563;
+  max-width: 620px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Bloques generales */
+
+.informativa-bloque h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.informativa-bloque p {
+  margin: 0 0 1rem;
+  color: #4b5563;
+  line-height: 1.65;
+  max-width: 700px;
+}
+
+.informativa-bloque p:last-child {
+  margin-bottom: 0;
+}
+
+.informativa-intro {
+  max-width: 600px;
+}
+
+.informativa-bloque--gris {
+  background-color: #fafafa;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Estadísticas */
+
+.informativa-stats {
+  background-color: #f4f9f5;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.stat-tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stat-valor {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2f6b3f;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Áreas de información */
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.area-tarjeta {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.area-icono {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.area-tarjeta h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.area-tarjeta p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #6b7280;
+  line-height: 1.55;
+}
+
+/* Recursos */
+
+.recursos-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.recurso-fila {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.recurso-fila:last-child {
+  border-bottom: none;
+}
+
+.recurso-fila h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.recurso-fila p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #6b7280;
+  line-height: 1.55;
+}
+
+/* FAQ */
+
+.faq-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-fila {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-fila:last-child {
+  border-bottom: none;
+}
+
+.faq-fila h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.faq-fila p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #6b7280;
+  line-height: 1.55;
+}
+
+/* Contacto */
+
+.contacto-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.contacto-datos p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.contacto-datos strong {
+  color: #111827;
+  margin-right: 0.3rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+}

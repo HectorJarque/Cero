@@ -88,5 +88,81 @@
     "placeholder": "Here is where your project, your website, your demo will be shown — whatever you need to present.",
     "back": "Back to home",
     "notFound": "We couldn't find this demo."
+  },
+  "informativa": {
+    "hero": {
+      "tag": "Informational website",
+      "title": "Espacio Verde Foundation",
+      "subtitle": "For twelve years we've been bringing environmental information to anyone willing to listen: neighbours, schools, local councils and anyone curious about the world around them."
+    },
+    "stats": {
+      "anios": "years of activity",
+      "informes": "reports published",
+      "centros": "partner schools"
+    },
+    "about": {
+      "title": "Who we are",
+      "text1": "It all started in 2013 with a group of neighbours from Quart de Poblet worried about the state of the local orchards and the nearby river. What began as informal meetings in a borrowed room eventually became a foundation dedicated to gathering and sharing environmental information carefully and without rushing.",
+      "text2": "Today we still hold the same idea: we don't sell anything, and we don't ask for donations on every page. We simply make available the data, reports and resources we put together year after year."
+    },
+    "areas": {
+      "title": "Information areas",
+      "intro": "We organise our work around four main areas, each with its own documentation and regular updates.",
+      "biodiversidad": {
+        "title": "Biodiversity",
+        "description": "Species records of local flora and fauna, annual surveys and monitoring of the ecosystems closest to the Valencian orchards."
+      },
+      "climatico": {
+        "title": "Climate change",
+        "description": "Temperature, rainfall and drought data for the region, explained so that anyone can follow them, without unnecessary jargon."
+      },
+      "educacion": {
+        "title": "Environmental education",
+        "description": "Classroom-ready materials: worksheets, games and guides regularly used by the schools we work with."
+      },
+      "voluntariado": {
+        "title": "Volunteering",
+        "description": "Everything you need to know to help out from time to time: tree planting, riverbank clean-ups and data collection days."
+      }
+    },
+    "recursos": {
+      "title": "Available resources",
+      "intro": "Part of our work is writing down what we learn, so it isn't lost and anyone can look it up whenever they need to.",
+      "guias": {
+        "title": "Educational guides",
+        "description": "Short, plain-language documents on specific topics: how to identify an injured bird, what to do during a heatwave in the orchard, and more."
+      },
+      "informes": {
+        "title": "Annual reports",
+        "description": "A summary of the data collected throughout the year, with simple charts and comparisons against previous years."
+      },
+      "charlas": {
+        "title": "Talks and events",
+        "description": "A calendar of public events, usually held at schools or the local library, on current environmental topics."
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": {
+        "question": "Can I use your reports for a school project?",
+        "answer": "Of course. All the information we publish is freely available, we just ask that you credit the source when you use it."
+      },
+      "q2": {
+        "question": "Do I need to be a member to receive the guides?",
+        "answer": "No, there's no membership or fee of any kind. Anyone can write to us and we'll send the material they need."
+      },
+      "q3": {
+        "question": "How often do you update the data?",
+        "answer": "Annual reports are published every January, although some species records are revised as soon as we detect relevant changes."
+      }
+    },
+    "contact": {
+      "title": "Contact information",
+      "intro": "If you have any questions about our resources, or simply want to know more, feel free to write to us.",
+      "addressLabel": "Address:",
+      "emailLabel": "Email:",
+      "scheduleLabel": "Office hours:",
+      "schedule": "Monday to Friday, 9:00 am to 2:00 pm"
+    }
   }
 }
