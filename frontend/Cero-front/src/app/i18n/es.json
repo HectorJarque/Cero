@@ -49,7 +49,7 @@
   },
   "portfolio": {
     "title": "Webs de ejemplo",
-    "subtitle": "Así de bien puede quedar la web de tu negocio",
+    "subtitle": "Así de bien puede quedar la web de tu portfolio",
     "viewDemo": "Ver demo",
     "projects": {
       "restaurante": {
@@ -164,6 +164,92 @@
       "emailLabel": "Email:",
       "scheduleLabel": "Horario de atención:",
       "schedule": "Lunes a viernes, de 9:00 a 14:00"
+    }
+  },
+  "ecommerce": {
+    "hero": {
+      "tag": "Tienda online",
+      "title": "Naranja Studio",
+      "subtitle": "Cerámica hecha a mano, pieza a pieza, en un pequeño taller donde cada jarrón o taza tarda su tiempo en estar lista. Nada sale de aquí en serie.",
+      "cta": "Ver productos"
+    },
+    "categorias": {
+      "title": "Explora por categoría",
+      "jarrones": { "title": "Jarrones", "count": "8 piezas" },
+      "tazas": { "title": "Tazas y vasos", "count": "14 piezas" },
+      "vajilla": { "title": "Vajilla", "count": "11 piezas" },
+      "decoracion": { "title": "Decoración", "count": "9 piezas" }
+    },
+    "productos": {
+      "title": "Lo más reciente del taller",
+      "intro": "Cada pieza se cuece y esmalta a mano, así que dos unidades nunca son exactamente iguales, y esa es la gracia.",
+      "addToCart": "Añadir al carrito",
+      "searchPlaceholder": "Busca por nombre, por ejemplo 'taza' o 'jarrón'",
+      "clearFilters": "Quitar filtros",
+      "noResults": "No hemos encontrado ninguna pieza con esos filtros. Prueba con otra palabra o quita el filtro de categoría.",
+      "jarronArena": {
+        "title": "Jarrón Arena",
+        "description": "Jarrón de cuello alto en tono tierra, ideal para ramas secas o flores de temporada."
+      },
+      "tazaOcre": {
+        "title": "Taza Ocre",
+        "description": "Taza de desayuno con asa ancha y esmalte mate, cómoda incluso para manos grandes."
+      },
+      "setPlatos": {
+        "title": "Set de 4 platos llanos",
+        "description": "Juego de cuatro platos con ligeras variaciones de tono, pensados para mezclar y combinar."
+      },
+      "portavelas": {
+        "title": "Portavelas Duna",
+        "description": "Pequeño portavelas de base ancha, perfecto para velas de té en la mesa o el alféizar."
+      },
+      "cuencoTerracota": {
+        "title": "Cuenco Terracota",
+        "description": "Cuenco hondo, ideal para ensaladas o como pieza decorativa sobre la encimera."
+      },
+      "jarraAgua": {
+        "title": "Jarra de agua Brisa",
+        "description": "Jarra de un litro con pico fino, esmaltada por dentro para un acabado suave al tacto."
+      }
+    },
+    "badges": {
+      "nuevo": "Nuevo",
+      "masVendido": "Más vendido"
+    },
+    "ventajas": {
+      "envio": {
+        "title": "Envío cuidado",
+        "description": "Cada pieza viaja envuelta a mano para que llegue entera, sin prisas de por medio."
+      },
+      "devolucion": {
+        "title": "14 días para decidir",
+        "description": "Si algo no encaja en tu casa como esperabas, lo recogemos sin hacer preguntas."
+      },
+      "artesanal": {
+        "title": "Hecho a mano",
+        "description": "Todo se elabora en el mismo taller, sin grandes producciones ni fábricas de por medio."
+      }
+    },
+    "resenas": {
+      "title": "Lo que cuentan quienes ya tienen una pieza",
+      "r1": {
+        "text": "Compré la jarra de agua pensando que sería un capricho, y ahora es lo primero que cojo cada mañana.",
+        "author": "Marina, Valencia"
+      },
+      "r2": {
+        "text": "Se nota que cada taza es distinta a la otra. Llegó con una nota escrita a mano, un detalle precioso.",
+        "author": "Adrián, Castellón"
+      },
+      "r3": {
+        "text": "Pedí el set de platos para un regalo y terminé comprándome otro para mí. Una pasada de acabado.",
+        "author": "Laura, Alicante"
+      }
+    },
+    "newsletter": {
+      "title": "Antes de que te vayas",
+      "subtitle": "Avisamos por correo cuando sale una nueva hornada del taller, sin spam ni mensajes de más.",
+      "placeholder": "Tu correo electrónico",
+      "button": "Apuntarme"
     }
   }
 }

@@ -49,7 +49,7 @@
   },
   "portfolio": {
     "title": "Example websites",
-    "subtitle": "This is how good your business website can look",
+    "subtitle": "This is how good your portfolio website can look",
     "viewDemo": "View demo",
     "projects": {
       "restaurante": {
@@ -163,6 +163,92 @@
       "emailLabel": "Email:",
       "scheduleLabel": "Office hours:",
       "schedule": "Monday to Friday, 9:00 am to 2:00 pm"
+    }
+  },
+  "ecommerce": {
+    "hero": {
+      "tag": "Online store",
+      "title": "Naranja Studio",
+      "subtitle": "Handmade ceramics, one piece at a time, from a small workshop where every vase or cup takes its time to be ready. Nothing here is mass-produced.",
+      "cta": "Shop now"
+    },
+    "categorias": {
+      "title": "Browse by category",
+      "jarrones": { "title": "Vases", "count": "8 pieces" },
+      "tazas": { "title": "Mugs & cups", "count": "14 pieces" },
+      "vajilla": { "title": "Tableware", "count": "11 pieces" },
+      "decoracion": { "title": "Decor", "count": "9 pieces" }
+    },
+    "productos": {
+      "title": "Fresh from the workshop",
+      "intro": "Every piece is fired and glazed by hand, so no two are ever quite the same — and that's the whole point.",
+      "addToCart": "Add to cart",
+      "searchPlaceholder": "Search by name, e.g. 'mug' or 'vase'",
+      "clearFilters": "Clear filters",
+      "noResults": "We couldn't find any piece matching those filters. Try a different word or remove the category filter.",
+      "jarronArena": {
+        "title": "Arena Vase",
+        "description": "Tall-necked vase in an earthy tone, perfect for dried branches or seasonal flowers."
+      },
+      "tazaOcre": {
+        "title": "Ocre Mug",
+        "description": "Breakfast mug with a wide handle and matte glaze, comfortable even for bigger hands."
+      },
+      "setPlatos": {
+        "title": "Set of 4 dinner plates",
+        "description": "A set of four plates with subtle tone variations, made to be mixed and matched."
+      },
+      "portavelas": {
+        "title": "Duna Candle Holder",
+        "description": "Small wide-based candle holder, perfect for tea lights on the table or windowsill."
+      },
+      "cuencoTerracota": {
+        "title": "Terracotta Bowl",
+        "description": "Deep bowl, great for salads or simply as a decorative piece on the counter."
+      },
+      "jarraAgua": {
+        "title": "Brisa Water Jug",
+        "description": "One-litre jug with a fine spout, glazed inside for a smooth finish to the touch."
+      }
+    },
+    "badges": {
+      "nuevo": "New",
+      "masVendido": "Best seller"
+    },
+    "ventajas": {
+      "envio": {
+        "title": "Careful shipping",
+        "description": "Every piece travels hand-wrapped so it arrives whole, with no rush involved."
+      },
+      "devolucion": {
+        "title": "14 days to decide",
+        "description": "If something doesn't quite fit your home as you expected, we'll collect it, no questions asked."
+      },
+      "artesanal": {
+        "title": "Handmade",
+        "description": "Everything is made in the same workshop, with no large-scale production or factories involved."
+      }
+    },
+    "resenas": {
+      "title": "What people who already own a piece say",
+      "r1": {
+        "text": "I bought the water jug thinking it'd just be a treat, and now it's the first thing I reach for every morning.",
+        "author": "Marina, Valencia"
+      },
+      "r2": {
+        "text": "You can tell each mug is different from the next. It arrived with a handwritten note, such a lovely touch.",
+        "author": "Adrián, Castellón"
+      },
+      "r3": {
+        "text": "I ordered the plate set as a gift and ended up buying another one for myself. The finish is incredible.",
+        "author": "Laura, Alicante"
+      }
+    },
+    "newsletter": {
+      "title": "Before you go",
+      "subtitle": "We'll email you when a new batch leaves the workshop, no spam, no extra noise.",
+      "placeholder": "Your email address",
+      "button": "Sign me up"
     }
   }
 }
