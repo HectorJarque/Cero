@@ -250,5 +250,52 @@
       "placeholder": "Your email address",
       "button": "Sign me up"
     }
+  },
+  "dashboard": {
+    "brand": "Naranja Admin",
+    "title": "Overview",
+    "subtitle": "Here's how the store is doing this week, at a glance.",
+    "searchPlaceholder": "Search order or customer",
+    "userName": "Kallik",
+    "menu": { "resumen": "Overview", "pedidos": "Orders", "productos": "Products", "clientes": "Customers", "ajustes": "Settings" },
+    "stats": { "ingresos": "Total revenue", "pedidos": "Orders", "clientes": "Unique customers", "ticketMedio": "Average order" },
+    "dias": { "lun": "Mon", "mar": "Tue", "mie": "Wed", "jue": "Thu", "vie": "Fri", "sab": "Sat", "dom": "Sun" },
+    "chart": { "title": "This week's sales" },
+    "orders": {
+      "subtitle": "All received orders, with search and status filtering.",
+      "title": "Recent orders",
+      "id": "Order", "customer": "Customer", "date": "Date", "total": "Total", "status": "Status",
+      "noResults": "No orders match this search or filter."
+    },
+    "status": { "todos": "All", "pendiente": "Pending", "enviado": "Shipped", "entregado": "Delivered", "cancelado": "Cancelled" },
+    "productos": {
+      "subtitle": "Current inventory status for the workshop.",
+      "name": "Product", "category": "Category", "stock": "Stock", "price": "Price", "units": "units",
+      "categorias": {
+        "jarrones": "Vases",
+        "tazas": "Mugs & cups",
+        "vajilla": "Tableware",
+        "decoracion": "Decor"
+      }
+    },
+    "clientes": {
+      "subtitle": "Customers who have purchased from the store before.",
+      "name": "Name", "email": "Email", "orders": "Orders", "spent": "Total spent"
+    },
+    "ajustes": {
+      "subtitle": "General store preferences.",
+      "tienda": {
+        "title": "Store details",
+        "description": "Name, address and contact email shown on orders and invoices."
+      },
+      "notificaciones": {
+        "title": "Notifications",
+        "description": "Email alerts when a new order comes in or when a piece's stock is running low."
+      },
+      "envios": {
+        "title": "Shipping zones",
+        "description": "Regions currently served and the shipping cost associated with each one."
+      }
+    }
   }
 }

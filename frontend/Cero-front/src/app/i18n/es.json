@@ -251,5 +251,52 @@
       "placeholder": "Tu correo electrónico",
       "button": "Apuntarme"
     }
+  },
+  "dashboard": {
+    "brand": "Naranja Admin",
+    "title": "Resumen general",
+    "subtitle": "Así va la tienda esta semana, de un vistazo.",
+    "searchPlaceholder": "Buscar pedido o cliente",
+    "userName": "Kallik",
+    "menu": { "resumen": "Resumen", "pedidos": "Pedidos", "productos": "Productos", "clientes": "Clientes", "ajustes": "Ajustes" },
+    "stats": { "ingresos": "Ingresos totales", "pedidos": "Pedidos", "clientes": "Clientes distintos", "ticketMedio": "Ticket medio" },
+    "dias": { "lun": "Lun", "mar": "Mar", "mie": "Mié", "jue": "Jue", "vie": "Vie", "sab": "Sáb", "dom": "Dom" },
+    "chart": { "title": "Ventas de la semana" },
+    "orders": {
+      "subtitle": "Todos los pedidos recibidos, con opción de buscar y filtrar por estado.",
+      "title": "Últimos pedidos",
+      "id": "Pedido", "customer": "Cliente", "date": "Fecha", "total": "Total", "status": "Estado",
+      "noResults": "No hay pedidos que coincidan con esta búsqueda o filtro."
+    },
+    "status": { "todos": "Todos", "pendiente": "Pendiente", "enviado": "Enviado", "entregado": "Entregado", "cancelado": "Cancelado" },
+    "productos": {
+      "subtitle": "Estado actual del inventario del taller.",
+      "name": "Producto", "category": "Categoría", "stock": "Stock", "price": "Precio", "units": "uds.",
+      "categorias": {
+        "jarrones": "Jarrones",
+        "tazas": "Tazas y vasos",
+        "vajilla": "Vajilla",
+        "decoracion": "Decoración"
+      }
+    },
+    "clientes": {
+      "subtitle": "Clientes que han comprado alguna vez en la tienda.",
+      "name": "Nombre", "email": "Correo", "orders": "Pedidos", "spent": "Total gastado"
+    },
+    "ajustes": {
+      "subtitle": "Preferencias generales de la tienda.",
+      "tienda": {
+        "title": "Datos de la tienda",
+        "description": "Nombre, dirección y correo de contacto que aparecen en los pedidos y en las facturas."
+      },
+      "notificaciones": {
+        "title": "Notificaciones",
+        "description": "Avisos por correo cuando entra un pedido nuevo o cuando el stock de una pieza empieza a escasear."
+      },
+      "envios": {
+        "title": "Zonas de envío",
+        "description": "Provincias a las que se envía actualmente y los gastos de envío asociados a cada una."
+      }
+    }
   }
 }

@@ -1,1 +1,235 @@
-<p>dashboard works!</p>
+<div class="dashboard-entero">
+
+  <aside class="dashboard-lateral">
+    <div class="lateral-marca">
+      <span>{{ 'dashboard.brand' | translate }}</span>
+    </div>
+
+    <nav class="lateral-nav">
+      @for (item of menu; track item.id) {
+        <button
+          type="button"
+          class="lateral-item"
+          [class.lateral-item--activo]="seccionActiva() === item.id"
+          (click)="cambiarSeccion(item.id)">
+          {{ item.titleKey | translate }}
+        </button>
+      }
+    </nav>
+  </aside>
+
+  <div class="dashboard-principal">
+
+    <header class="dashboard-topbar">
+      <div class="topbar-buscador">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </svg>
+        <input
+          type="text"
+          [value]="searchTerm()"
+          (input)="onSearchChange($any($event.target).value)"
+          [placeholder]="'dashboard.searchPlaceholder' | translate">
+      </div>
+
+      <div class="topbar-usuario">
+        <span class="usuario-avatar">K</span>
+        <span class="usuario-nombre">{{ 'dashboard.userName' | translate }}</span>
+      </div>
+    </header>
+
+    <main class="dashboard-contenido">
+
+      <!-- Resumen -->
+      @if (seccionActiva() === 'resumen') {
+        <h1>{{ 'dashboard.title' | translate }}</h1>
+        <p class="dashboard-subtitulo">{{ 'dashboard.subtitle' | translate }}</p>
+
+        <div class="stats-grid">
+          <div class="stat-tarjeta">
+            <span class="stat-label">{{ 'dashboard.stats.ingresos' | translate }}</span>
+            <span class="stat-valor">{{ totalIngresos().toFixed(2) }} €</span>
+          </div>
+          <div class="stat-tarjeta">
+            <span class="stat-label">{{ 'dashboard.stats.pedidos' | translate }}</span>
+            <span class="stat-valor">{{ totalPedidos() }}</span>
+          </div>
+          <div class="stat-tarjeta">
+            <span class="stat-label">{{ 'dashboard.stats.clientes' | translate }}</span>
+            <span class="stat-valor">{{ clientesUnicos() }}</span>
+          </div>
+          <div class="stat-tarjeta">
+            <span class="stat-label">{{ 'dashboard.stats.ticketMedio' | translate }}</span>
+            <span class="stat-valor">{{ ticketMedio().toFixed(2) }} €</span>
+          </div>
+        </div>
+
+        <div class="dashboard-panel">
+          <h2>{{ 'dashboard.chart.title' | translate }}</h2>
+
+          <div class="chart-barras">
+            @for (barra of barrasChart(); track barra.diaKey) {
+              <div class="chart-columna">
+                <div class="chart-barra-contenedor">
+                  <div class="chart-barra" [style.height.%]="barra.alturaPorcentaje"></div>
+                </div>
+                <span class="chart-dia">{{ barra.diaKey | translate }}</span>
+              </div>
+            }
+          </div>
+        </div>
+      }
+
+      <!-- Pedidos -->
+      @if (seccionActiva() === 'pedidos') {
+        <h1>{{ 'dashboard.menu.pedidos' | translate }}</h1>
+        <p class="dashboard-subtitulo">{{ 'dashboard.orders.subtitle' | translate }}</p>
+
+        <div class="dashboard-panel">
+          <div class="panel-cabecera">
+            <h2>{{ 'dashboard.orders.title' | translate }}</h2>
+
+            <div class="filtro-estados">
+              @for (estado of estados; track estado) {
+                <button
+                  type="button"
+                  class="filtro-chip"
+                  [class.filtro-chip--activo]="filtroEstado() === estado"
+                  (click)="cambiarFiltroEstado(estado)">
+                  {{ ('dashboard.status.' + estado) | translate }}
+                </button>
+              }
+            </div>
+          </div>
+
+          @if (pedidosFiltrados().length > 0) {
+            <table class="tabla-datos">
+              <thead>
+              <tr>
+                <th>{{ 'dashboard.orders.id' | translate }}</th>
+                <th>{{ 'dashboard.orders.customer' | translate }}</th>
+                <th>{{ 'dashboard.orders.date' | translate }}</th>
+                <th>{{ 'dashboard.orders.total' | translate }}</th>
+                <th>{{ 'dashboard.orders.status' | translate }}</th>
+              </tr>
+              </thead>
+              <tbody>
+                @for (pedido of pedidosFiltrados(); track pedido.id) {
+                  <tr>
+                    <td class="celda-destacada">{{ pedido.id }}</td>
+                    <td>{{ pedido.cliente }}</td>
+                    <td>{{ pedido.fecha }}</td>
+                    <td>{{ pedido.total.toFixed(2) }} €</td>
+                    <td>
+                      <span class="badge-estado" [class]="'badge-estado--' + pedido.estado">
+                        {{ ('dashboard.status.' + pedido.estado) | translate }}
+                      </span>
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          } @else {
+            <div class="tabla-vacia">
+              <p>{{ 'dashboard.orders.noResults' | translate }}</p>
+            </div>
+          }
+        </div>
+      }
+
+      <!-- Productos -->
+      @if (seccionActiva() === 'productos') {
+        <h1>{{ 'dashboard.menu.productos' | translate }}</h1>
+        <p class="dashboard-subtitulo">{{ 'dashboard.productos.subtitle' | translate }}</p>
+
+        <div class="dashboard-panel">
+          <table class="tabla-datos">
+            <thead>
+            <tr>
+              <th>{{ 'dashboard.productos.name' | translate }}</th>
+              <th>{{ 'dashboard.productos.category' | translate }}</th>
+              <th>{{ 'dashboard.productos.stock' | translate }}</th>
+              <th>{{ 'dashboard.productos.price' | translate }}</th>
+            </tr>
+            </thead>
+            <tbody>
+              @for (producto of productos; track producto.nombre) {
+                <tr>
+                  <td class="celda-destacada">{{ producto.nombre }}</td>
+                  <td>{{ producto.categoriaKey | translate }}</td>
+                  <td>
+                    <span class="badge-stock" [class.badge-stock--bajo]="producto.stock <= 5">
+                      {{ producto.stock }} {{ 'dashboard.productos.units' | translate }}
+                    </span>
+                  </td>
+                  <td>{{ producto.precio.toFixed(2) }} €</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+
+      <!-- Clientes -->
+      @if (seccionActiva() === 'clientes') {
+        <h1>{{ 'dashboard.menu.clientes' | translate }}</h1>
+        <p class="dashboard-subtitulo">{{ 'dashboard.clientes.subtitle' | translate }}</p>
+
+        <div class="dashboard-panel">
+          <table class="tabla-datos">
+            <thead>
+            <tr>
+              <th>{{ 'dashboard.clientes.name' | translate }}</th>
+              <th>{{ 'dashboard.clientes.email' | translate }}</th>
+              <th>{{ 'dashboard.clientes.orders' | translate }}</th>
+              <th>{{ 'dashboard.clientes.spent' | translate }}</th>
+            </tr>
+            </thead>
+            <tbody>
+              @for (cliente of clientes; track cliente.email) {
+                <tr>
+                  <td class="celda-destacada">{{ cliente.nombre }}</td>
+                  <td>{{ cliente.email }}</td>
+                  <td>{{ cliente.pedidosRealizados }}</td>
+                  <td>{{ cliente.totalGastado.toFixed(2) }} €</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+
+      <!-- Ajustes -->
+      @if (seccionActiva() === 'ajustes') {
+        <h1>{{ 'dashboard.menu.ajustes' | translate }}</h1>
+        <p class="dashboard-subtitulo">{{ 'dashboard.ajustes.subtitle' | translate }}</p>
+
+        <div class="dashboard-panel ajustes-panel">
+          <div class="ajustes-fila">
+            <div>
+              <h3>{{ 'dashboard.ajustes.tienda.title' | translate }}</h3>
+              <p>{{ 'dashboard.ajustes.tienda.description' | translate }}</p>
+            </div>
+          </div>
+
+          <div class="ajustes-fila">
+            <div>
+              <h3>{{ 'dashboard.ajustes.notificaciones.title' | translate }}</h3>
+              <p>{{ 'dashboard.ajustes.notificaciones.description' | translate }}</p>
+            </div>
+          </div>
+
+          <div class="ajustes-fila">
+            <div>
+              <h3>{{ 'dashboard.ajustes.envios.title' | translate }}</h3>
+              <p>{{ 'dashboard.ajustes.envios.description' | translate }}</p>
+            </div>
+          </div>
+        </div>
+      }
+
+    </main>
+  </div>
+
+</div>
