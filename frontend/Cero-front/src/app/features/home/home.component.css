@@ -1,53 +1,236 @@
+/* HOME */
+
 .home-entero {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
+.home-entero * {
+  box-sizing: border-box;
+}
+
+.home-alineacion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+/* Hero */
+
 .hero {
+  position: relative;
+  background: linear-gradient(180deg, #fdf6ec 0%, #ffffff 100%);
+  border-bottom: 1px solid #eee;
+  padding: 4rem 2rem 4.5rem;
+  overflow: hidden;
+}
+
+.hero-forma {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
+.hero-forma--uno {
+  width: 220px;
+  height: 220px;
+  background: #f3dfc9;
+  top: -80px;
+  right: -60px;
+}
+
+.hero-forma--dos {
+  width: 140px;
+  height: 140px;
+  background: #e9f5f3;
+  bottom: -50px;
+  left: 6%;
+}
+
+.hero-alineacion {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .hero h1 {
-  margin-bottom: 10px;
+  margin: 0 0 0.85rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: -0.02em;
 }
 
 .hero p {
-  color: #666;
+  margin: 0;
+  color: #6b7280;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
+.hero-nota {
+  margin-top: 2rem;
+  display: inline-block;
+
+  background-color: #fff;
+  border: 1px dashed #e3c496;
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
+  max-width: 480px;
+}
+
+.hero-nota p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #9a5b1f;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Grid de proyectos */
+
 .grid-proyectos {
+  margin-top: -2.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .tarjeta {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-top: 3px solid var(--color-acento, #e5e7eb);
+  border-radius: 14px;
+  padding: 1.75rem;
+
   text-align: left;
   cursor: pointer;
-  transition: 0.3s;
+  font-family: inherit;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tarjeta:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 1rem;
+
+  border-radius: 10px;
+  background-color: var(--color-fondo, #f3f4f6);
+  color: var(--color-acento, #6b7280);
+}
+
+.tarjeta-icono svg {
+  width: 22px;
+  height: 22px;
+}
+
+.tarjeta-categoria {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-acento, #9ca3af);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
 }
 
 .tarjeta h2 {
-  margin-bottom: 10px;
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1f2937;
 }
 
 .tarjeta p {
-  color: #666;
+  margin: 0 0 1.25rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
+
+.tarjeta-flecha {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.tarjeta-flecha svg {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta:hover .tarjeta-flecha svg {
+  transform: translateX(3px);
+}
+
+/* Cierre */
+
+.home-cierre {
+  border-top: 1px solid #eee;
+  background-color: #fafafa;
+  padding: 3.5rem 2rem;
+}
+
+.cierre-alineacion {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cierre-alineacion h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.cierre-alineacion p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Responsive */
 
 @media (max-width: 768px) {
   .hero {
-    margin-bottom: 30px;
+    padding: 3.5rem 1.5rem 3.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .home-alineacion {
+    padding: 0 1.25rem 3rem;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+    margin-top: -2rem;
+  }
+
+  .home-cierre {
+    padding: 3rem 1.5rem;
   }
 }
