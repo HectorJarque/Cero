@@ -12,37 +12,52 @@
     "home": "Home"
   },
   "home": {
-    "examples": "Web pages examples",
-    "description": "Different types of projects to fit every website",
+    "signature": "Handmade by Kallik",
+    "examples": "Example websites",
+    "description": "Eight different website types, so you can see at a glance what fits your business best.",
+    "note": "Each demo is built as if it were a real project, not a generic template. It's the best way to picture what your own site could look like.",
+    "viewExample": "View example",
+    "closing": {
+      "title": "Can't find exactly what you're after?",
+      "text": "No two businesses are the same, so these eight demos are just a starting point. Tell me what you need and we'll build it around you."
+    },
     "portfolio": {
+      "category": "Portfolio",
       "title": "Portfolio",
       "description": "Professional portfolio example"
     },
     "informative": {
+      "category": "Informational website",
       "title": "Informative Website",
       "description": "Local business or company"
     },
     "ecommerce": {
+      "category": "Online store",
       "title": "E-commerce",
       "description": "Online product store"
     },
     "dashboard": {
+      "category": "Admin panel",
       "title": "Dashboard",
       "description": "Administrative panel"
     },
     "blog": {
+      "category": "Blog",
       "title": "Blog",
       "description": "News and articles"
     },
     "landing": {
+      "category": "Landing page",
       "title": "Landing Page",
       "description": "Lead generation page"
     },
     "reservations": {
+      "category": "Bookings",
       "title": "Reservations",
       "description": "Hotel, restaurant, or appointment booking system"
     },
     "saas": {
+      "category": "SaaS",
       "title": "SaaS",
       "description": "Online application"
     }
@@ -296,6 +311,63 @@
         "title": "Shipping zones",
         "description": "Regions currently served and the shipping cost associated with each one."
       }
+    }
+  },
+  "blog": {
+    "hero": {
+      "tag": "Blog",
+      "title": "El Cajón de Recetas",
+      "subtitle": "Old family recipes, a bit of garden talk, and small stories about life in Valencia, told slowly, the way things are told in a kitchen.",
+      "featuredLabel": "Featured"
+    },
+    "searchPlaceholder": "Search a recipe, tradition or topic",
+    "clearFilters": "Clear filters",
+    "noResults": "We couldn't find any article matching those filters. Try a different word.",
+    "readTime": "min read",
+    "categorias": {
+      "recetas": "Recipes",
+      "tradiciones": "Traditions",
+      "huerta": "Garden",
+      "vidaLocal": "Local life"
+    },
+    "articulos": {
+      "arrozHorno": {
+        "title": "My grandmother's baked rice, exactly as she taught me",
+        "excerpt": "With yesterday's chickpeas, black pudding, and that crust that forms on top if you keep an eye on the oven. The old recipe, no shortcuts."
+      },
+      "mascleta": {
+        "title": "Why the mascleta is felt in your chest before it's heard",
+        "excerpt": "It's not just noise: there's a structure, a planned crescendo, and a tradition behind those two minutes that stop the city every March afternoon."
+      },
+      "plantarJulio": {
+        "title": "What to plant in July without the heat ruining everything",
+        "excerpt": "July shows no mercy in the garden, but some varieties hold up well if you know when to water and where to find some shade."
+      },
+      "mercadoColon": {
+        "title": "A slow walk through the Mercado de Colón",
+        "excerpt": "It's neither the cheapest nor the biggest, but there's something about it that makes you linger longer than planned. Here's where to start."
+      },
+      "horchata": {
+        "title": "Homemade horchata, step by step, without it splitting",
+        "excerpt": "Good tiger nuts make all the difference, but the real trick is in the resting time. Here's the recipe just as my aunt made it every June."
+      },
+      "origenPaella": {
+        "title": "Where paella really comes from (and why it's so debated)",
+        "excerpt": "Between the Albufera, field labourers, and centuries of variations, the story of paella is worth far more than a lunch-table argument."
+      },
+      "riegoCalor": {
+        "title": "How to water the garden when the thermometer won't drop below 38",
+        "excerpt": "It's not about watering more, it's about watering smarter. A few simple tricks we've used in the family garden for years."
+      }
+    },
+    "sidebar": {
+      "aboutTitle": "About this blog",
+      "aboutText": "Written from Valencia by Marisa and Toni, between family recipes and time spent in the garden. No filters, no rush.",
+      "popularTitle": "Most read",
+      "newsletterTitle": "Recipes in your inbox",
+      "newsletterText": "Once a week, nothing more, whenever there's something truly worth sharing.",
+      "newsletterPlaceholder": "Your email address",
+      "newsletterButton": "Sign me up"
     }
   }
 }

@@ -1,1 +1,142 @@
-<p>blog works!</p>
+<section class="blog-entero">
+
+  <!-- Cabecera -->
+  <div class="blog-cabecera">
+    <div class="blog-alineacion blog-cabecera-contenido">
+      <span class="blog-etiqueta">{{ 'blog.hero.tag' | translate }}</span>
+      <h1>{{ 'blog.hero.title' | translate }}</h1>
+      <p class="blog-lead">{{ 'blog.hero.subtitle' | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Artículo destacado -->
+  @if (articuloDestacado(); as destacado) {
+    <div class="blog-bloque">
+      <div class="blog-alineacion">
+        <article class="destacado-tarjeta">
+          <div class="destacado-imagen">
+            <img [ngSrc]="destacado.img" [alt]="destacado.titleKey | translate" fill priority="true">
+          </div>
+          <div class="destacado-info">
+            <span class="destacado-etiqueta">{{ 'blog.hero.featuredLabel' | translate }}</span>
+            <h2>{{ destacado.titleKey | translate }}</h2>
+            <p>{{ destacado.excerptKey | translate }}</p>
+
+            <div class="articulo-meta">
+              <span>{{ destacado.author }}</span>
+              <span class="meta-punto">·</span>
+              <span>{{ destacado.date }}</span>
+              <span class="meta-punto">·</span>
+              <span>{{ destacado.readMinutes }} {{ 'blog.readTime' | translate }}</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  }
+
+  <!-- Contenido: artículos + barra lateral -->
+  <div class="blog-bloque blog-bloque--gris">
+    <div class="blog-alineacion blog-contenido-grid">
+
+      <div class="blog-columna-principal">
+
+        <!-- Buscador y filtros -->
+        <div class="buscador">
+          <svg class="buscador-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+          <input
+            type="text"
+            class="buscador-input"
+            [value]="searchTerm()"
+            (input)="onSearchChange($any($event.target).value)"
+            [placeholder]="'blog.searchPlaceholder' | translate">
+
+          @if (hayFiltrosActivos()) {
+            <button type="button" class="buscador-limpiar" (click)="limpiarFiltros()">
+              {{ 'blog.clearFilters' | translate }}
+            </button>
+          }
+        </div>
+
+        <div class="categorias-fila">
+          @for (categoria of categorias; track categoria.id) {
+            <button
+              type="button"
+              class="categoria-chip"
+              [class.categoria-chip--activo]="selectedCategory() === categoria.id"
+              (click)="toggleCategoria(categoria.id)">
+              {{ categoria.titleKey | translate }}
+            </button>
+          }
+        </div>
+
+        <!-- Lista de artículos -->
+        @if (articulosFiltrados().length > 0) {
+          <div class="articulos-grid">
+            @for (articulo of articulosFiltrados(); track articulo.slug) {
+              <article class="articulo-tarjeta">
+                <div class="articulo-imagen">
+                  <img [ngSrc]="articulo.img" [alt]="articulo.titleKey | translate" fill priority="false">
+                </div>
+                <div class="articulo-info">
+                  <h3>{{ articulo.titleKey | translate }}</h3>
+                  <p>{{ articulo.excerptKey | translate }}</p>
+
+                  <div class="articulo-meta">
+                    <span>{{ articulo.author }}</span>
+                    <span class="meta-punto">·</span>
+                    <span>{{ articulo.date }}</span>
+                    <span class="meta-punto">·</span>
+                    <span>{{ articulo.readMinutes }} {{ 'blog.readTime' | translate }}</span>
+                  </div>
+                </div>
+              </article>
+            }
+          </div>
+        } @else {
+          <div class="articulos-vacio">
+            <p>{{ 'blog.noResults' | translate }}</p>
+            <button type="button" class="categoria-chip" (click)="limpiarFiltros()">
+              {{ 'blog.clearFilters' | translate }}
+            </button>
+          </div>
+        }
+
+      </div>
+
+      <!-- Barra lateral -->
+      <aside class="blog-lateral">
+        <div class="lateral-bloque">
+          <h3>{{ 'blog.sidebar.aboutTitle' | translate }}</h3>
+          <p>{{ 'blog.sidebar.aboutText' | translate }}</p>
+        </div>
+
+        <div class="lateral-bloque">
+          <h3>{{ 'blog.sidebar.popularTitle' | translate }}</h3>
+          <ul class="populares-lista">
+            @for (articulo of masLeidos(); track articulo.slug) {
+              <li>
+                <span class="popular-titulo">{{ articulo.titleKey | translate }}</span>
+                <span class="popular-meta">{{ articulo.readMinutes }} {{ 'blog.readTime' | translate }}</span>
+              </li>
+            }
+          </ul>
+        </div>
+
+        <div class="lateral-bloque lateral-newsletter">
+          <h3>{{ 'blog.sidebar.newsletterTitle' | translate }}</h3>
+          <p>{{ 'blog.sidebar.newsletterText' | translate }}</p>
+          <div class="newsletter-form">
+            <input type="email" [placeholder]="'blog.sidebar.newsletterPlaceholder' | translate">
+            <button type="button">{{ 'blog.sidebar.newsletterButton' | translate }}</button>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</section>

@@ -12,37 +12,52 @@
     "home": "Inicio"
   },
   "home": {
+    "signature": "Hecho a mano por Kallik",
     "examples": "Ejemplos de páginas web",
-    "description": "Diferentes tipos de proyectos para ajustarse a cada web",
+    "description": "Ocho tipos de web distintos, pensados para que veas de un vistazo qué encaja mejor con tu negocio.",
+    "note": "Cada demo está construida como si fuera un proyecto real, no una plantilla genérica. Así se ve mejor lo que puede acabar teniendo tu web.",
+    "viewExample": "Ver ejemplo",
+    "closing": {
+      "title": "¿No encuentras exactamente lo tuyo?",
+      "text": "Ningún negocio es igual a otro, así que estas ocho demos son solo el punto de partida. Cuéntame qué necesitas y lo construimos a medida."
+    },
     "portfolio": {
+      "category": "Portfolio",
       "title": "Portfolio",
       "description": "Portfolio profesional de muestra"
     },
     "informative": {
+      "category": "Web informativa",
       "title": "Web informativa",
       "description": "Empresa o negocio local"
     },
     "ecommerce": {
+      "category": "Tienda online",
       "title": "Ecommerce",
       "description": "Tienda online de productos"
     },
     "dashboard": {
+      "category": "Panel administrativo",
       "title": "Dashboard",
       "description": "Panel administrativo"
     },
     "blog": {
+      "category": "Blog",
       "title": "Blog",
       "description": "Noticias y artículos"
     },
     "landing": {
+      "category": "Landing page",
       "title": "Landing Page",
       "description": "Página de captación"
     },
     "reservations": {
+      "category": "Reservas",
       "title": "Reservas",
       "description": "Hotel, restaurante o sistema de citas"
     },
     "saas": {
+      "category": "SaaS",
       "title": "SaaS",
       "description": "Aplicación online"
     }
@@ -297,6 +312,63 @@
         "title": "Zonas de envío",
         "description": "Provincias a las que se envía actualmente y los gastos de envío asociados a cada una."
       }
+    }
+  },
+  "blog": {
+    "hero": {
+      "tag": "Blog",
+      "title": "El Cajón de Recetas",
+      "subtitle": "Recetas de siempre, algo de huerta y pequeñas historias sobre la vida en Valencia, contadas sin prisa, como se cuentan las cosas en una cocina.",
+      "featuredLabel": "Destacado"
+    },
+    "searchPlaceholder": "Busca una receta, tradición o tema",
+    "clearFilters": "Quitar filtros",
+    "noResults": "No hemos encontrado ningún artículo con esos filtros. Prueba con otra palabra.",
+    "readTime": "min de lectura",
+    "categorias": {
+      "recetas": "Recetas",
+      "tradiciones": "Tradiciones",
+      "huerta": "Huerta",
+      "vidaLocal": "Vida local"
+    },
+    "articulos": {
+      "arrozHorno": {
+        "title": "El arroz al horno de mi abuela, tal cual me lo enseñó",
+        "excerpt": "Con garbanzos del día anterior, morcilla y esa costra que se forma arriba si no te despistas con el horno. La receta de siempre, sin atajos."
+      },
+      "mascleta": {
+        "title": "Por qué la mascleta se siente en el pecho antes que se oye",
+        "excerpt": "No es solo ruido: hay un orden, un crescendo pensado y una tradición detrás de esos dos minutos que paran la ciudad cada tarde de marzo."
+      },
+      "plantarJulio": {
+        "title": "Qué plantar en julio sin que el calor te lo eche todo a perder",
+        "excerpt": "Julio no perdona en la huerta, pero hay variedades que aguantan bien si sabes cuándo regar y dónde buscar algo de sombra."
+      },
+      "mercadoColon": {
+        "title": "Una vuelta por el Mercado de Colón sin prisa",
+        "excerpt": "Ni es el más barato ni el más grande, pero tiene algo que te hace quedarte un rato más de lo previsto. Te cuento por dónde empezar."
+      },
+      "horchata": {
+        "title": "Horchata casera, paso a paso, sin que se corte",
+        "excerpt": "La chufa buena marca la diferencia, pero el truco está en el reposo. Aquí va la receta tal y como la hacía mi tía cada junio."
+      },
+      "origenPaella": {
+        "title": "De dónde viene realmente la paella (y por qué se discute tanto)",
+        "excerpt": "Entre la Albufera, los jornaleros del campo y siglos de variaciones, la historia de la paella da para mucho más que una discusión de sobremesa."
+      },
+      "riegoCalor": {
+        "title": "Cómo regar el huerto cuando el termómetro no baja de 38",
+        "excerpt": "No se trata de regar más, sino de regar mejor. Algunos trucos sencillos que llevamos años usando en la huerta familiar."
+      }
+    },
+    "sidebar": {
+      "aboutTitle": "Sobre este blog",
+      "aboutText": "Escrito desde Valencia por Marisa y Toni, entre recetas de familia y ratos en el huerto. Sin postureo, sin prisas.",
+      "popularTitle": "Los más leídos",
+      "newsletterTitle": "Recetas en tu correo",
+      "newsletterText": "Una vez a la semana, sin más, cuando hay algo que de verdad merece la pena compartir.",
+      "newsletterPlaceholder": "Tu correo electrónico",
+      "newsletterButton": "Apuntarme"
     }
   }
 }
