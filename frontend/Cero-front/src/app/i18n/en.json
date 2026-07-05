@@ -369,5 +369,117 @@
       "newsletterPlaceholder": "Your email address",
       "newsletterButton": "Sign me up"
     }
+  },
+  "landing": {
+    "hero": {
+      "badge": "In-person workshop in Valencia",
+      "title": "Learn to see the street with different eyes",
+      "subtitle": "A weekend workshop to lose the fear of going out with a camera and come home with photos that actually say something.",
+      "cta": "Reserve my spot",
+      "spots": "4 spots left out of 12",
+      "stats": {
+        "sesiones": "sessions",
+        "alumnos": "spots per edition",
+        "exalumnos": "past students"
+      }
+    },
+    "beneficios": {
+      "tag": "What you'll get",
+      "title": "It's not just about pressing the button",
+      "mirada": {
+        "title": "A style of your own",
+        "description": "You'll learn to notice what used to go unseen: light, gestures, moments that last a single second."
+      },
+      "tecnica": {
+        "title": "Technique without the headache",
+        "description": "Aperture, shutter speed and ISO explained without impossible formulas, using examples shot right on the street."
+      },
+      "grupo": {
+        "title": "Small group",
+        "description": "A maximum of 12 people per edition, so we can go through your photos one by one during the workshop."
+      },
+      "practica": {
+        "title": "Real outings",
+        "description": "Two photo walks through central Valencia, one by day and one at dusk, with feedback on the spot."
+      }
+    },
+    "programa": {
+      "tag": "How it's structured",
+      "title": "Four sessions, one weekend",
+      "intro": "The workshop runs Saturday and Sunday, mixing a short morning theory session with a hands-on outing in the afternoon.",
+      "s1": {
+        "title": "Saturday morning: the technical basics",
+        "description": "Key concepts of exposure and composition, explained through real photos taken around Valencia."
+      },
+      "s2": {
+        "title": "Saturday afternoon: first outing",
+        "description": "A walk through the Mercado Central and El Carmen, looking for light, texture and everyday scenes."
+      },
+      "s3": {
+        "title": "Sunday morning: group review",
+        "description": "We go through Saturday's photos together, with direct feedback and no sugar-coating."
+      },
+      "s4": {
+        "title": "Sunday at dusk: second outing",
+        "description": "Turia and the Puente de las Flores, working with low light to close the workshop with your best set of photos."
+      }
+    },
+    "profesor": {
+      "tag": "Who's teaching",
+      "name": "Toni Ferrando",
+      "bio1": "A photographer for over fifteen years, with work published in travel magazines and a long stretch documenting everyday life in Valencia's markets.",
+      "bio2": "He's been running workshops since 2019 because, as he puts it, teaching photography teaches him as much as taking photos does. He prefers small groups and streets full of real people over staged sets."
+    },
+    "testimonios": {
+      "tag": "Past students",
+      "title": "What people who've been here say",
+      "t1": {
+        "text": "My camera had been sitting in a drawer for two years. Since the workshop I haven't stopped going out on weekends.",
+        "author": "Elena Ripoll"
+      },
+      "t2": {
+        "text": "What I liked most is that Toni corrects you on the spot, out on the street, not just in a talk at the end.",
+        "author": "Marc Vidal"
+      },
+      "t3": {
+        "text": "A genuinely small group, you can tell. He went through my photos one by one and told me what he'd change in each.",
+        "author": "Sofía Alcaraz"
+      }
+    },
+    "precio": {
+      "tag": "Price",
+      "title": "One edition, one weekend",
+      "description": "The price includes all four sessions, a PDF support guide, and an individual review of your final set by email, one week after the workshop.",
+      "item1": "Full Saturday and Sunday",
+      "item2": "Maximum group of 12 people",
+      "item3": "Final photo review by email",
+      "note": "one-time payment, no instalments",
+      "cta": "I want to sign up"
+    },
+    "faq": {
+      "tag": "Common questions",
+      "title": "Before you sign up",
+      "q1": {
+        "question": "Do I need a professional camera?",
+        "answer": "No. A basic DSLR or mirrorless is fine, even a phone with good manual controls works. What matters is understanding light, not the price of the gear."
+      },
+      "q2": {
+        "question": "What if it rains that weekend?",
+        "answer": "The outings adapt: we look for porches, covered markets and shop-window light. Rain makes for interesting photos too."
+      },
+      "q3": {
+        "question": "Is there a minimum skill level to join?",
+        "answer": "None at all. Half of each group usually hasn't touched manual mode before the workshop."
+      },
+      "q4": {
+        "question": "Can I cancel if something comes up?",
+        "answer": "Yes, up to a week before the workshop you'll get a full refund, no questions asked."
+      }
+    },
+    "ctaFinal": {
+      "title": "Only a few spots left for this edition",
+      "text": "Groups are kept small on purpose, so spots usually sell out before the workshop date.",
+      "cta": "Reserve my spot now"
+    }
   }
 }

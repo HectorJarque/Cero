@@ -370,5 +370,117 @@
       "newsletterPlaceholder": "Tu correo electrónico",
       "newsletterButton": "Apuntarme"
     }
+  },
+  "landing": {
+    "hero": {
+      "badge": "Taller presencial en Valencia",
+      "title": "Aprende a mirar la calle con otros ojos",
+      "subtitle": "Un taller de fin de semana para perder el miedo a salir con la cámara y volver a casa con fotos que de verdad cuenten algo.",
+      "cta": "Reservar mi plaza",
+      "spots": "Quedan 4 plazas de 12",
+      "stats": {
+        "sesiones": "sesiones",
+        "alumnos": "plazas por edición",
+        "exalumnos": "alumnos ya formados"
+      }
+    },
+    "beneficios": {
+      "tag": "Qué te llevas",
+      "title": "No es solo apretar el botón",
+      "mirada": {
+        "title": "Una mirada propia",
+        "description": "Aprenderás a fijarte en lo que antes pasaba desapercibido: luces, gestos, momentos que duran un segundo."
+      },
+      "tecnica": {
+        "title": "Técnica sin agobios",
+        "description": "Diafragma, velocidad e ISO explicados sin fórmulas imposibles, con ejemplos tomados en la propia calle."
+      },
+      "grupo": {
+        "title": "Grupo reducido",
+        "description": "Máximo 12 personas por edición, para poder revisar tus fotos una a una durante el taller."
+      },
+      "practica": {
+        "title": "Salidas reales",
+        "description": "Dos salidas fotográficas por el centro de Valencia, de día y al atardecer, con corrección en el momento."
+      }
+    },
+    "programa": {
+      "tag": "Cómo se organiza",
+      "title": "Cuatro sesiones, un fin de semana",
+      "intro": "El taller se hace en sábado y domingo, combinando teoría breve por la mañana con salida práctica por la tarde.",
+      "s1": {
+        "title": "Sábado por la mañana: la base técnica",
+        "description": "Conceptos clave de exposición y composición, explicados con fotos reales tomadas en Valencia."
+      },
+      "s2": {
+        "title": "Sábado por la tarde: primera salida",
+        "description": "Recorrido por el Mercado Central y el Carmen, buscando luz, texturas y escenas cotidianas."
+      },
+      "s3": {
+        "title": "Domingo por la mañana: revisión en grupo",
+        "description": "Repasamos las fotos del sábado entre todos, con comentarios directos y sin paños calientes."
+      },
+      "s4": {
+        "title": "Domingo al atardecer: segunda salida",
+        "description": "Turia y puente de las Flores, para trabajar la luz baja y cerrar el taller con tu mejor serie de fotos."
+      }
+    },
+    "profesor": {
+      "tag": "Quién lo da",
+      "name": "Toni Ferrando",
+      "bio1": "Fotógrafo desde hace más de quince años, con trabajo publicado en revistas de viajes y una larga temporada documentando el día a día de los mercados valencianos.",
+      "bio2": "Da talleres desde 2019 porque, según dice, explicar fotografía le enseña tanto como hacerla. Prefiere los grupos pequeños y las calles con gente de verdad antes que los decorados."
+    },
+    "testimonios": {
+      "tag": "Quien ya ha venido",
+      "title": "Lo que cuentan los que ya han pasado por aquí",
+      "t1": {
+        "text": "Llevaba la cámara en el armario desde hacía dos años. Después del taller no he dejado de salir los fines de semana.",
+        "author": "Elena Ripoll"
+      },
+      "t2": {
+        "text": "Lo que más me gustó fue que Toni corrige en el momento, en la calle, no solo con una charla al final.",
+        "author": "Marc Vidal"
+      },
+      "t3": {
+        "text": "Grupo pequeño de verdad, se nota. Pudo ver mis fotos una a una y decirme qué cambiaría de cada una.",
+        "author": "Sofía Alcaraz"
+      }
+    },
+    "precio": {
+      "tag": "Precio",
+      "title": "Una edición, un fin de semana",
+      "description": "El precio incluye las cuatro sesiones, material de apoyo en PDF y una revisión individual de tu serie final por correo, una semana después del taller.",
+      "item1": "Sábado y domingo completos",
+      "item2": "Grupo máximo de 12 personas",
+      "item3": "Revisión final de tus fotos por correo",
+      "note": "pago único, sin cuotas",
+      "cta": "Quiero apuntarme"
+    },
+    "faq": {
+      "tag": "Dudas frecuentes",
+      "title": "Antes de apuntarte",
+      "q1": {
+        "question": "¿Necesito una cámara profesional?",
+        "answer": "No. Vale una réflex o mirrorless básica, e incluso el móvil si tiene buen control manual. Lo importante es entender la luz, no el precio del equipo."
+      },
+      "q2": {
+        "question": "¿Y si llueve el fin de semana del taller?",
+        "answer": "Las salidas se adaptan: buscamos porches, mercados cubiertos y luz de escaparate. La lluvia también da fotos interesantes."
+      },
+      "q3": {
+        "question": "¿Hay algún nivel mínimo para apuntarse?",
+        "answer": "Ninguno. La mitad de cada grupo suele venir sin haber tocado el modo manual antes del taller."
+      },
+      "q4": {
+        "question": "¿Puedo cancelar si surge un imprevisto?",
+        "answer": "Sí, hasta una semana antes del taller se devuelve el importe completo, sin preguntas."
+      }
+    },
+    "ctaFinal": {
+      "title": "Quedan pocas plazas para esta edición",
+      "text": "Se hacen grupos pequeños a propósito, así que las plazas suelen agotarse antes de la fecha del taller.",
+      "cta": "Reservar mi plaza ahora"
+    }
   }
 }

@@ -1,0 +1,518 @@
+/* LANDING */
+
+.landing-entero {
+  width: 100%;
+  background: #fff;
+}
+
+.landing-entero * {
+  box-sizing: border-box;
+}
+
+.landing-entero button {
+  font-family: inherit;
+}
+
+.landing-alineacion {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Botón principal reutilizable */
+
+.boton-principal {
+  border: none;
+  border-radius: 8px;
+  background-color: #a13d5c;
+  color: #fff;
+
+  padding: 0.85rem 1.75rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.boton-principal:hover {
+  background-color: #832f49;
+}
+
+.boton-principal--claro {
+  background-color: #fff;
+  color: #a13d5c;
+}
+
+.boton-principal--claro:hover {
+  background-color: #f6ecef;
+}
+
+/* Hero */
+
+.hero-landing {
+  background: linear-gradient(180deg, #faeef2 0%, #ffffff 100%);
+  border-bottom: 1px solid #eee;
+}
+
+.hero-contenido {
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+
+  border-radius: 999px;
+  background-color: #f3d9e2;
+  color: #8a2f4b;
+
+  margin-bottom: 1.25rem;
+}
+
+.hero-landing h1 {
+  margin: 0 0 0.85rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.25;
+}
+
+.hero-lead {
+  margin: 0 0 1.75rem;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero-acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-plazas {
+  font-size: 0.85rem;
+  color: #9a5b1f;
+  font-weight: 500;
+}
+
+.hero-datos {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.hero-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.dato-valor {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #a13d5c;
+}
+
+.dato-label {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Bloques generales */
+
+.landing-bloque--gris {
+  background-color: #fafafa;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.bloque-etiqueta {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #a13d5c;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.6rem;
+}
+
+.landing-bloque h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.bloque-intro {
+  margin: 0 0 2rem;
+  color: #6b7280;
+  max-width: 550px;
+  line-height: 1.6;
+}
+
+/* Beneficios */
+
+.beneficios-grid {
+  margin-top: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.beneficio-tarjeta {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.beneficio-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 0.9rem;
+
+  border-radius: 10px;
+  background-color: #faeef2;
+  color: #a13d5c;
+}
+
+.beneficio-icono svg {
+  width: 20px;
+  height: 20px;
+}
+
+.beneficio-tarjeta h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.beneficio-tarjeta p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Programa */
+
+.programa-lista {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.programa-fila {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.programa-fila:last-child {
+  border-bottom: none;
+}
+
+.programa-numero {
+  flex-shrink: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e3b7c4;
+  width: 44px;
+}
+
+.programa-texto h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.programa-texto p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.55;
+}
+
+/* Profesor */
+
+.profesor-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.profesor-imagen {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+
+  background-color: #faeef2;
+  color: #a13d5c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profesor-iniciales {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.profesor-texto h2 {
+  margin: 0 0 0.9rem;
+}
+
+.profesor-texto p {
+  margin: 0 0 0.8rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.profesor-texto p:last-child {
+  margin-bottom: 0;
+}
+
+/* Testimonios */
+
+.testimonios-grid {
+  margin-top: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.testimonio-tarjeta {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.testimonio-texto {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.55;
+  font-style: italic;
+}
+
+.testimonio-autor {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Precio */
+
+.precio-tarjeta {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 0;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.precio-info {
+  padding: 2.5rem;
+}
+
+.precio-info p {
+  margin: 0 0 1.25rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.precio-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.precio-lista li {
+  font-size: 0.9rem;
+  color: #374151;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.precio-lista li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #a13d5c;
+}
+
+.precio-cta {
+  background-color: #faeef2;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.precio-valor {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.precio-nota {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.precio-plazas {
+  font-size: 0.82rem;
+  color: #9a5b1f;
+  font-weight: 500;
+}
+
+/* FAQ */
+
+.faq-alineacion {
+  max-width: 720px;
+}
+
+.faq-lista {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-pregunta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  padding: 1.25rem 0;
+  text-align: left;
+
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.faq-flecha {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: #9ca3af;
+  transition: transform 0.2s ease;
+}
+
+.faq-item--abierto .faq-flecha {
+  transform: rotate(180deg);
+}
+
+.faq-respuesta {
+  margin: 0 0 1.25rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* CTA final */
+
+.landing-cta-final {
+  background-color: #a13d5c;
+}
+
+.cta-final-contenido {
+  text-align: center;
+  max-width: 550px;
+}
+
+.cta-final-contenido h2 {
+  margin: 0 0 0.75rem;
+  color: #fff;
+}
+
+.cta-final-contenido p {
+  margin: 0 0 1.75rem;
+  color: #f3d9e2;
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .beneficios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .precio-tarjeta {
+    grid-template-columns: 1fr;
+  }
+
+  .profesor-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .landing-alineacion {
+    padding: 3rem 1.5rem;
+  }
+
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-datos {
+    gap: 1.5rem;
+  }
+
+  .hero-landing h1 {
+    font-size: 1.8rem;
+  }
+}

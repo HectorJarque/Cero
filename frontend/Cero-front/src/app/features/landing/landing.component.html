@@ -1,1 +1,191 @@
-<p>landing works!</p>
+<section class="landing-entero">
+
+  <!-- Hero -->
+  <div class="hero-landing">
+    <div class="landing-alineacion hero-contenido">
+      <span class="hero-badge">{{ 'landing.hero.badge' | translate }}</span>
+      <h1>{{ 'landing.hero.title' | translate }}</h1>
+      <p class="hero-lead">{{ 'landing.hero.subtitle' | translate }}</p>
+
+      <div class="hero-acciones">
+        <button type="button" class="boton-principal">{{ 'landing.hero.cta' | translate }}</button>
+        <span class="hero-plazas">{{ 'landing.hero.spots' | translate }}</span>
+      </div>
+
+      <div class="hero-datos">
+        <div class="hero-dato">
+          <span class="dato-valor">4</span>
+          <span class="dato-label">{{ 'landing.hero.stats.sesiones' | translate }}</span>
+        </div>
+        <div class="hero-dato">
+          <span class="dato-valor">12</span>
+          <span class="dato-label">{{ 'landing.hero.stats.alumnos' | translate }}</span>
+        </div>
+        <div class="hero-dato">
+          <span class="dato-valor">120+</span>
+          <span class="dato-label">{{ 'landing.hero.stats.exalumnos' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Qué aprenderás -->
+  <div class="landing-bloque">
+    <div class="landing-alineacion">
+      <span class="bloque-etiqueta">{{ 'landing.beneficios.tag' | translate }}</span>
+      <h2>{{ 'landing.beneficios.title' | translate }}</h2>
+
+      <div class="beneficios-grid">
+        @for (beneficio of beneficios; track beneficio.titleKey) {
+          <div class="beneficio-tarjeta">
+            <span class="beneficio-icono">
+              @switch (beneficio.icon) {
+                @case ('ojo') {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M2 12s3.8-6.5 10-6.5S22 12 22 12s-3.8 6.5-10 6.5S2 12 2 12Z" />
+                    <circle cx="12" cy="12" r="2.6" />
+                  </svg>
+                }
+                @case ('camara') {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" />
+                    <circle cx="12" cy="13" r="3.2" />
+                  </svg>
+                }
+                @case ('grupo') {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <circle cx="8.5" cy="8" r="3" />
+                    <circle cx="16" cy="9" r="2.4" />
+                    <path d="M3 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" />
+                    <path d="M14.5 14.2c2.4.3 4 2 4 4.8" />
+                  </svg>
+                }
+                @case ('certificado') {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <circle cx="12" cy="9" r="5.5" />
+                    <path d="m8.5 13.5-1 6L12 17l4.5 2.5-1-6" />
+                  </svg>
+                }
+              }
+            </span>
+            <h3>{{ beneficio.titleKey | translate }}</h3>
+            <p>{{ beneficio.descKey | translate }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Programa -->
+  <div class="landing-bloque landing-bloque--gris">
+    <div class="landing-alineacion">
+      <span class="bloque-etiqueta">{{ 'landing.programa.tag' | translate }}</span>
+      <h2>{{ 'landing.programa.title' | translate }}</h2>
+      <p class="bloque-intro">{{ 'landing.programa.intro' | translate }}</p>
+
+      <div class="programa-lista">
+        @for (sesion of programa; track sesion.numero) {
+          <div class="programa-fila">
+            <span class="programa-numero">{{ sesion.numero }}</span>
+            <div class="programa-texto">
+              <h3>{{ sesion.titleKey | translate }}</h3>
+              <p>{{ sesion.descKey | translate }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Profesor -->
+  <div class="landing-bloque">
+    <div class="landing-alineacion profesor-grid">
+      <div class="profesor-imagen">
+        <span class="profesor-iniciales">TF</span>
+      </div>
+      <div class="profesor-texto">
+        <span class="bloque-etiqueta">{{ 'landing.profesor.tag' | translate }}</span>
+        <h2>{{ 'landing.profesor.name' | translate }}</h2>
+        <p>{{ 'landing.profesor.bio1' | translate }}</p>
+        <p>{{ 'landing.profesor.bio2' | translate }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonios -->
+  <div class="landing-bloque landing-bloque--gris">
+    <div class="landing-alineacion">
+      <span class="bloque-etiqueta">{{ 'landing.testimonios.tag' | translate }}</span>
+      <h2>{{ 'landing.testimonios.title' | translate }}</h2>
+
+      <div class="testimonios-grid">
+        @for (testimonio of testimonios; track testimonio.authorKey) {
+          <div class="testimonio-tarjeta">
+            <p class="testimonio-texto">{{ testimonio.textKey | translate }}</p>
+            <span class="testimonio-autor">{{ testimonio.authorKey | translate }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Precio / CTA -->
+  <div class="landing-bloque">
+    <div class="landing-alineacion">
+      <div class="precio-tarjeta">
+        <div class="precio-info">
+          <span class="bloque-etiqueta">{{ 'landing.precio.tag' | translate }}</span>
+          <h2>{{ 'landing.precio.title' | translate }}</h2>
+          <p>{{ 'landing.precio.description' | translate }}</p>
+
+          <ul class="precio-lista">
+            <li>{{ 'landing.precio.item1' | translate }}</li>
+            <li>{{ 'landing.precio.item2' | translate }}</li>
+            <li>{{ 'landing.precio.item3' | translate }}</li>
+          </ul>
+        </div>
+
+        <div class="precio-cta">
+          <span class="precio-valor">95 €</span>
+          <span class="precio-nota">{{ 'landing.precio.note' | translate }}</span>
+          <button type="button" class="boton-principal">{{ 'landing.precio.cta' | translate }}</button>
+          <span class="precio-plazas">{{ 'landing.hero.spots' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="landing-bloque landing-bloque--gris">
+    <div class="landing-alineacion faq-alineacion">
+      <span class="bloque-etiqueta">{{ 'landing.faq.tag' | translate }}</span>
+      <h2>{{ 'landing.faq.title' | translate }}</h2>
+
+      <div class="faq-lista">
+        @for (pregunta of preguntas; track pregunta.questionKey; let i = $index) {
+          <div class="faq-item" [class.faq-item--abierto]="preguntaAbierta() === i">
+            <button type="button" class="faq-pregunta" (click)="toggleFaq(i)">
+              <span>{{ pregunta.questionKey | translate }}</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-flecha">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            @if (preguntaAbierta() === i) {
+              <p class="faq-respuesta">{{ pregunta.answerKey | translate }}</p>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA final -->
+  <div class="landing-cta-final">
+    <div class="landing-alineacion cta-final-contenido">
+      <h2>{{ 'landing.ctaFinal.title' | translate }}</h2>
+      <p>{{ 'landing.ctaFinal.text' | translate }}</p>
+      <button type="button" class="boton-principal boton-principal--claro">{{ 'landing.ctaFinal.cta' | translate }}</button>
+    </div>
+  </div>
+
+</section>
