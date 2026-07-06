@@ -481,5 +481,85 @@
       "text": "Groups are kept small on purpose, so spots usually sell out before the workshop date.",
       "cta": "Reserve my spot now"
     }
+  },
+  "reservas": {
+    "hero": {
+      "tag": "Online booking",
+      "title": "La Barraca de Vicent",
+      "subtitle": "Valencian market cuisine by the Turia riverbed, with rice dishes at lunch and a menu that changes with whatever the local orchards bring that week."
+    },
+    "widget": {
+      "title": "Book your table",
+      "subtitle": "Choose a date, party size and time, and we'll confirm right away.",
+      "dateLabel": "Date",
+      "guestsLabel": "Guests",
+      "guest": "guest",
+      "guests": "guests",
+      "lunch": "Lunch",
+      "dinner": "Dinner",
+      "nameLabel": "Name",
+      "namePlaceholder": "What's your name?",
+      "emailLabel": "Email",
+      "emailPlaceholder": "To confirm your booking",
+      "summaryPrefix": "Table for",
+      "summaryOn": "on",
+      "summaryAt": "at",
+      "confirm": "Confirm booking"
+    },
+    "confirmacion": {
+      "title": "Booking confirmed",
+      "note": "You'll receive an email with all the details. If you need to change anything, feel free to call the restaurant directly.",
+      "another": "Make another booking"
+    },
+    "about": {
+      "tag": "Who we are",
+      "title": "Thirty years by the Turia",
+      "text": "Vicent opened the restaurant in 1996, in a space that used to be a farm hut. The menu has changed with the seasons ever since, but the core idea remains the same: market cooking, no frills, built around Valencian orchard produce."
+    },
+    "menu": {
+      "tag": "Some of our dishes",
+      "title": "What you shouldn't miss at the table",
+      "arrozSenyoret": {
+        "title": "Arroz del senyoret",
+        "description": "With cuttlefish, prawns and clams, all pre-peeled, so you can eat without getting your hands messy."
+      },
+      "allipebre": {
+        "title": "All i pebre with eel",
+        "description": "A traditional Albufera recipe, made with garlic, paprika and potato."
+      },
+      "esgarraet": {
+        "title": "Esgarraet",
+        "description": "Roasted red pepper, shredded salt cod and good olive oil, a perfect starter."
+      },
+      "tarta": {
+        "title": "House sweet potato tart",
+        "description": "Vicent's mother's recipe, made fresh every morning at the restaurant."
+      }
+    },
+    "testimonios": {
+      "tag": "Past guests",
+      "title": "What people who've sat at our table say",
+      "t1": {
+        "text": "The arroz del senyoret is one of the best I've had in Valencia, and we've tried quite a few places.",
+        "author": "The Ferrer family"
+      },
+      "t2": {
+        "text": "We booked for twelve people on a Sunday and everything went perfectly, with no rush from the staff at all.",
+        "author": "Noa Castells"
+      },
+      "t3": {
+        "text": "The all i pebre reminded me of the one my grandmother used to make in the Albufera. Hard to find something this authentic these days.",
+        "author": "David Roselló"
+      }
+    },
+    "ubicacion": {
+      "tag": "How to get there",
+      "title": "Right by the river",
+      "address": "Paseo de la Pechina, 22, Valencia",
+      "days1": "Tuesday to Thursday",
+      "days2": "Friday to Sunday",
+      "days3": "Monday",
+      "closed": "Closed"
+    }
   }
 }

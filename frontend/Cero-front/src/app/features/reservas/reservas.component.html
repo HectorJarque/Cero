@@ -1,1 +1,224 @@
-<p>reservas works!</p>
+<section class="reservas-entero">
+
+  <!-- Hero -->
+  <div class="hero-reservas">
+    <div class="reservas-alineacion hero-contenido">
+      <span class="hero-etiqueta">{{ 'reservas.hero.tag' | translate }}</span>
+      <h1>{{ 'reservas.hero.title' | translate }}</h1>
+      <p class="hero-lead">{{ 'reservas.hero.subtitle' | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Widget de reserva -->
+  <div class="reservas-bloque">
+    <div class="reservas-alineacion">
+
+      @if (!reservaConfirmada()) {
+        <div class="widget-reserva">
+
+          <div class="widget-cabecera">
+            <h2>{{ 'reservas.widget.title' | translate }}</h2>
+            <p>{{ 'reservas.widget.subtitle' | translate }}</p>
+          </div>
+
+          <!-- Fecha y comensales -->
+          <div class="widget-controles">
+            <label class="control-campo">
+              <span>{{ 'reservas.widget.dateLabel' | translate }}</span>
+              <input
+                type="date"
+                [min]="fechaMinima"
+                [max]="fechaMaxima"
+                [value]="fechaSeleccionada()"
+                (change)="onFechaChange($any($event.target).value)">
+            </label>
+
+            <label class="control-campo">
+              <span>{{ 'reservas.widget.guestsLabel' | translate }}</span>
+              <select [value]="comensales()" (change)="onComensalesChange(+$any($event.target).value)">
+                @for (n of [1,2,3,4,5,6,7,8]; track n) {
+                  <option [value]="n">{{ n }} {{ n === 1 ? ('reservas.widget.guest' | translate) : ('reservas.widget.guests' | translate) }}</option>
+                }
+              </select>
+            </label>
+          </div>
+
+          <!-- Horas: comida -->
+          <div class="turno-bloque">
+            <span class="turno-titulo">{{ 'reservas.widget.lunch' | translate }}</span>
+            <div class="horas-grid">
+              @for (franja of franjasComida(); track franja.hora) {
+                <button
+                  type="button"
+                  class="hora-chip"
+                  [class.hora-chip--activo]="horaSeleccionada() === franja.hora"
+                  [class.hora-chip--lleno]="!franja.disponible"
+                  [disabled]="!franja.disponible"
+                  (click)="seleccionarHora(franja.hora)">
+                  {{ franja.hora }}
+                </button>
+              }
+            </div>
+          </div>
+
+          <!-- Horas: cena -->
+          <div class="turno-bloque">
+            <span class="turno-titulo">{{ 'reservas.widget.dinner' | translate }}</span>
+            <div class="horas-grid">
+              @for (franja of franjasCena(); track franja.hora) {
+                <button
+                  type="button"
+                  class="hora-chip"
+                  [class.hora-chip--activo]="horaSeleccionada() === franja.hora"
+                  [class.hora-chip--lleno]="!franja.disponible"
+                  [disabled]="!franja.disponible"
+                  (click)="seleccionarHora(franja.hora)">
+                  {{ franja.hora }}
+                </button>
+              }
+            </div>
+          </div>
+
+          <!-- Datos de contacto, solo si hay hora elegida -->
+          @if (horaSeleccionada()) {
+            <div class="widget-contacto">
+              <label class="control-campo">
+                <span>{{ 'reservas.widget.nameLabel' | translate }}</span>
+                <input
+                  type="text"
+                  [value]="nombre()"
+                  (input)="onNombreChange($any($event.target).value)"
+                  [placeholder]="'reservas.widget.namePlaceholder' | translate">
+              </label>
+
+              <label class="control-campo">
+                <span>{{ 'reservas.widget.emailLabel' | translate }}</span>
+                <input
+                  type="email"
+                  [value]="email()"
+                  (input)="onEmailChange($any($event.target).value)"
+                  [placeholder]="'reservas.widget.emailPlaceholder' | translate">
+              </label>
+            </div>
+
+            <div class="widget-resumen">
+              <p>
+                {{ 'reservas.widget.summaryPrefix' | translate }}
+                <strong>{{ comensales() }} {{ comensales() === 1 ? ('reservas.widget.guest' | translate) : ('reservas.widget.guests' | translate) }}</strong>
+                {{ 'reservas.widget.summaryOn' | translate }}
+                <strong>{{ fechaSeleccionada() }}</strong>
+                {{ 'reservas.widget.summaryAt' | translate }}
+                <strong>{{ horaSeleccionada() }}</strong>.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="boton-confirmar"
+              [disabled]="!puedeConfirmar()"
+              (click)="confirmarReserva()">
+              {{ 'reservas.widget.confirm' | translate }}
+            </button>
+          }
+
+        </div>
+      } @else {
+        <div class="widget-confirmacion">
+          <span class="confirmacion-icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m5 13 4 4L19 7" />
+            </svg>
+          </span>
+          <h2>{{ 'reservas.confirmacion.title' | translate }}</h2>
+          <p>
+            {{ 'reservas.widget.summaryPrefix' | translate }}
+            <strong>{{ comensales() }} {{ comensales() === 1 ? ('reservas.widget.guest' | translate) : ('reservas.widget.guests' | translate) }}</strong>
+            {{ 'reservas.widget.summaryOn' | translate }}
+            <strong>{{ fechaSeleccionada() }}</strong>
+            {{ 'reservas.widget.summaryAt' | translate }}
+            <strong>{{ horaSeleccionada() }}</strong>.
+          </p>
+          <p class="confirmacion-nota">{{ 'reservas.confirmacion.note' | translate }}</p>
+
+          <button type="button" class="boton-secundario" (click)="hacerOtraReserva()">
+            {{ 'reservas.confirmacion.another' | translate }}
+          </button>
+        </div>
+      }
+
+    </div>
+  </div>
+
+  <!-- Sobre el restaurante -->
+  <div class="reservas-bloque reservas-bloque--gris">
+    <div class="reservas-alineacion">
+      <span class="bloque-etiqueta">{{ 'reservas.about.tag' | translate }}</span>
+      <h2>{{ 'reservas.about.title' | translate }}</h2>
+      <p>{{ 'reservas.about.text' | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Platos destacados -->
+  <div class="reservas-bloque">
+    <div class="reservas-alineacion">
+      <span class="bloque-etiqueta">{{ 'reservas.menu.tag' | translate }}</span>
+      <h2>{{ 'reservas.menu.title' | translate }}</h2>
+
+      <div class="platos-lista">
+        @for (plato of platos; track plato.titleKey) {
+          <div class="plato-fila">
+            <div class="plato-texto">
+              <h3>{{ plato.titleKey | translate }}</h3>
+              <p>{{ plato.descKey | translate }}</p>
+            </div>
+            <span class="plato-precio">{{ plato.price }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonios -->
+  <div class="reservas-bloque reservas-bloque--gris">
+    <div class="reservas-alineacion">
+      <span class="bloque-etiqueta">{{ 'reservas.testimonios.tag' | translate }}</span>
+      <h2>{{ 'reservas.testimonios.title' | translate }}</h2>
+
+      <div class="testimonios-grid">
+        @for (testimonio of testimonios; track testimonio.authorKey) {
+          <div class="testimonio-tarjeta">
+            <p class="testimonio-texto">{{ testimonio.textKey | translate }}</p>
+            <span class="testimonio-autor">{{ testimonio.authorKey | translate }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Ubicación y horario -->
+  <div class="reservas-bloque">
+    <div class="reservas-alineacion ubicacion-grid">
+      <div>
+        <span class="bloque-etiqueta">{{ 'reservas.ubicacion.tag' | translate }}</span>
+        <h2>{{ 'reservas.ubicacion.title' | translate }}</h2>
+        <p class="ubicacion-direccion">{{ 'reservas.ubicacion.address' | translate }}</p>
+      </div>
+
+      <div class="horario-lista">
+        <div class="horario-fila">
+          <span>{{ 'reservas.ubicacion.days1' | translate }}</span>
+          <span>13:00 – 16:00</span>
+        </div>
+        <div class="horario-fila">
+          <span>{{ 'reservas.ubicacion.days2' | translate }}</span>
+          <span>13:00 – 16:00 / 20:00 – 23:00</span>
+        </div>
+        <div class="horario-fila">
+          <span>{{ 'reservas.ubicacion.days3' | translate }}</span>
+          <span>{{ 'reservas.ubicacion.closed' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

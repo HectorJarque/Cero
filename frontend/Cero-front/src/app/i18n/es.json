@@ -482,5 +482,85 @@
       "text": "Se hacen grupos pequeños a propósito, así que las plazas suelen agotarse antes de la fecha del taller.",
       "cta": "Reservar mi plaza ahora"
     }
+  },
+  "reservas": {
+    "hero": {
+      "tag": "Reserva online",
+      "title": "La Barraca de Vicent",
+      "subtitle": "Cocina valenciana de mercado, a orillas del Turia, con arroces al mediodía y una carta que cambia según lo que traiga la huerta esa semana."
+    },
+    "widget": {
+      "title": "Reserva tu mesa",
+      "subtitle": "Elige fecha, comensales y hora, y te confirmamos al momento.",
+      "dateLabel": "Fecha",
+      "guestsLabel": "Comensales",
+      "guest": "persona",
+      "guests": "personas",
+      "lunch": "Comida",
+      "dinner": "Cena",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "¿Cómo te llamas?",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "Para confirmarte la reserva",
+      "summaryPrefix": "Mesa para",
+      "summaryOn": "el día",
+      "summaryAt": "a las",
+      "confirm": "Confirmar reserva"
+    },
+    "confirmacion": {
+      "title": "Reserva confirmada",
+      "note": "Te llega un correo con todos los detalles. Si necesitas cambiar algo, puedes llamarnos directamente al restaurante.",
+      "another": "Hacer otra reserva"
+    },
+    "about": {
+      "tag": "Quiénes somos",
+      "title": "Treinta años frente al Turia",
+      "text": "Vicent abrió el restaurante en 1996, en un local que antes fue una barraca de labranza. Desde entonces la carta ha cambiado con las estaciones, pero la idea de fondo sigue igual: cocina de mercado, sin artificios, con producto de la huerta valenciana."
+    },
+    "menu": {
+      "tag": "Algunos platos",
+      "title": "Lo que no puede faltar en la mesa",
+      "arrozSenyoret": {
+        "title": "Arroz del senyoret",
+        "description": "Con sepia, gambas y almejas, todo pelado, para comer sin mancharse las manos."
+      },
+      "allipebre": {
+        "title": "All i pebre de anguila",
+        "description": "Receta de toda la vida de la Albufera, con ajo, pimentón y patata."
+      },
+      "esgarraet": {
+        "title": "Esgarraet",
+        "description": "Pimiento rojo asado, bacalao desmigado y un buen aceite, para empezar."
+      },
+      "tarta": {
+        "title": "Tarta de boniato de la casa",
+        "description": "Receta de la madre de Vicent, se hace cada mañana en el propio restaurante."
+      }
+    },
+    "testimonios": {
+      "tag": "Quien ya ha venido",
+      "title": "Lo que dicen quienes se han sentado a la mesa",
+      "t1": {
+        "text": "El arroz del senyoret es de los mejores que he probado en Valencia, y eso que hemos ido a bastantes sitios.",
+        "author": "Family Ferrer"
+      },
+      "t2": {
+        "text": "Reservamos para doce personas un domingo y todo salió perfecto, sin ninguna prisa por parte del personal.",
+        "author": "Noa Castells"
+      },
+      "t3": {
+        "text": "El all i pebre me recordó al que hacía mi abuela en la Albufera. Difícil encontrar algo tan auténtico hoy en día.",
+        "author": "David Roselló"
+      }
+    },
+    "ubicacion": {
+      "tag": "Cómo llegar",
+      "title": "A pie del río",
+      "address": "Paseo de la Pechina, 22, Valencia",
+      "days1": "Martes a jueves",
+      "days2": "Viernes a domingo",
+      "days3": "Lunes",
+      "closed": "Cerrado"
+    }
   }
 }
