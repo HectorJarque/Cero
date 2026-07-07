@@ -12,11 +12,11 @@
     "home": "Inicio"
   },
   "home": {
-    "signature": "Hecho a mano por Kallik",
+    "kicker": "Portfolio de proyectos",
     "examples": "Ejemplos de páginas web",
-    "description": "Ocho tipos de web distintos, pensados para que veas de un vistazo qué encaja mejor con tu negocio.",
-    "note": "Cada demo está construida como si fuera un proyecto real, no una plantilla genérica. Así se ve mejor lo que puede acabar teniendo tu web.",
+    "description": "Ocho tipos de web distintos, construidos como proyectos reales, para que veas de un vistazo qué encaja mejor con tu negocio.",
     "viewExample": "Ver ejemplo",
+    "signature": "— Kallik",
     "closing": {
       "title": "¿No encuentras exactamente lo tuyo?",
       "text": "Ningún negocio es igual a otro, así que estas ocho demos son solo el punto de partida. Cuéntame qué necesitas y lo construimos a medida."

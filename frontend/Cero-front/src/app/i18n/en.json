@@ -12,11 +12,11 @@
     "home": "Home"
   },
   "home": {
-    "signature": "Handmade by Kallik",
+    "kicker": "Project portfolio",
     "examples": "Example websites",
-    "description": "Eight different website types, so you can see at a glance what fits your business best.",
-    "note": "Each demo is built as if it were a real project, not a generic template. It's the best way to picture what your own site could look like.",
+    "description": "Eight different website types, built as real projects, so you can see at a glance what fits your business best.",
     "viewExample": "View example",
+    "signature": "— Kallik",
     "closing": {
       "title": "Can't find exactly what you're after?",
       "text": "No two businesses are the same, so these eight demos are just a starting point. Tell me what you need and we'll build it around you."

@@ -43,8 +43,8 @@ export const PROYECTOS_HOME: ProyectoHome[] = [
   {
     route: '/dashboard',
     icon: 'dashboard',
-    color: '#3a5a9a',
-    colorFondo: '#eef2fa',
+    color: '#33618f',
+    colorFondo: '#eaf2f8',
     categoryKey: 'home.dashboard.category',
     titleKey: 'home.dashboard.title',
     descKey: 'home.dashboard.description'
@@ -79,8 +79,8 @@ export const PROYECTOS_HOME: ProyectoHome[] = [
   {
     route: '/saas',
     icon: 'saas',
-    color: '#5b4b9a',
-    colorFondo: '#f1eef9',
+    color: '#5c4a8a',
+    colorFondo: '#f0edf7',
     categoryKey: 'home.saas.category',
     titleKey: 'home.saas.title',
     descKey: 'home.saas.description'
