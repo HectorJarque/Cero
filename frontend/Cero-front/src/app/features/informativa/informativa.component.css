@@ -1,12 +1,17 @@
-/* INFORMATIVA */
+/* INFORMATIVA — estilo editorial */
 
 .informativa-entero {
   width: 100%;
   background: #fff;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.informativa-entero * {
+  box-sizing: border-box;
 }
 
 .informativa-alineacion {
-  max-width: 900px;
+  max-width: 780px;
   margin: 0 auto;
   padding: 3.5rem 2rem;
 }
@@ -14,52 +19,54 @@
 /* Hero */
 
 .informativa-hero {
-  background-color: #eef6f0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 2px solid #1f2937;
 }
 
 .informativa-etiqueta {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 0.3rem 0.7rem;
-
-  border-radius: 999px;
-  background-color: #d7ebdc;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
   color: #2f6b3f;
-
-  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.1rem;
 }
 
 .informativa-hero h1 {
-  margin: 0 0 0.75rem;
-  font-size: 2.1rem;
-  font-weight: 600;
-  color: #1f2937;
+  margin: 0 0 1rem;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.2;
 }
 
 .informativa-lead {
   margin: 0;
-  color: #4b5563;
-  max-width: 620px;
-  line-height: 1.6;
-  font-size: 1.05rem;
+  color: #4b4b4b;
+  max-width: 560px;
+  line-height: 1.7;
+  font-size: 1.08rem;
 }
 
 /* Bloques generales */
 
 .informativa-bloque h2 {
-  margin: 0 0 0.75rem;
+  margin: 0 0 1rem;
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 400;
+  color: #1a1a1a;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 0.75rem;
 }
 
 .informativa-bloque p {
-  margin: 0 0 1rem;
-  color: #4b5563;
-  line-height: 1.65;
-  max-width: 700px;
+  margin: 0 0 1.1rem;
+  font-family: Arial, sans-serif;
+  color: #4b4b4b;
+  line-height: 1.75;
+  max-width: 620px;
+  font-size: 0.98rem;
 }
 
 .informativa-bloque p:last-child {
@@ -67,81 +74,91 @@
 }
 
 .informativa-intro {
-  max-width: 600px;
+  max-width: 560px;
 }
 
 .informativa-bloque--gris {
-  background-color: #fafafa;
-  border-top: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: #fafaf8;
+  border-top: 1px solid #e5e5e0;
+  border-bottom: 1px solid #e5e5e0;
 }
 
-/* Estadísticas */
+/* Estadísticas: números grandes en fila, sin tarjetas */
 
 .informativa-stats {
-  background-color: #f4f9f5;
+  background: none;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  text-align: left;
 }
 
 .stat-tarjeta {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.25rem;
 }
 
 .stat-valor {
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 400;
   color: #2f6b3f;
+  line-height: 1;
 }
 
 .stat-label {
-  font-size: 0.9rem;
-  color: #6b7280;
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  color: #6b6b6b;
 }
 
-/* Áreas de información */
+/* Áreas: lista con borde izquierdo, no tarjetas cerradas */
 
 .areas-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .area-tarjeta {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 1.5rem;
+  background: none;
+  border: none;
+  border-left: 3px solid #2f6b3f;
+  border-radius: 0;
+  padding: 0.25rem 0 1.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.area-tarjeta:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0.25rem;
 }
 
 .area-icono {
-  display: inline-block;
-  font-size: 1.6rem;
-  margin-bottom: 0.6rem;
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .area-tarjeta h3 {
   margin: 0 0 0.4rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1a1a1a;
 }
 
 .area-tarjeta p {
   margin: 0;
   font-size: 0.92rem;
-  color: #6b7280;
-  line-height: 1.55;
+  color: #6b6b6b;
+  line-height: 1.6;
 }
 
-/* Recursos */
+/* Recursos: fila simple */
 
 .recursos-lista {
   display: flex;
@@ -149,8 +166,8 @@
 }
 
 .recurso-fila {
-  padding: 1.1rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e5e5e0;
 }
 
 .recurso-fila:last-child {
@@ -158,17 +175,18 @@
 }
 
 .recurso-fila h3 {
-  margin: 0 0 0.3rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #1f2937;
+  margin: 0 0 0.35rem;
+  font-size: 1.08rem;
+  font-weight: 400;
+  color: #1a1a1a;
 }
 
 .recurso-fila p {
   margin: 0;
-  font-size: 0.92rem;
-  color: #6b7280;
-  line-height: 1.55;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  line-height: 1.6;
 }
 
 /* FAQ */
@@ -179,8 +197,8 @@
 }
 
 .faq-fila {
-  padding: 1.1rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e5e5e0;
 }
 
 .faq-fila:last-child {
@@ -188,17 +206,19 @@
 }
 
 .faq-fila h3 {
-  margin: 0 0 0.35rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1f2937;
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  font-style: italic;
 }
 
 .faq-fila p {
   margin: 0;
-  font-size: 0.92rem;
-  color: #6b7280;
-  line-height: 1.55;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  line-height: 1.6;
 }
 
 /* Contacto */
@@ -207,28 +227,34 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 1.25rem;
+  margin-top: 0.5rem;
+  font-family: Arial, sans-serif;
 }
 
 .contacto-datos p {
   margin: 0;
-  color: #4b5563;
+  color: #4b4b4b;
+  font-size: 0.92rem;
 }
 
 .contacto-datos strong {
-  color: #111827;
+  color: #1a1a1a;
   margin-right: 0.3rem;
 }
 
 /* Responsive */
 
-@media (max-width: 768px) {
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+@media (max-width: 640px) {
+  .informativa-alineacion {
+    padding: 2.5rem 1.5rem;
   }
 
-  .areas-grid {
-    grid-template-columns: 1fr;
+  .informativa-hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }

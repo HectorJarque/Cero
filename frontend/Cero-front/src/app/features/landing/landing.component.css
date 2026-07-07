@@ -1,8 +1,8 @@
-/* LANDING */
+/* LANDING — página de venta clásica, columna centrada estrecha */
 
 .landing-entero {
   width: 100%;
-  background: #fff;
+  background: #fffbfc;
 }
 
 .landing-entero * {
@@ -14,22 +14,20 @@
 }
 
 .landing-alineacion {
-  max-width: 1000px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 3.5rem 2rem;
 }
-
-/* Botón principal reutilizable */
 
 .boton-principal {
   border: none;
-  border-radius: 8px;
+  border-radius: 999px;
   background-color: #a13d5c;
   color: #fff;
 
-  padding: 0.85rem 1.75rem;
-  font-size: 0.98rem;
-  font-weight: 600;
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 700;
   cursor: pointer;
 
   transition: background-color 0.2s ease;
@@ -51,41 +49,38 @@
 /* Hero */
 
 .hero-landing {
-  background: linear-gradient(180deg, #faeef2 0%, #ffffff 100%);
-  border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 
 .hero-contenido {
   text-align: center;
-  max-width: 700px;
+  max-width: 100%;
 }
 
 .hero-badge {
   display: inline-block;
   font-size: 0.8rem;
-  font-weight: 500;
-  padding: 0.3rem 0.8rem;
-
-  border-radius: 999px;
-  background-color: #f3d9e2;
-  color: #8a2f4b;
-
-  margin-bottom: 1.25rem;
+  font-weight: 700;
+  color: #a13d5c;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
 }
 
 .hero-landing h1 {
-  margin: 0 0 0.85rem;
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #1f2937;
-  line-height: 1.25;
+  margin: 0 0 1.1rem;
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.3;
 }
 
 .hero-lead {
-  margin: 0 0 1.75rem;
-  color: #4b5563;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  margin: 0 0 2rem;
+  color: #6b6b6b;
+  font-size: 1.08rem;
+  line-height: 1.65;
 }
 
 .hero-acciones {
@@ -93,121 +88,135 @@
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .hero-plazas {
   font-size: 0.85rem;
   color: #9a5b1f;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .hero-datos {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 0;
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
 }
 
 .hero-dato {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  border-right: 1px solid #eee;
+}
+
+.hero-dato:last-child {
+  border-right: none;
 }
 
 .dato-valor {
+  font-family: Georgia, serif;
   font-size: 1.6rem;
-  font-weight: 700;
   color: #a13d5c;
 }
 
 .dato-label {
-  font-size: 0.8rem;
-  color: #6b7280;
+  font-size: 0.78rem;
+  color: #9ca3af;
 }
 
 /* Bloques generales */
 
 .landing-bloque--gris {
-  background-color: #fafafa;
-  border-top: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: #faf6f7;
+  border-top: 1px solid #f0e5e8;
+  border-bottom: 1px solid #f0e5e8;
 }
 
 .bloque-etiqueta {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
+  display: block;
+  text-align: center;
+  font-size: 0.76rem;
+  font-weight: 700;
   color: #a13d5c;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   margin-bottom: 0.6rem;
 }
 
 .landing-bloque h2 {
   margin: 0 0 0.75rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #1f2937;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: #1a1a1a;
 }
 
 .bloque-intro {
-  margin: 0 0 2rem;
-  color: #6b7280;
-  max-width: 550px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #6b6b6b;
+  max-width: 480px;
   line-height: 1.6;
 }
 
-/* Beneficios */
+/* Beneficios: lista vertical, no grid de 4 */
 
 .beneficios-grid {
-  margin-top: 1.75rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
 .beneficio-tarjeta {
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
 .beneficio-icono {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  margin-bottom: 0.9rem;
-
-  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
   background-color: #faeef2;
   color: #a13d5c;
 }
 
 .beneficio-icono svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .beneficio-tarjeta h3 {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.3rem;
   font-size: 1rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
 .beneficio-tarjeta p {
   margin: 0;
-  font-size: 0.88rem;
-  color: #6b7280;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  line-height: 1.55;
 }
 
 /* Programa */
 
 .programa-lista {
-  margin-top: 1.75rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -215,8 +224,8 @@
 .programa-fila {
   display: flex;
   gap: 1.5rem;
-  padding: 1.4rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 .programa-fila:last-child {
@@ -225,127 +234,130 @@
 
 .programa-numero {
   flex-shrink: 0;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
   color: #e3b7c4;
-  width: 44px;
+  width: 40px;
 }
 
 .programa-texto h3 {
   margin: 0 0 0.35rem;
-  font-size: 1.02rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
 .programa-texto p {
   margin: 0;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #6b6b6b;
   line-height: 1.55;
 }
 
-/* Profesor */
+/* Profesor: vertical, centrado */
 
 .profesor-grid {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  gap: 1.25rem;
 }
 
 .profesor-imagen {
-  width: 160px;
-  height: 160px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-
   background-color: #faeef2;
   color: #a13d5c;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .profesor-iniciales {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.profesor-texto h2 {
-  margin: 0 0 0.9rem;
+  font-family: Georgia, serif;
+  font-size: 1.9rem;
 }
 
 .profesor-texto p {
   margin: 0 0 0.8rem;
-  color: #4b5563;
-  line-height: 1.6;
+  color: #6b6b6b;
+  line-height: 1.65;
+  max-width: 480px;
 }
 
 .profesor-texto p:last-child {
   margin-bottom: 0;
 }
 
-/* Testimonios */
+/* Testimonios: cita apilada, no tarjetas en columnas */
 
 .testimonios-grid {
-  margin-top: 1.75rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .testimonio-tarjeta {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.5rem;
+  background: none;
+  border: none;
+  border-left: 3px solid #a13d5c;
+  border-radius: 0;
+  padding: 0 0 0 1.5rem;
 }
 
 .testimonio-texto {
-  margin: 0 0 1rem;
-  font-size: 0.92rem;
-  color: #4b5563;
+  margin: 0 0 0.75rem;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  color: #3f3f3f;
   line-height: 1.55;
   font-style: italic;
 }
 
 .testimonio-autor {
   font-size: 0.85rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 700;
+  color: #a13d5c;
 }
 
-/* Precio */
+/* Precio: vertical, no dos columnas */
 
 .precio-tarjeta {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 0;
-
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #1a1a1a;
+  border-radius: 0;
   overflow: hidden;
 }
 
 .precio-info {
-  padding: 2.5rem;
+  padding: 2rem 2rem 1.5rem;
+  text-align: center;
+}
+
+.precio-info .bloque-etiqueta,
+.precio-info h2 {
+  text-align: center;
 }
 
 .precio-info p {
-  margin: 0 0 1.25rem;
-  color: #6b7280;
+  margin: 0 auto 1.25rem;
+  color: #6b6b6b;
   line-height: 1.6;
+  max-width: 420px;
 }
 
 .precio-lista {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 0.6rem;
+  text-align: left;
 }
 
 .precio-lista li {
@@ -360,60 +372,53 @@
   position: absolute;
   left: 0;
   top: 0.4rem;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: 6px;
+  height: 6px;
   background-color: #a13d5c;
 }
 
 .precio-cta {
-  background-color: #faeef2;
-  padding: 2.5rem;
-
+  background-color: #1a1a1a;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 0.6rem;
   text-align: center;
 }
 
 .precio-valor {
+  font-family: Georgia, serif;
   font-size: 2.4rem;
-  font-weight: 700;
-  color: #1f2937;
+  color: #fff;
 }
 
 .precio-nota {
-  font-size: 0.82rem;
-  color: #6b7280;
+  font-size: 0.8rem;
+  color: #b0b0b0;
   margin-bottom: 0.5rem;
 }
 
 .precio-plazas {
   font-size: 0.82rem;
-  color: #9a5b1f;
-  font-weight: 500;
+  color: #e3b7c4;
+  font-weight: 600;
 }
 
 /* FAQ */
 
 .faq-alineacion {
-  max-width: 720px;
+  max-width: 640px;
 }
 
 .faq-lista {
-  margin-top: 1.75rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .faq-item {
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.faq-item:last-child {
-  border-bottom: none;
+  border-bottom: 1px solid #eee;
 }
 
 .faq-pregunta {
@@ -422,24 +427,21 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-
   border: none;
   background: none;
   cursor: pointer;
-
   padding: 1.25rem 0;
   text-align: left;
-
   font-size: 0.98rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
 .faq-flecha {
   flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  color: #9ca3af;
+  width: 17px;
+  height: 17px;
+  color: #a13d5c;
   transition: transform 0.2s ease;
 }
 
@@ -449,10 +451,9 @@
 
 .faq-respuesta {
   margin: 0 0 1.25rem;
-  color: #6b7280;
+  color: #6b6b6b;
   font-size: 0.9rem;
   line-height: 1.6;
-  max-width: 600px;
 }
 
 /* CTA final */
@@ -463,12 +464,12 @@
 
 .cta-final-contenido {
   text-align: center;
-  max-width: 550px;
 }
 
 .cta-final-contenido h2 {
   margin: 0 0 0.75rem;
   color: #fff;
+  font-family: Georgia, serif;
 }
 
 .cta-final-contenido p {
@@ -479,40 +480,28 @@
 
 /* Responsive */
 
-@media (max-width: 900px) {
-  .beneficios-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .testimonios-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .precio-tarjeta {
-    grid-template-columns: 1fr;
-  }
-
-  .profesor-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-    justify-items: center;
-  }
-}
-
 @media (max-width: 640px) {
   .landing-alineacion {
-    padding: 3rem 1.5rem;
-  }
-
-  .beneficios-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-datos {
-    gap: 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 
   .hero-landing h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+  }
+
+  .hero-datos {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .hero-dato {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.25rem;
+  }
+
+  .hero-dato:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }

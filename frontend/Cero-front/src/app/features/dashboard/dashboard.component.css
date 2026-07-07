@@ -1,10 +1,11 @@
-/* DASHBOARD */
+/* DASHBOARD — herramienta de trabajo, cuadrada y densa */
 
 .dashboard-entero {
   display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: #f6f5f3;
+  background-color: #f4f5f6;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .dashboard-entero * {
@@ -16,30 +17,31 @@
   font-family: inherit;
 }
 
-/* Barra lateral */
+/* Sidebar */
 
 .dashboard-lateral {
-  width: 220px;
+  width: 210px;
   flex-shrink: 0;
-  background-color: #fff;
-  border-right: 1px solid #e5e7eb;
-  padding: 1.75rem 1.25rem;
+  background-color: #1c2b3a;
+  padding: 1.5rem 1rem;
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.75rem;
 }
 
 .lateral-marca {
-  font-weight: 600;
-  font-size: 1.05rem;
-  color: #1f2937;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #fff;
+  padding-left: 0.6rem;
+  border-left: 3px solid #4f8ecb;
 }
 
 .lateral-nav {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.1rem;
 }
 
 .lateral-item {
@@ -48,27 +50,27 @@
   background: none;
   cursor: pointer;
 
-  padding: 0.65rem 0.85rem;
-  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  border-radius: 4px;
 
-  font-size: 0.9rem;
-  color: #6b7280;
+  font-size: 0.87rem;
+  color: #9aacbd;
 
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .lateral-item:hover {
-  background-color: #fdf3ec;
-  color: #9a5b1f;
+  background-color: #263a4d;
+  color: #fff;
 }
 
 .lateral-item--activo {
-  background-color: #fdf3ec;
-  color: #c4642b;
+  background-color: #4f8ecb;
+  color: #fff;
   font-weight: 600;
 }
 
-/* Contenido principal */
+/* Principal */
 
 .dashboard-principal {
   flex: 1;
@@ -77,16 +79,14 @@
   min-width: 0;
 }
 
-/* Barra superior */
-
 .dashboard-topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 1rem 2rem;
+  padding: 0.9rem 2rem;
   background-color: #fff;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #dfe3e7;
 }
 
 .topbar-buscador {
@@ -94,16 +94,16 @@
   align-items: center;
   gap: 0.6rem;
 
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 0.5rem 0.9rem;
-  width: 280px;
+  border: 1px solid #dfe3e7;
+  border-radius: 4px;
+  padding: 0.45rem 0.85rem;
+  width: 260px;
 }
 
 .topbar-buscador svg {
-  width: 16px;
-  height: 16px;
-  color: #9ca3af;
+  width: 15px;
+  height: 15px;
+  color: #9aacbd;
   flex-shrink: 0;
 }
 
@@ -111,119 +111,118 @@
   flex: 1;
   border: none;
   outline: none;
-  font-size: 0.9rem;
+  font-size: 0.87rem;
   background: transparent;
-}
-
-.topbar-buscador input::placeholder {
-  color: #9ca3af;
 }
 
 .topbar-usuario {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.6rem;
 }
 
 .usuario-avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
 
-  background-color: #fdf3ec;
-  color: #9a5b1f;
+  background-color: #4f8ecb;
+  color: #fff;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.76rem;
+  font-weight: 700;
 }
 
 .usuario-nombre {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #1f2937;
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: #1c2b3a;
 }
 
 /* Contenido */
 
 .dashboard-contenido {
   flex: 1;
-  padding: 2.5rem 2rem;
+  padding: 2.25rem 2rem;
   width: 100%;
-  max-width: 1000px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
 .dashboard-contenido h1 {
-  margin: 0 0 0.3rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #1f2937;
+  margin: 0 0 0.25rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1c2b3a;
 }
 
 .dashboard-subtitulo {
-  margin: 0 0 2rem;
-  color: #6b7280;
+  margin: 0 0 1.75rem;
+  color: #6b7684;
+  font-size: 0.92rem;
 }
 
-/* Tarjetas de estadísticas */
+/* Estadísticas: números en monoespaciada, bloques cuadrados */
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  margin-bottom: 2rem;
+  gap: 1px;
+  background-color: #dfe3e7;
+  border: 1px solid #dfe3e7;
+  margin-bottom: 1.75rem;
 }
 
 .stat-tarjeta {
   background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.25rem 1.4rem;
-
+  padding: 1.1rem 1.3rem;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.3rem;
 }
 
 .stat-label {
-  font-size: 0.82rem;
-  color: #6b7280;
+  font-size: 0.76rem;
+  color: #6b7684;
 }
 
 .stat-valor {
-  font-size: 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #1c2b3a;
 }
 
 /* Paneles */
 
 .dashboard-panel {
   background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.5rem 1.75rem;
-  margin-bottom: 1.5rem;
+  border: 1px solid #dfe3e7;
+  border-radius: 4px;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.25rem;
 }
 
 .dashboard-panel h2 {
-  margin: 0 0 1.25rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1f2937;
+  margin: 0 0 1.1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c2b3a;
 }
 
-/* Gráfico de barras */
+/* Gráfico de barras: más plano y cuadrado */
 
 .chart-barras {
   display: flex;
   align-items: flex-end;
-  gap: 1rem;
-  height: 180px;
+  gap: 0.6rem;
+  height: 160px;
+  border-bottom: 2px solid #1c2b3a;
+  padding-bottom: 0;
 }
 
 .chart-columna {
@@ -231,7 +230,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   height: 100%;
 }
 
@@ -243,28 +242,28 @@
 }
 
 .chart-barra {
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
   min-height: 4px;
-  border-radius: 6px 6px 0 0;
-  background-color: #c4642b;
-
-  transition: height 0.3s ease;
+  border-radius: 0;
+  background-color: #4f8ecb;
 }
 
 .chart-dia {
-  font-size: 0.78rem;
-  color: #6b7280;
+  font-family: 'Courier New', monospace;
+  font-size: 0.72rem;
+  color: #6b7684;
 }
 
-/* Cabecera de panel con filtros */
+/* Filtros */
 
 .panel-cabecera {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
 }
 
 .panel-cabecera h2 {
@@ -273,34 +272,32 @@
 
 .filtro-estados {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 
 .filtro-chip {
-  border: 1px solid #d1d5db;
-  border-radius: 999px;
+  border: 1px solid #dfe3e7;
+  border-radius: 4px;
   background: #fff;
   cursor: pointer;
 
-  padding: 0.35rem 0.9rem;
-  font-size: 0.82rem;
+  padding: 0.32rem 0.8rem;
+  font-size: 0.78rem;
   color: #4b5563;
-
-  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .filtro-chip:hover {
-  border-color: #c4642b;
+  border-color: #4f8ecb;
 }
 
 .filtro-chip--activo {
-  background-color: #c4642b;
-  border-color: #c4642b;
+  background-color: #1c2b3a;
+  border-color: #1c2b3a;
   color: #fff;
 }
 
-/* Tablas de datos (pedidos, productos, clientes) */
+/* Tabla */
 
 .tabla-datos {
   width: 100%;
@@ -309,82 +306,60 @@
 
 .tabla-datos th {
   text-align: left;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #9ca3af;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #9aacbd;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 
-  padding: 0.75rem 0.5rem;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 0.65rem 0.5rem;
+  border-bottom: 2px solid #1c2b3a;
 }
 
 .tabla-datos td {
-  padding: 0.85rem 0.5rem;
-  border-bottom: 1px solid #f1f2f4;
-  font-size: 0.9rem;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #eceff2;
+  font-size: 0.87rem;
   color: #374151;
 }
 
 .celda-destacada {
-  font-weight: 600;
-  color: #1f2937;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  color: #1c2b3a;
 }
 
-/* Badges de estado de pedido */
+/* Badges: cuadrados, no pastilla */
 
-.badge-estado {
-  display: inline-block;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 500;
-}
-
-.badge-estado--pendiente {
-  background-color: #fef3c7;
-  color: #92640a;
-}
-
-.badge-estado--enviado {
-  background-color: #dbeafe;
-  color: #1d4ed8;
-}
-
-.badge-estado--entregado {
-  background-color: #dcfce7;
-  color: #15803d;
-}
-
-.badge-estado--cancelado {
-  background-color: #fee2e2;
-  color: #b91c1c;
-}
-
-/* Badges de stock */
-
+.badge-estado,
 .badge-stock {
   display: inline-block;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 500;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
 
-  background-color: #dcfce7;
+.badge-estado--pendiente { background-color: #fdf0d5; color: #92640a; }
+.badge-estado--enviado { background-color: #dce8f5; color: #1d4ed8; }
+.badge-estado--entregado { background-color: #dcefe0; color: #15803d; }
+.badge-estado--cancelado { background-color: #fbdede; color: #b91c1c; }
+
+.badge-stock {
+  background-color: #dcefe0;
   color: #15803d;
 }
 
 .badge-stock--bajo {
-  background-color: #fee2e2;
+  background-color: #fbdede;
   color: #b91c1c;
 }
-
-/* Tabla vacía */
 
 .tabla-vacia {
   text-align: center;
   padding: 2.5rem 1rem;
-  color: #6b7280;
+  color: #6b7684;
+  font-size: 0.9rem;
 }
 
 /* Ajustes */
@@ -395,8 +370,8 @@
 }
 
 .ajustes-fila {
-  padding: 1.25rem 0;
-  border-bottom: 1px solid #f1f2f4;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #eceff2;
 }
 
 .ajustes-fila:last-child {
@@ -404,16 +379,16 @@
 }
 
 .ajustes-fila h3 {
-  margin: 0 0 0.35rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1f2937;
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1c2b3a;
 }
 
 .ajustes-fila p {
   margin: 0;
-  font-size: 0.9rem;
-  color: #6b7280;
+  font-size: 0.86rem;
+  color: #6b7684;
   line-height: 1.5;
 }
 
@@ -435,8 +410,6 @@
     flex-direction: row;
     align-items: center;
     overflow-x: auto;
-    border-right: none;
-    border-bottom: 1px solid #e5e7eb;
   }
 
   .lateral-nav {
@@ -444,11 +417,7 @@
   }
 
   .topbar-buscador {
-    width: 160px;
-  }
-
-  .chart-barras {
-    height: 140px;
+    width: 150px;
   }
 }
 
@@ -459,10 +428,6 @@
 
   .dashboard-contenido {
     padding: 1.5rem 1.25rem;
-  }
-
-  .dashboard-topbar {
-    padding: 1rem 1.25rem;
   }
 
   .tabla-datos {

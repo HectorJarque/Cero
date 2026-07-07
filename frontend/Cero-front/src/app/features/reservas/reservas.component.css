@@ -1,4 +1,4 @@
-/* RESERVAS */
+/* RESERVAS — panel oscuro tipo restaurante */
 
 .reservas-entero {
   width: 100%;
@@ -16,69 +16,68 @@
 }
 
 .reservas-alineacion {
-  max-width: 900px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 3.5rem 2rem;
 }
 
-/* Hero */
+/* Hero: oscuro, tipografía serif de restaurante */
 
 .hero-reservas {
-  background: linear-gradient(180deg, #e9f5f3 0%, #ffffff 100%);
-  border-bottom: 1px solid #eee;
+  background-color: #14211d;
 }
 
 .hero-contenido {
-  max-width: 620px;
-  text-align: center;
+  max-width: 100%;
+  text-align: left;
   margin: 0 auto;
 }
 
 .hero-etiqueta {
   display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 0.3rem 0.8rem;
-
-  border-radius: 999px;
-  background-color: #cfeae5;
-  color: #146158;
-
-  margin-bottom: 1.25rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #6fbdb0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.1rem;
 }
 
 .hero-reservas h1 {
   margin: 0 0 0.85rem;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #1f2937;
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
   line-height: 1.25;
 }
 
 .hero-lead {
   margin: 0;
-  color: #4b5563;
+  color: #a9bcb7;
   font-size: 1.02rem;
   line-height: 1.6;
+  max-width: 520px;
 }
 
 /* Bloques */
 
 .bloque-etiqueta {
   display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.76rem;
+  font-weight: 700;
   color: #1f7a70;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   margin-bottom: 0.6rem;
 }
 
 .reservas-bloque h2 {
   margin: 0 0 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-family: Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: #14211d;
 }
 
 .reservas-bloque p {
@@ -88,26 +87,29 @@
 }
 
 .reservas-bloque--gris {
-  background-color: #fafafa;
+  background-color: #f6f8f7;
   border-top: 1px solid #e5e7eb;
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* Widget de reserva */
+/* Widget de reserva: sobre panel oscuro para destacar */
 
 .widget-reserva {
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 2rem;
+  background-color: #14211d;
+  border: none;
+  border-radius: 6px;
+  padding: 2.25rem;
+  color: #fff;
 }
 
 .widget-cabecera h2 {
+  color: #fff;
   margin: 0 0 0.35rem;
 }
 
 .widget-cabecera p {
   margin: 0 0 1.75rem;
-  color: #6b7280;
+  color: #a9bcb7;
 }
 
 .widget-controles {
@@ -124,22 +126,20 @@
 }
 
 .control-campo span {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #374151;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #cdd9d5;
 }
 
 .control-campo input,
 .control-campo select {
   padding: 0.65rem 0.85rem;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
+  border: 1px solid #2c3f39;
+  border-radius: 4px;
   font-size: 0.92rem;
-  color: #1f2937;
+  color: #14211d;
   background: #fff;
 }
-
-/* Turnos y horas */
 
 .turno-bloque {
   margin-bottom: 1.5rem;
@@ -147,10 +147,12 @@
 
 .turno-titulo {
   display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #374151;
-  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #6fbdb0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.7rem;
 }
 
 .horas-grid {
@@ -160,36 +162,36 @@
 }
 
 .hora-chip {
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  background: #fff;
+  border: 1px solid #2c3f39;
+  border-radius: 4px;
+  background: transparent;
   cursor: pointer;
 
   padding: 0.5rem 1rem;
   font-size: 0.88rem;
-  color: #374151;
+  color: #cdd9d5;
 
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .hora-chip:hover:not(:disabled) {
-  border-color: #1f7a70;
+  border-color: #6fbdb0;
 }
 
 .hora-chip--activo {
-  background-color: #1f7a70;
-  border-color: #1f7a70;
-  color: #fff;
+  background-color: #6fbdb0;
+  border-color: #6fbdb0;
+  color: #14211d;
+  font-weight: 700;
 }
 
 .hora-chip--lleno {
-  background-color: #f3f4f6;
-  color: #b0b5bd;
+  background-color: transparent;
+  border-color: #2c3f39;
+  color: #4d5f59;
   text-decoration: line-through;
   cursor: not-allowed;
 }
-
-/* Contacto */
 
 .widget-contacto {
   display: grid;
@@ -197,63 +199,54 @@
   gap: 1.25rem;
   margin-top: 1.75rem;
   padding-top: 1.75rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #2c3f39;
 }
 
 .widget-resumen {
   margin-top: 1.25rem;
   padding: 0.9rem 1.1rem;
-
-  background-color: #e9f5f3;
-  border-radius: 8px;
+  background-color: #1e332c;
+  border-radius: 4px;
 }
 
 .widget-resumen p {
   margin: 0;
   font-size: 0.9rem;
-  color: #146158;
+  color: #a9e0d4;
 }
-
-/* Botones del widget */
 
 .boton-confirmar {
   width: 100%;
   margin-top: 1.25rem;
-
   border: none;
-  border-radius: 8px;
-  background-color: #1f7a70;
-  color: #fff;
-
+  border-radius: 4px;
+  background-color: #6fbdb0;
+  color: #14211d;
   padding: 0.85rem;
   font-size: 0.98rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-
-  transition: background-color 0.2s ease;
 }
 
 .boton-confirmar:hover:not(:disabled) {
-  background-color: #17615a;
+  background-color: #5aa89b;
 }
 
 .boton-confirmar:disabled {
-  background-color: #cbd5df;
+  background-color: #3a4a45;
+  color: #6b7684;
   cursor: not-allowed;
 }
 
 .boton-secundario {
   border: 1px solid #d1d5db;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #fff;
   cursor: pointer;
-
   padding: 0.7rem 1.4rem;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #374151;
-
-  transition: background-color 0.2s ease;
 }
 
 .boton-secundario:hover {
@@ -264,23 +257,23 @@
 
 .widget-confirmacion {
   text-align: center;
-  border: 1px solid #cfeae5;
-  border-radius: 16px;
+  border: 1px solid #14211d;
+  border-radius: 6px;
   padding: 3rem 2rem;
-  background-color: #f3faf9;
+  background-color: #14211d;
+  color: #fff;
 }
 
 .confirmacion-icono {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   margin: 0 auto 1.25rem;
-
   border-radius: 50%;
-  background-color: #1f7a70;
-  color: #fff;
+  background-color: #6fbdb0;
+  color: #14211d;
 }
 
 .confirmacion-icono svg {
@@ -289,21 +282,24 @@
 }
 
 .widget-confirmacion h2 {
+  color: #fff;
+  font-family: Georgia, serif;
   margin: 0 0 0.75rem;
 }
 
 .widget-confirmacion p {
   margin: 0 auto 0.5rem;
   max-width: 420px;
+  color: #cdd9d5;
 }
 
 .confirmacion-nota {
-  font-size: 0.88rem;
-  color: #6b7280;
+  font-size: 0.86rem;
+  color: #8ea19b;
   margin-bottom: 1.75rem;
 }
 
-/* Platos destacados */
+/* Platos: fila con precio a la derecha, tipografía serif */
 
 .platos-lista {
   margin-top: 1.5rem;
@@ -313,12 +309,11 @@
 
 .plato-fila {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-between;
   gap: 1.5rem;
-
-  padding: 1.15rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 1.25rem 0;
+  border-bottom: 1px dotted #d1d5db;
 }
 
 .plato-fila:last-child {
@@ -327,22 +322,24 @@
 
 .plato-texto h3 {
   margin: 0 0 0.3rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #14211d;
 }
 
 .plato-texto p {
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.87rem;
   color: #6b7280;
   line-height: 1.5;
 }
 
 .plato-precio {
   flex-shrink: 0;
-  font-weight: 600;
-  color: #1f2937;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: #1f7a70;
 }
 
 /* Testimonios */
@@ -356,23 +353,25 @@
 
 .testimonio-tarjeta {
   background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.5rem;
+  border: none;
+  border-top: 2px solid #1f7a70;
+  border-radius: 0;
+  padding: 1.5rem 0.25rem 0;
 }
 
 .testimonio-texto {
   margin: 0 0 1rem;
-  font-size: 0.92rem;
-  color: #4b5563;
+  font-family: Georgia, serif;
+  font-size: 0.98rem;
+  color: #3f3f3f;
   line-height: 1.55;
   font-style: italic;
 }
 
 .testimonio-autor {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: #1f7a70;
 }
 
 /* Ubicación */
@@ -397,10 +396,8 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-
   padding-bottom: 0.75rem;
   border-bottom: 1px solid #f1f2f4;
-
   font-size: 0.9rem;
   color: #374151;
 }
@@ -410,8 +407,8 @@
 }
 
 .horario-fila span:first-child {
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 700;
+  color: #14211d;
 }
 
 /* Responsive */
@@ -438,10 +435,5 @@
 
   .widget-reserva {
     padding: 1.5rem;
-  }
-
-  .plato-fila {
-    flex-direction: column;
-    gap: 0.4rem;
   }
 }
