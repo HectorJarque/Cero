@@ -104,32 +104,35 @@
           </div>
 
           @if (pedidosFiltrados().length > 0) {
-            <table class="tabla-datos">
-              <thead>
-              <tr>
-                <th>{{ 'dashboard.orders.id' | translate }}</th>
-                <th>{{ 'dashboard.orders.customer' | translate }}</th>
-                <th>{{ 'dashboard.orders.date' | translate }}</th>
-                <th>{{ 'dashboard.orders.total' | translate }}</th>
-                <th>{{ 'dashboard.orders.status' | translate }}</th>
-              </tr>
-              </thead>
-              <tbody>
-                @for (pedido of pedidosFiltrados(); track pedido.id) {
-                  <tr>
-                    <td class="celda-destacada">{{ pedido.id }}</td>
-                    <td>{{ pedido.cliente }}</td>
-                    <td>{{ pedido.fecha }}</td>
-                    <td>{{ pedido.total.toFixed(2) }} €</td>
-                    <td>
+            <div class="tabla-datos-wrapper">
+              <table class="tabla-datos">
+                <thead>
+                <tr>
+                  <th>{{ 'dashboard.orders.id' | translate }}</th>
+                  <th>{{ 'dashboard.orders.customer' | translate }}</th>
+                  <th>{{ 'dashboard.orders.date' | translate }}</th>
+                  <th>{{ 'dashboard.orders.total' | translate }}</th>
+                  <th>{{ 'dashboard.orders.status' | translate }}</th>
+                </tr>
+                </thead>
+                <tbody>
+                  @for (pedido of pedidosFiltrados(); track pedido.id) {
+                    <tr>
+                      <td class="celda-destacada">{{ pedido.id }}</td>
+                      <td>{{ pedido.cliente }}</td>
+                      <td>{{ pedido.fecha }}</td>
+                      <td>{{ pedido.total.toFixed(2) }} €</td>
+                      <td>
                       <span class="badge-estado" [class]="'badge-estado--' + pedido.estado">
                         {{ ('dashboard.status.' + pedido.estado) | translate }}
                       </span>
-                    </td>
-                  </tr>
-                }
-              </tbody>
-            </table>
+                      </td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+
           } @else {
             <div class="tabla-vacia">
               <p>{{ 'dashboard.orders.noResults' | translate }}</p>

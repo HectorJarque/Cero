@@ -1,17 +1,44 @@
 <footer class="footer-entero">
   <div class="footer-alineacion">
 
-    <div class="marca">
-      {{ 'footer.brand' | translate }}
+    <div class="footer-grid">
+
+      <div class="footer-marca">
+        <span class="marca-nombre">{{ 'footer.brand' | translate }}</span>
+        <p class="marca-texto">{{ 'footer.tagline' | translate }}</p>
+      </div>
+
+      <div class="footer-columna">
+        <span class="columna-titulo">{{ 'footer.examplesTitle' | translate }}</span>
+        <a routerLink="/portfolio">{{ 'nav.portfolio' | translate }}</a>
+        <a routerLink="/informativa">{{ 'nav.informativa' | translate }}</a>
+        <a routerLink="/ecommerce">{{ 'nav.ecommerce' | translate }}</a>
+        <a routerLink="/dashboard">{{ 'nav.dashboard' | translate }}</a>
+      </div>
+
+      <div class="footer-columna">
+        <span class="columna-titulo">&nbsp;</span>
+        <a routerLink="/blog">{{ 'nav.blog' | translate }}</a>
+        <a routerLink="/landing">{{ 'nav.landing' | translate }}</a>
+        <a routerLink="/reservas">{{ 'nav.reservas' | translate }}</a>
+        <a routerLink="/saas">{{ 'nav.saas' | translate }}</a>
+      </div>
+
+      <div class="footer-columna">
+        <span class="columna-titulo">{{ 'footer.contactTitle' | translate }}</span>
+        <a href="mailto:jarquebusiness@gmail.com">jarquebusiness&#64;gmail.com</a>
+        <a href="https://github.com/HectorJarque" target="_blank" rel="noopener">GitHub</a>
+        <span class="footer-ubicacion">{{ 'footer.location' | translate }}</span>
+      </div>
+
     </div>
 
-    <div class="copyright">
-      © 2026
-    </div>
+    <div class="footer-linea"></div>
 
-    <a routerLink="/">
-      {{ 'footer.home' | translate }}
-    </a>
+    <div class="footer-inferior">
+      <span>© {{ anioActual }} {{ 'footer.brand' | translate }}</span>
+      <a routerLink="/">{{ 'footer.home' | translate }}</a>
+    </div>
 
   </div>
 </footer>

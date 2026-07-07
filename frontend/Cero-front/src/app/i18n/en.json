@@ -8,18 +8,31 @@
   },
   "footer": {
     "brand": "Kallik",
-    "copyright": "© 2026",
-    "home": "Home"
+    "tagline": "Custom web development, from Valencia. Every project is built around the business behind it.",
+    "examplesTitle": "Examples",
+    "contactTitle": "Contact",
+    "location": "Valencia, Spain",
+    "home": "Back to home"
+  },
+  "nav": {
+    "portfolio": "Portfolio",
+    "informativa": "Informational website",
+    "ecommerce": "Online store",
+    "dashboard": "Admin panel",
+    "blog": "Blog",
+    "landing": "Landing page",
+    "reservas": "Bookings",
+    "saas": "SaaS"
   },
   "home": {
-    "kicker": "Project portfolio",
+    "kicker": "Starting examples",
     "examples": "Example websites",
-    "description": "Eight different website types, built as real projects, so you can see at a glance what fits your business best.",
+    "description": "Eight demos so you can see at a glance what kind of website fits your business best. None of them are meant to be used as-is: they're a starting point for a conversation about what you actually need.",
     "viewExample": "View example",
     "signature": "— Kallik",
     "closing": {
-      "title": "Can't find exactly what you're after?",
-      "text": "No two businesses are the same, so these eight demos are just a starting point. Tell me what you need and we'll build it around you."
+      "title": "Every project is designed from scratch",
+      "text": "These examples show what's possible, not a fixed catalogue. On a real project, your business gets studied, the design is adapted to your brand, and every detail is decided together with you, from colours to content structure."
     },
     "portfolio": {
       "category": "Portfolio",

@@ -1,27 +1,67 @@
 <header class="header-entero">
   <div class="header-alineacion">
 
-    <a routerLink="/" class="logo-hueco">
+    <a routerLink="/" class="logo-hueco" (click)="cerrarTodo()">
       <img ngSrc="/img/logo.png" alt="Logo" height="768" width="927">
       <span>{{ 'header.logo' | translate }}</span>
     </a>
 
-    <nav class="navegacion">
-      <a routerLink="/">
+    <nav class="navegacion navegacion--escritorio">
+      <a routerLink="/" (click)="cerrarTodo()">
         {{ 'header.nav.home' | translate }}
       </a>
 
-      <a routerLink="/">
-        {{ 'header.nav.examples' | translate }}
-      </a>
+      <div class="dropdown">
+        <button type="button" class="dropdown-boton" (click)="toggleEjemplos()">
+          {{ 'header.nav.examples' | translate }}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="dropdown-flecha" [class.dropdown-flecha--abierta]="ejemplosAbierto()">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+
+        @if (ejemplosAbierto()) {
+          <div class="dropdown-menu">
+            @for (ejemplo of ejemplos; track ejemplo.route) {
+              <a [routerLink]="ejemplo.route" class="dropdown-item" (click)="cerrarTodo()">
+                {{ ejemplo.labelKey | translate }}
+              </a>
+            }
+          </div>
+        }
+      </div>
     </nav>
 
-    <button
-      type="button"
-      class="idioma-btn"
-      (click)="toggleLanguage()">
-      {{ currentLang === 'es' ? 'ES' : 'EN' }}
-    </button>
+    <div class="header-acciones">
+      <button
+        type="button"
+        class="idioma-btn"
+        (click)="toggleLanguage()">
+        {{ currentLang === 'es' ? 'ES' : 'EN' }}
+      </button>
+
+      <button type="button" class="menu-movil-btn" (click)="toggleMenuMovil()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          @if (!menuMovilAbierto()) {
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          } @else {
+            <path d="M6 6l12 12M18 6 6 18" />
+          }
+        </svg>
+      </button>
+    </div>
 
   </div>
+
+  <!-- Menú móvil -->
+  @if (menuMovilAbierto()) {
+    <nav class="navegacion navegacion--movil">
+      <a routerLink="/" (click)="cerrarTodo()">{{ 'header.nav.home' | translate }}</a>
+      <span class="movil-subtitulo">{{ 'header.nav.examples' | translate }}</span>
+      @for (ejemplo of ejemplos; track ejemplo.route) {
+        <a [routerLink]="ejemplo.route" class="movil-item" (click)="cerrarTodo()">
+          {{ ejemplo.labelKey | translate }}
+        </a>
+      }
+    </nav>
+  }
 </header>

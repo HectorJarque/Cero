@@ -6,4 +6,11 @@
 
 .app-contenido {
   flex: 1;
+  padding-top: 73px;
+}
+
+@media (max-width: 640px) {
+  .app-contenido {
+    padding-top: 65px;
+  }
 }
