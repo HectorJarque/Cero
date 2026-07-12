@@ -73,6 +73,22 @@
       "category": "SaaS",
       "title": "SaaS",
       "description": "Online application"
+    },
+    "customization": {
+      "tag": "Everything adapts",
+      "title": "None of this comes locked in from the start",
+      "theme": {
+        "title": "Light or dark theme",
+        "text": "The sun and moon button you see above, right in the header, is real: you can switch between light and dark theme right now. On a real project, we decide together which one makes more sense, or whether it's worth offering both."
+      },
+      "colors": {
+        "title": "Brand colours",
+        "text": "Each demo uses a different palette, but on a real project the colours come from your brand: your logo, your existing materials, or whatever we decide together if we're starting from scratch."
+      },
+      "language": {
+        "title": "One language or several",
+        "text": "This site works in Spanish and English, but how many languages you need depends on who you're speaking to. If your business is purely local, you might not even need translation."
+      }
     }
   },
   "portfolio": {

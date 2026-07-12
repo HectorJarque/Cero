@@ -6,6 +6,7 @@
       "examples": "Ejemplos"
     }
   },
+
   "footer": {
     "brand": "Kallik",
     "tagline": "Desarrollo web hecho a medida, desde Valencia. Cada proyecto se construye pensando en el negocio que hay detrás.",
@@ -73,6 +74,22 @@
       "category": "SaaS",
       "title": "SaaS",
       "description": "Aplicación online"
+    },
+    "customization": {
+      "tag": "Todo se adapta",
+      "title": "Nada de esto viene cerrado de fábrica",
+      "theme": {
+        "title": "Tema claro u oscuro",
+        "text": "El botón del sol y la luna que ves arriba, en el propio header, es real: puedes cambiar entre tema claro y oscuro ahora mismo. En un proyecto tuyo se decide contigo cuál tiene más sentido, o si conviene ofrecer los dos."
+      },
+      "colors": {
+        "title": "Colores de marca",
+        "text": "Cada demo usa una paleta distinta, pero en un proyecto real los colores salen de tu marca: tu logo, tus materiales ya existentes, o los que decidamos juntos si empezamos desde cero."
+      },
+      "language": {
+        "title": "Uno o varios idiomas",
+        "text": "Esta web funciona en español e inglés, pero el número de idiomas depende de a quién te dirijas. Si tu negocio es solo local, quizás no necesites ni traducción."
+      }
     }
   },
   "portfolio": {
