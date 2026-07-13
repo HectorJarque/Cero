@@ -2,7 +2,7 @@
 
 .informativa-entero {
   width: 100%;
-  background: #fff;
+  background: var(--bg-page, #fff);
   font-family: Georgia, 'Times New Roman', serif;
 }
 
@@ -16,10 +16,8 @@
   padding: 3.5rem 2rem;
 }
 
-/* Hero */
-
 .informativa-hero {
-  border-bottom: 2px solid #1f2937;
+  border-bottom: 2px solid var(--text-primary, #1f2937);
 }
 
 .informativa-etiqueta {
@@ -37,33 +35,31 @@
   margin: 0 0 1rem;
   font-size: 2.6rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   line-height: 1.2;
 }
 
 .informativa-lead {
   margin: 0;
-  color: #4b4b4b;
+  color: var(--text-secondary, #4b4b4b);
   max-width: 560px;
   line-height: 1.7;
   font-size: 1.08rem;
 }
 
-/* Bloques generales */
-
 .informativa-bloque h2 {
   margin: 0 0 1rem;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #1a1a1a;
-  border-bottom: 1px solid #d4d4d4;
+  color: var(--text-primary, #1a1a1a);
+  border-bottom: 1px solid var(--border-color, #d4d4d4);
   padding-bottom: 0.75rem;
 }
 
 .informativa-bloque p {
   margin: 0 0 1.1rem;
   font-family: Arial, sans-serif;
-  color: #4b4b4b;
+  color: var(--text-secondary, #4b4b4b);
   line-height: 1.75;
   max-width: 620px;
   font-size: 0.98rem;
@@ -78,17 +74,15 @@
 }
 
 .informativa-bloque--gris {
-  background-color: #fafaf8;
-  border-top: 1px solid #e5e5e0;
-  border-bottom: 1px solid #e5e5e0;
+  background-color: var(--bg-surface-alt, #fafaf8);
+  border-top: 1px solid var(--border-color, #e5e5e0);
+  border-bottom: 1px solid var(--border-color, #e5e5e0);
 }
-
-/* Estadísticas: números grandes en fila, sin tarjetas */
 
 .informativa-stats {
   background: none;
-  border-top: 1px solid #d4d4d4;
-  border-bottom: 1px solid #d4d4d4;
+  border-top: 1px solid var(--border-color, #d4d4d4);
+  border-bottom: 1px solid var(--border-color, #d4d4d4);
 }
 
 .stats-grid {
@@ -114,10 +108,8 @@
 .stat-label {
   font-family: Arial, sans-serif;
   font-size: 0.82rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
 }
-
-/* Áreas: lista con borde izquierdo, no tarjetas cerradas */
 
 .areas-grid {
   display: flex;
@@ -148,17 +140,15 @@
   margin: 0 0 0.4rem;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .area-tarjeta p {
   margin: 0;
   font-size: 0.92rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   line-height: 1.6;
 }
-
-/* Recursos: fila simple */
 
 .recursos-lista {
   display: flex;
@@ -167,7 +157,7 @@
 
 .recurso-fila {
   padding: 1.25rem 0;
-  border-bottom: 1px solid #e5e5e0;
+  border-bottom: 1px solid var(--border-color, #e5e5e0);
 }
 
 .recurso-fila:last-child {
@@ -178,18 +168,16 @@
   margin: 0 0 0.35rem;
   font-size: 1.08rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .recurso-fila p {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 0.9rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   line-height: 1.6;
 }
-
-/* FAQ */
 
 .faq-lista {
   display: flex;
@@ -198,7 +186,7 @@
 
 .faq-fila {
   padding: 1.25rem 0;
-  border-bottom: 1px solid #e5e5e0;
+  border-bottom: 1px solid var(--border-color, #e5e5e0);
 }
 
 .faq-fila:last-child {
@@ -209,7 +197,7 @@
   margin: 0 0 0.4rem;
   font-size: 1.05rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   font-style: italic;
 }
 
@@ -217,11 +205,9 @@
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 0.9rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   line-height: 1.6;
 }
-
-/* Contacto */
 
 .contacto-datos {
   display: flex;
@@ -233,12 +219,12 @@
 
 .contacto-datos p {
   margin: 0;
-  color: #4b4b4b;
+  color: var(--text-secondary, #4b4b4b);
   font-size: 0.92rem;
 }
 
 .contacto-datos strong {
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   margin-right: 0.3rem;
 }
 

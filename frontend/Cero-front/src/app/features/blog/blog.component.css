@@ -1,8 +1,8 @@
-/* BLOG — revista, destacado a sangre con texto superpuesto */
+/* BLOG — revista */
 
 .blog-entero {
   width: 100%;
-  background: #fff;
+  background: var(--bg-page, #fff);
 }
 
 .blog-entero * {
@@ -20,10 +20,8 @@
   padding: 3rem 2rem;
 }
 
-/* Cabecera: alineada a la izquierda, tipografía grande */
-
 .blog-cabecera {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
 }
 
 .blog-cabecera-contenido {
@@ -45,18 +43,16 @@
   font-family: Georgia, serif;
   font-size: 2.6rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .blog-lead {
   margin: 0;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   max-width: 520px;
   line-height: 1.6;
   font-size: 1rem;
 }
-
-/* Destacado: imagen a sangre, texto superpuesto */
 
 .destacado-tarjeta {
   position: relative;
@@ -123,7 +119,7 @@
   align-items: center;
   gap: 0.4rem;
   font-size: 0.82rem;
-  color: #c4c4c4;
+  color: var(--text-muted, #9ca3af);
 }
 
 .destacado-info .articulo-meta {
@@ -131,10 +127,8 @@
 }
 
 .meta-punto {
-  color: #6b6b6b;
+  color: var(--text-muted, #6b6b6b);
 }
-
-/* Grid principal + lateral */
 
 .blog-contenido-grid {
   display: grid;
@@ -143,21 +137,19 @@
   align-items: start;
 }
 
-/* Buscador */
-
 .buscador {
   display: flex;
   align-items: center;
   gap: 0.6rem;
   margin-bottom: 1.25rem;
-  border-bottom: 2px solid #1a1a1a;
+  border-bottom: 2px solid var(--text-primary, #1a1a1a);
   padding: 0 0 0.6rem;
 }
 
 .buscador-icono {
   width: 17px;
   height: 17px;
-  color: #9ca3af;
+  color: var(--text-muted, #9ca3af);
   flex-shrink: 0;
 }
 
@@ -166,7 +158,7 @@
   border: none;
   outline: none;
   font-size: 0.96rem;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   background: transparent;
 }
 
@@ -179,8 +171,6 @@
   font-weight: 600;
   color: #b8791f;
 }
-
-/* Categorías: texto simple separado por barras */
 
 .categorias-fila {
   display: flex;
@@ -196,8 +186,8 @@
   cursor: pointer;
 
   padding: 0.3rem 0.9rem;
-  border-right: 1px solid #d1d5db;
-  color: #6b7280;
+  border-right: 1px solid var(--border-color, #d1d5db);
+  color: var(--text-secondary, #6b7280);
   font-weight: 500;
 }
 
@@ -210,13 +200,11 @@
 }
 
 .categoria-chip--activo {
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
-/* Lista de artículos: fila horizontal, no tarjetas cuadradas */
 
 .articulos-grid {
   display: flex;
@@ -229,7 +217,7 @@
 
   background: none;
   border: none;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
   border-radius: 0;
   padding: 1.5rem 0;
 }
@@ -243,7 +231,7 @@
   width: 140px;
   height: 100px;
   flex-shrink: 0;
-  background-color: #f1ece0;
+  background-color: var(--bg-surface-alt, #f1ece0);
 }
 
 .articulo-imagen img {
@@ -260,29 +248,27 @@
   font-family: Georgia, serif;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   line-height: 1.35;
 }
 
 .articulo-info p {
   margin: 0 0 0.6rem;
   font-size: 0.87rem;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   line-height: 1.5;
 }
 
 .articulos-vacio {
   text-align: center;
   padding: 3rem 1.5rem;
-  border: 1px dashed #d1d5db;
+  border: 1px dashed var(--border-color, #d1d5db);
 }
 
 .articulos-vacio p {
   margin: 0 0 1.25rem;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
 }
-
-/* Lateral */
 
 .blog-lateral {
   display: flex;
@@ -293,7 +279,7 @@
 .lateral-bloque {
   background: none;
   border: none;
-  border-top: 2px solid #1a1a1a;
+  border-top: 2px solid var(--text-primary, #1a1a1a);
   border-radius: 0;
   padding: 1rem 0 0;
 }
@@ -302,7 +288,7 @@
   margin: 0 0 0.6rem;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -310,7 +296,7 @@
 .lateral-bloque p {
   margin: 0;
   font-size: 0.87rem;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   line-height: 1.55;
 }
 
@@ -328,7 +314,7 @@
   flex-direction: column;
   gap: 0.15rem;
   padding-bottom: 0.9rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
 }
 
 .populares-lista li:last-child {
@@ -339,13 +325,13 @@
 .popular-titulo {
   font-family: Georgia, serif;
   font-size: 0.92rem;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   line-height: 1.4;
 }
 
 .popular-meta {
   font-size: 0.76rem;
-  color: #9ca3af;
+  color: var(--text-muted, #9ca3af);
 }
 
 .lateral-newsletter {
@@ -361,16 +347,18 @@
 
 .newsletter-form input {
   padding: 0.6rem 0.7rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-color, #d1d5db);
   border-radius: 0;
   font-size: 0.86rem;
+  background: var(--bg-surface, #fff);
+  color: var(--text-primary, #1a1a1a);
 }
 
 .newsletter-form button {
   border: none;
   border-radius: 0;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: var(--text-primary, #1a1a1a);
+  color: var(--bg-page, #fff);
   padding: 0.6rem 0.9rem;
   font-size: 0.86rem;
   font-weight: 700;
@@ -379,6 +367,7 @@
 
 .newsletter-form button:hover {
   background-color: #b8791f;
+  color: #fff;
 }
 
 /* Responsive */

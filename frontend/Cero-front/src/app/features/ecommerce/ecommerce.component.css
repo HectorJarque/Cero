@@ -2,7 +2,7 @@
 
 .ecommerce-entero {
   width: 100%;
-  background: #fffdfb;
+  background: var(--bg-page, #fffdfb);
 }
 
 .ecommerce-entero * {
@@ -20,10 +20,8 @@
   padding: 3.5rem 2rem;
 }
 
-/* Hero: asimétrico, alineado a la izquierda */
-
 .ecommerce-hero {
-  background-color: #fdf3ec;
+  background-color: #2b1a10;
   border-bottom: 3px solid #c4642b;
 }
 
@@ -38,7 +36,7 @@
   display: inline-block;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #9a5b1f;
+  color: #e0a95f;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
@@ -48,13 +46,13 @@
   margin: 0 0 0.75rem;
   font-size: 2.4rem;
   font-weight: 800;
-  color: #1f2937;
+  color: #fff;
   letter-spacing: -0.01em;
 }
 
 .ecommerce-lead {
   margin: 0 0 1.5rem;
-  color: #6b5648;
+  color: #d9c9ba;
   line-height: 1.6;
   font-size: 1.02rem;
 }
@@ -62,7 +60,7 @@
 .ecommerce-cta {
   border: none;
   border-radius: 4px;
-  background-color: #1f2937;
+  background-color: #c4642b;
   color: #fff;
 
   padding: 0.8rem 1.8rem;
@@ -76,37 +74,33 @@
 }
 
 .ecommerce-cta:hover {
-  background-color: #c4642b;
+  background-color: #a8531f;
 }
-
-/* Bloques */
 
 .ecommerce-bloque h2 {
   margin: 0 0 0.5rem;
   font-size: 1.5rem;
   font-weight: 800;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .ecommerce-intro {
   margin: 0 0 2rem;
-  color: #8a7666;
+  color: var(--text-secondary, #8a7666);
   max-width: 520px;
 }
 
 .ecommerce-bloque--gris {
-  background-color: #faf6f2;
-  border-top: 1px solid #ece2d6;
-  border-bottom: 1px solid #ece2d6;
+  background-color: var(--bg-surface-alt, #faf6f2);
+  border-top: 1px solid var(--border-color, #ece2d6);
+  border-bottom: 1px solid var(--border-color, #ece2d6);
 }
-
-/* Categorías: pestañas subrayadas, no chips redondos */
 
 .categorias-grid {
   margin-top: 1.5rem;
   display: flex;
   gap: 0;
-  border-bottom: 2px solid #ece2d6;
+  border-bottom: 2px solid var(--border-color, #ece2d6);
 }
 
 .categoria-tarjeta {
@@ -125,7 +119,7 @@
 }
 
 .categoria-tarjeta:hover {
-  background-color: #fdf3ec;
+  background-color: var(--bg-surface-alt, #fdf3ec);
 }
 
 .categoria-tarjeta--activa {
@@ -144,15 +138,13 @@
 .categoria-titulo {
   font-size: 0.92rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .categoria-count {
   font-size: 0.76rem;
-  color: #b0a394;
+  color: var(--text-muted, #b0a394);
 }
-
-/* Buscador */
 
 .buscador {
   display: flex;
@@ -160,16 +152,16 @@
   gap: 0.75rem;
   margin: 1.5rem 0 2rem;
 
-  border: 1px solid #ece2d6;
+  border: 1px solid var(--border-color, #ece2d6);
   border-radius: 4px;
   padding: 0.65rem 1rem;
-  background: #fff;
+  background: var(--bg-surface, #fff);
 }
 
 .buscador-icono {
   width: 17px;
   height: 17px;
-  color: #b0a394;
+  color: var(--text-muted, #b0a394);
   flex-shrink: 0;
 }
 
@@ -178,12 +170,12 @@
   border: none;
   outline: none;
   font-size: 0.94rem;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
   background: transparent;
 }
 
 .buscador-input::placeholder {
-  color: #b0a394;
+  color: var(--text-muted, #b0a394);
 }
 
 .buscador-limpiar {
@@ -199,8 +191,6 @@
 .buscador-limpiar:hover {
   text-decoration: underline;
 }
-
-/* Productos: fotos con marco fino */
 
 .productos-grid {
   display: grid;
@@ -218,8 +208,8 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-color: #f1ece0;
-  border: 1px solid #ece2d6;
+  background-color: var(--bg-surface-alt, #f1ece0);
+  border: 1px solid var(--border-color, #ece2d6);
   padding: 6px;
 }
 
@@ -250,13 +240,13 @@
   margin: 0 0 0.3rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .producto-info p {
   margin: 0 0 0.8rem;
   font-size: 0.86rem;
-  color: #8a7666;
+  color: var(--text-secondary, #8a7666);
   line-height: 1.5;
 }
 
@@ -269,13 +259,14 @@
 .producto-precio {
   font-size: 1.05rem;
   font-weight: 800;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .producto-boton {
-  border: 1.5px solid #1f2937;
+  border: 1.5px solid var(--text-primary, #1f2937);
   border-radius: 4px;
-  background: #fff;
+  background: transparent;
+  color: var(--text-primary, #1f2937);
 
   padding: 0.35rem 0.75rem;
   font-size: 0.78rem;
@@ -287,22 +278,20 @@
 }
 
 .producto-boton:hover {
-  background-color: #1f2937;
-  color: #fff;
+  background-color: var(--text-primary, #1f2937);
+  color: var(--bg-page, #fff);
 }
 
 .productos-vacio {
   text-align: center;
   padding: 3rem 1.5rem;
-  border: 1px dashed #ece2d6;
+  border: 1px dashed var(--border-color, #ece2d6);
 }
 
 .productos-vacio p {
   margin: 0 0 1.25rem;
-  color: #8a7666;
+  color: var(--text-secondary, #8a7666);
 }
-
-/* Ventajas: fila horizontal con separadores, no columnas iguales */
 
 .ventajas-grid {
   display: flex;
@@ -313,7 +302,7 @@
 .ventaja-item {
   flex: 1;
   padding-right: 2rem;
-  border-right: 1px solid #ece2d6;
+  border-right: 1px solid var(--border-color, #ece2d6);
 }
 
 .ventaja-item:last-child {
@@ -329,17 +318,15 @@
   margin: 0 0 0.35rem;
   font-size: 0.98rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .ventaja-item p {
   margin: 0;
   font-size: 0.86rem;
-  color: #8a7666;
+  color: var(--text-secondary, #8a7666);
   line-height: 1.5;
 }
-
-/* Reseñas */
 
 .resenas-grid {
   margin-top: 1.5rem;
@@ -349,7 +336,7 @@
 }
 
 .resena-tarjeta {
-  background: #fff;
+  background: var(--bg-surface, #fff);
   border-top: 3px solid #c4642b;
   padding: 1.5rem 0.25rem 0;
 }
@@ -357,20 +344,18 @@
 .resena-texto {
   margin: 0 0 1rem;
   font-size: 0.92rem;
-  color: #6b5648;
+  color: var(--text-secondary, #6b5648);
   line-height: 1.55;
 }
 
 .resena-autor {
   font-size: 0.82rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
-/* Newsletter */
-
 .ecommerce-newsletter {
-  background-color: #1f2937;
+  background-color: #1a1108;
 }
 
 .newsletter-contenido {
@@ -384,7 +369,7 @@
 
 .newsletter-contenido p {
   margin: 0.5rem 0 1.5rem;
-  color: #c7cdd6;
+  color: #c9b8a8;
 }
 
 .newsletter-form {
@@ -434,7 +419,7 @@
   .ventaja-item {
     border-right: none;
     padding-right: 0;
-    border-bottom: 1px solid #ece2d6;
+    border-bottom: 1px solid var(--border-color, #ece2d6);
     padding-bottom: 1.5rem;
   }
 }

@@ -1,8 +1,8 @@
-/* LANDING — página de venta clásica, columna centrada estrecha */
+/* LANDING — página de venta clásica */
 
 .landing-entero {
   width: 100%;
-  background: #fffbfc;
+  background: var(--bg-page, #fffbfc);
 }
 
 .landing-entero * {
@@ -46,10 +46,8 @@
   background-color: #f6ecef;
 }
 
-/* Hero */
-
 .hero-landing {
-  background-color: #fff;
+  background-color: var(--bg-page, #fff);
 }
 
 .hero-contenido {
@@ -72,13 +70,13 @@
   font-family: Georgia, serif;
   font-size: 2.5rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   line-height: 1.3;
 }
 
 .hero-lead {
   margin: 0 0 2rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   font-size: 1.08rem;
   line-height: 1.65;
 }
@@ -93,7 +91,7 @@
 
 .hero-plazas {
   font-size: 0.85rem;
-  color: #9a5b1f;
+  color: #b8791f;
   font-weight: 600;
 }
 
@@ -101,7 +99,7 @@
   display: flex;
   justify-content: center;
   gap: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color, #eee);
   padding-top: 2rem;
 }
 
@@ -110,7 +108,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  border-right: 1px solid #eee;
+  border-right: 1px solid var(--border-color, #eee);
 }
 
 .hero-dato:last-child {
@@ -125,15 +123,13 @@
 
 .dato-label {
   font-size: 0.78rem;
-  color: #9ca3af;
+  color: var(--text-muted, #9ca3af);
 }
 
-/* Bloques generales */
-
 .landing-bloque--gris {
-  background-color: #faf6f7;
-  border-top: 1px solid #f0e5e8;
-  border-bottom: 1px solid #f0e5e8;
+  background-color: var(--bg-surface-alt, #faf6f7);
+  border-top: 1px solid var(--border-color, #f0e5e8);
+  border-bottom: 1px solid var(--border-color, #f0e5e8);
 }
 
 .bloque-etiqueta {
@@ -153,18 +149,16 @@
   font-family: Georgia, serif;
   font-size: 1.55rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .bloque-intro {
   margin: 0 auto 2rem;
   text-align: center;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   max-width: 480px;
   line-height: 1.6;
 }
-
-/* Beneficios: lista vertical, no grid de 4 */
 
 .beneficios-grid {
   margin-top: 2rem;
@@ -203,17 +197,15 @@
   margin: 0 0 0.3rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .beneficio-tarjeta p {
   margin: 0;
   font-size: 0.9rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   line-height: 1.55;
 }
-
-/* Programa */
 
 .programa-lista {
   margin-top: 2rem;
@@ -225,7 +217,7 @@
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color, #eee);
 }
 
 .programa-fila:last-child {
@@ -244,17 +236,15 @@
   margin: 0 0 0.35rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .programa-texto p {
   margin: 0;
   font-size: 0.9rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   line-height: 1.55;
 }
-
-/* Profesor: vertical, centrado */
 
 .profesor-grid {
   display: flex;
@@ -282,7 +272,7 @@
 
 .profesor-texto p {
   margin: 0 0 0.8rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   line-height: 1.65;
   max-width: 480px;
 }
@@ -290,8 +280,6 @@
 .profesor-texto p:last-child {
   margin-bottom: 0;
 }
-
-/* Testimonios: cita apilada, no tarjetas en columnas */
 
 .testimonios-grid {
   margin-top: 2rem;
@@ -312,7 +300,7 @@
   margin: 0 0 0.75rem;
   font-family: Georgia, serif;
   font-size: 1.05rem;
-  color: #3f3f3f;
+  color: var(--text-primary, #3f3f3f);
   line-height: 1.55;
   font-style: italic;
 }
@@ -323,12 +311,10 @@
   color: #a13d5c;
 }
 
-/* Precio: vertical, no dos columnas */
-
 .precio-tarjeta {
   display: flex;
   flex-direction: column;
-  border: 2px solid #1a1a1a;
+  border: 2px solid var(--text-primary, #1a1a1a);
   border-radius: 0;
   overflow: hidden;
 }
@@ -345,7 +331,7 @@
 
 .precio-info p {
   margin: 0 auto 1.25rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   line-height: 1.6;
   max-width: 420px;
 }
@@ -362,7 +348,7 @@
 
 .precio-lista li {
   font-size: 0.9rem;
-  color: #374151;
+  color: var(--text-secondary, #374151);
   padding-left: 1.4rem;
   position: relative;
 }
@@ -405,8 +391,6 @@
   font-weight: 600;
 }
 
-/* FAQ */
-
 .faq-alineacion {
   max-width: 640px;
 }
@@ -418,7 +402,7 @@
 }
 
 .faq-item {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color, #eee);
 }
 
 .faq-pregunta {
@@ -434,7 +418,7 @@
   text-align: left;
   font-size: 0.98rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .faq-flecha {
@@ -451,12 +435,10 @@
 
 .faq-respuesta {
   margin: 0 0 1.25rem;
-  color: #6b6b6b;
+  color: var(--text-secondary, #6b6b6b);
   font-size: 0.9rem;
   line-height: 1.6;
 }
-
-/* CTA final */
 
 .landing-cta-final {
   background-color: #a13d5c;
@@ -496,7 +478,7 @@
 
   .hero-dato {
     border-right: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color, #eee);
     padding-bottom: 1.25rem;
   }
 

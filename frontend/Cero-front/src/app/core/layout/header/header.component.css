@@ -2,8 +2,8 @@
 
 .header-entero {
   width: 100%;
-  border-bottom: 1px solid #e5e7eb;
-  background: #fff;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+  background: var(--bg-surface, #fff);
 
   position: fixed;
   top: 0;
@@ -22,13 +22,10 @@
   gap: 2rem;
 }
 
-/* Logo */
-
 .logo-hueco {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-
   text-decoration: none;
   color: inherit;
 }
@@ -42,10 +39,8 @@
 .logo-hueco span {
   font-size: 1.05rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
-
-/* Navegación escritorio */
 
 .navegacion--escritorio {
   display: flex;
@@ -55,7 +50,7 @@
 
 .navegacion a {
   text-decoration: none;
-  color: #374151;
+  color: var(--text-secondary, #374151);
   font-size: 0.94rem;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -65,8 +60,6 @@
   color: #c4642b;
 }
 
-/* Dropdown de ejemplos */
-
 .dropdown {
   position: relative;
 }
@@ -75,17 +68,14 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-
   border: none;
   background: none;
   cursor: pointer;
   padding: 0;
-
   font-family: inherit;
   font-size: 0.94rem;
   font-weight: 500;
-  color: #374151;
-
+  color: var(--text-secondary, #374151);
   transition: color 0.2s ease;
 }
 
@@ -109,10 +99,10 @@
   left: 50%;
   transform: translateX(-50%);
 
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
   border-radius: 10px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
   padding: 0.5rem;
 
   display: grid;
@@ -125,21 +115,17 @@
   display: block;
   padding: 0.6rem 0.85rem;
   border-radius: 6px;
-
   font-size: 0.88rem;
   font-weight: 500;
-  color: #374151;
+  color: var(--text-secondary, #374151);
   white-space: nowrap;
-
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .dropdown-item:hover {
-  background-color: #fdf3ec;
+  background-color: var(--bg-surface-alt, #fdf3ec);
   color: #c4642b;
 }
-
-/* Acciones */
 
 .header-acciones {
   display: flex;
@@ -147,24 +133,40 @@
   gap: 0.75rem;
 }
 
-.idioma-btn {
-  padding: 0.45rem 0.8rem;
-
-  border: 1px solid #d1d5db;
+.tema-btn,
+.idioma-btn,
+.menu-movil-btn {
+  border: 1px solid var(--border-color, #d1d5db);
   border-radius: 6px;
-
-  background: white;
+  background: var(--bg-surface, #fff);
   cursor: pointer;
-  font-family: inherit;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #374151;
-
+  color: var(--text-secondary, #374151);
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
+.tema-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.tema-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.idioma-btn {
+  padding: 0.45rem 0.8rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tema-btn:hover,
 .idioma-btn:hover {
-  background-color: #fdf3ec;
+  background-color: var(--bg-surface-alt, #fdf3ec);
   border-color: #c4642b;
 }
 
@@ -174,12 +176,6 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  background: #fff;
-  cursor: pointer;
-  color: #374151;
 }
 
 .menu-movil-btn svg {
@@ -187,13 +183,9 @@
   height: 18px;
 }
 
-/* Menú móvil */
-
 .navegacion--movil {
   display: none;
 }
-
-/* Responsive */
 
 @media (max-width: 860px) {
   .navegacion--escritorio {
@@ -208,9 +200,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.15rem;
-
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--border-color, #e5e7eb);
     padding: 1rem 2rem 1.25rem;
+    background: var(--bg-surface, #fff);
   }
 
   .navegacion--movil a {
@@ -221,7 +213,7 @@
     margin-top: 0.5rem;
     font-size: 0.76rem;
     font-weight: 700;
-    color: #9ca3af;
+    color: var(--text-muted, #9ca3af);
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }

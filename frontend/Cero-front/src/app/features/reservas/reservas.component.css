@@ -2,7 +2,7 @@
 
 .reservas-entero {
   width: 100%;
-  background: #fff;
+  background: var(--bg-page, #fff);
 }
 
 .reservas-entero * {
@@ -20,8 +20,6 @@
   margin: 0 auto;
   padding: 3.5rem 2rem;
 }
-
-/* Hero: oscuro, tipografía serif de restaurante */
 
 .hero-reservas {
   background-color: #14211d;
@@ -60,13 +58,11 @@
   max-width: 520px;
 }
 
-/* Bloques */
-
 .bloque-etiqueta {
   display: inline-block;
   font-size: 0.76rem;
   font-weight: 700;
-  color: #1f7a70;
+  color: #1f9c8f;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 0.6rem;
@@ -77,22 +73,20 @@
   font-family: Georgia, serif;
   font-size: 1.55rem;
   font-weight: 400;
-  color: #14211d;
+  color: var(--text-primary, #14211d);
 }
 
 .reservas-bloque p {
   margin: 0;
-  color: #4b5563;
+  color: var(--text-secondary, #4b5563);
   line-height: 1.6;
 }
 
 .reservas-bloque--gris {
-  background-color: #f6f8f7;
-  border-top: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: var(--bg-surface-alt, #f6f8f7);
+  border-top: 1px solid var(--border-color, #e5e7eb);
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
 }
-
-/* Widget de reserva: sobre panel oscuro para destacar */
 
 .widget-reserva {
   background-color: #14211d;
@@ -239,21 +233,19 @@
 }
 
 .boton-secundario {
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-color, #d1d5db);
   border-radius: 4px;
-  background: #fff;
+  background: var(--bg-surface, #fff);
   cursor: pointer;
   padding: 0.7rem 1.4rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #374151;
+  color: var(--text-secondary, #374151);
 }
 
 .boton-secundario:hover {
-  background-color: #f3f4f6;
+  background-color: var(--bg-surface-alt, #f3f4f6);
 }
-
-/* Confirmación */
 
 .widget-confirmacion {
   text-align: center;
@@ -299,8 +291,6 @@
   margin-bottom: 1.75rem;
 }
 
-/* Platos: fila con precio a la derecha, tipografía serif */
-
 .platos-lista {
   margin-top: 1.5rem;
   display: flex;
@@ -313,7 +303,7 @@
   justify-content: space-between;
   gap: 1.5rem;
   padding: 1.25rem 0;
-  border-bottom: 1px dotted #d1d5db;
+  border-bottom: 1px dotted var(--border-color, #d1d5db);
 }
 
 .plato-fila:last-child {
@@ -325,13 +315,13 @@
   font-family: Georgia, serif;
   font-size: 1.05rem;
   font-weight: 400;
-  color: #14211d;
+  color: var(--text-primary, #14211d);
 }
 
 .plato-texto p {
   margin: 0;
   font-size: 0.87rem;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   line-height: 1.5;
 }
 
@@ -339,10 +329,8 @@
   flex-shrink: 0;
   font-family: Georgia, serif;
   font-weight: 700;
-  color: #1f7a70;
+  color: #1f9c8f;
 }
-
-/* Testimonios */
 
 .testimonios-grid {
   margin-top: 1.5rem;
@@ -352,9 +340,9 @@
 }
 
 .testimonio-tarjeta {
-  background: #fff;
+  background: var(--bg-surface, #fff);
   border: none;
-  border-top: 2px solid #1f7a70;
+  border-top: 2px solid #1f9c8f;
   border-radius: 0;
   padding: 1.5rem 0.25rem 0;
 }
@@ -363,7 +351,7 @@
   margin: 0 0 1rem;
   font-family: Georgia, serif;
   font-size: 0.98rem;
-  color: #3f3f3f;
+  color: var(--text-primary, #3f3f3f);
   line-height: 1.55;
   font-style: italic;
 }
@@ -371,10 +359,8 @@
 .testimonio-autor {
   font-size: 0.83rem;
   font-weight: 700;
-  color: #1f7a70;
+  color: #1f9c8f;
 }
-
-/* Ubicación */
 
 .ubicacion-grid {
   display: grid;
@@ -397,9 +383,9 @@
   justify-content: space-between;
   gap: 1rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid #f1f2f4;
+  border-bottom: 1px solid var(--border-color, #f1f2f4);
   font-size: 0.9rem;
-  color: #374151;
+  color: var(--text-secondary, #374151);
 }
 
 .horario-fila:last-child {
@@ -408,7 +394,7 @@
 
 .horario-fila span:first-child {
   font-weight: 700;
-  color: #14211d;
+  color: var(--text-primary, #14211d);
 }
 
 /* Responsive */

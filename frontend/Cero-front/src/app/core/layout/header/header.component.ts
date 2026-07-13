@@ -3,6 +3,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
 import { Lang, TranslationService } from '../../services/translation.service';
+import { ThemeService } from '../../../shared/services/theme.service';
 import { ENLACES_EJEMPLOS } from '../../../shared/data/navegacion.data';
 
 @Component({
@@ -14,6 +15,7 @@ import { ENLACES_EJEMPLOS } from '../../../shared/data/navegacion.data';
 })
 export class HeaderComponent {
   private translationService = inject(TranslationService);
+  private themeService = inject(ThemeService);
   private elementRef = inject(ElementRef);
 
   ejemplos = ENLACES_EJEMPLOS;
@@ -25,9 +27,17 @@ export class HeaderComponent {
     return this.translationService.lang();
   }
 
+  get temaActual() {
+    return this.themeService.tema();
+  }
+
   toggleLanguage(): void {
     const newLang: Lang = this.currentLang === 'es' ? 'en' : 'es';
     this.translationService.setLang(newLang);
+  }
+
+  toggleTema(): void {
+    this.themeService.toggleTema();
   }
 
   toggleEjemplos(): void {

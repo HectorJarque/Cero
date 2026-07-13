@@ -2,7 +2,7 @@
 
 .home-entero {
   width: 100%;
-  background: #fff;
+  background: var(--bg-page, #fff);
 }
 
 .home-entero * {
@@ -23,8 +23,8 @@
 /* Hero */
 
 .hero {
-  background-color: #fdf8f2;
-  border-bottom: 1px solid #eee;
+  background-color: var(--bg-surface-alt, #fdf8f2);
+  border-bottom: 1px solid var(--border-color, #eee);
   padding: 4.5rem 0 4rem;
 }
 
@@ -48,14 +48,14 @@
   margin: 0 0 1rem;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
 
 .hero p {
   margin: 0;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   font-size: 1.05rem;
   line-height: 1.65;
 }
@@ -74,8 +74,8 @@
   flex-direction: column;
   align-items: flex-start;
 
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
   border-radius: 14px;
   padding: 1.85rem;
 }
@@ -111,13 +111,13 @@
   margin: 0 0 0.6rem;
   font-size: 1.15rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
   line-height: 1.35;
 }
 
 .tarjeta p {
   margin: 0 0 1.5rem;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   font-size: 0.9rem;
   line-height: 1.55;
 }
@@ -158,8 +158,8 @@
 /* Cierre */
 
 .home-cierre {
-  background-color: #fafafa;
-  border-top: 1px solid #eee;
+  background-color: var(--bg-surface-alt, #fafafa);
+  border-top: 1px solid var(--border-color, #eee);
   padding: 4rem 0;
 }
 
@@ -173,12 +173,12 @@
   margin: 0 0 0.75rem;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .cierre-contenido p {
   margin: 0 0 1.25rem;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   line-height: 1.6;
 }
 
@@ -192,7 +192,7 @@
 /* Personalización */
 
 .home-personalizacion {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color, #eee);
   padding: 3.5rem 0 4rem;
 }
 
@@ -214,7 +214,7 @@
   margin: 0 0 2.25rem;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .personalizacion-grid {
@@ -230,21 +230,14 @@
   margin: 0 0 0.5rem;
   font-size: 1.02rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--text-primary, #1f2937);
 }
 
 .personalizacion-item p {
   margin: 0;
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   font-size: 0.9rem;
   line-height: 1.55;
-}
-
-@media (max-width: 768px) {
-  .personalizacion-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 }
 
 /* Responsive */
@@ -252,6 +245,13 @@
 @media (max-width: 900px) {
   .grid-proyectos {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .personalizacion-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 

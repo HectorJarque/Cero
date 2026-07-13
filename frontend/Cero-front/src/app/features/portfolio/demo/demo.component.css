@@ -3,7 +3,7 @@
 .demo-entero {
   width: 100%;
   min-height: 60vh;
-  background: #fff;
+  background: var(--bg-page, #fff);
 }
 
 .demo-alineacion {
@@ -23,58 +23,53 @@
   padding: 0.3rem 0.7rem;
 
   border-radius: 999px;
-  background-color: #f3f4f6;
-  color: #374151;
+  background-color: var(--bg-surface-alt, #f3f4f6);
+  color: var(--text-primary, #374151);
 }
 
 .demo-alineacion h1 {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
+  color: var(--text-primary, #1f2937);
 }
 
 .demo-alineacion p {
   margin: 0;
-  color: #4b5563;
+  color: var(--text-secondary, #4b5563);
   line-height: 1.5;
 }
-
-/* Aviso de placeholder */
 
 .demo-aviso {
   width: 100%;
   margin-top: 1rem;
   padding: 3rem 1.5rem;
 
-  border: 1px dashed #d1d5db;
+  border: 1px dashed var(--border-color, #d1d5db);
   border-radius: 10px;
-  background-color: #fafafa;
+  background-color: var(--bg-surface-alt, #fafafa);
 
   text-align: center;
 }
 
 .demo-aviso p {
-  color: #6b7280;
+  color: var(--text-secondary, #6b7280);
   font-style: italic;
 }
-
-/* Volver */
 
 .demo-volver {
   margin-top: 1.5rem;
 
   text-decoration: none;
-  color: inherit;
+  color: var(--text-primary, inherit);
   font-weight: 500;
   font-size: 0.9rem;
 
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-color, #d1d5db);
   border-radius: 6px;
   padding: 0.5rem 1rem;
-
-  transition: background-color 0.2s ease;
 }
 
 .demo-volver:hover {
-  background-color: #f3f4f6;
+  background-color: var(--bg-surface-alt, #f3f4f6);
 }

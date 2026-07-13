@@ -1,0 +1,24 @@
+:root {
+  --bg-page: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #fafafa;
+  --border-color: #e5e7eb;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+}
+
+[data-theme="dark"] {
+  --bg-page: #15181c;
+  --bg-surface: #1e2228;
+  --bg-surface-alt: #1a1d22;
+  --border-color: #333a42;
+  --text-primary: #eceef0;
+  --text-secondary: #b7bec7;
+  --text-muted: #838b96;
+}
+
+html,
+body {
+  background-color: var(--bg-page, #fff);
+}
