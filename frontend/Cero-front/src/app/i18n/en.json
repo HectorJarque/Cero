@@ -590,5 +590,110 @@
       "days3": "Monday",
       "closed": "Closed"
     }
+  },
+  "saas": {
+    "hero": {
+      "tag": "> foco.app",
+      "title": "The time tracker your team will actually use",
+      "subtitle": "Foco tracks where each project's time goes, without heavy clock-ins or endless spreadsheets.",
+      "cta": "Start for free",
+      "note": "No credit card · Cancel anytime"
+    },
+    "features": {
+      "tag": "Features",
+      "title": "Everything you need, nothing you don't",
+      "tracking": {
+        "title": "One-click tracking",
+        "description": "Start and stop the timer from any screen, without losing track of what task you're on."
+      },
+      "tasks": {
+        "title": "Tasks per project",
+        "description": "Organise each client's work into tasks, with due dates and assigned owners."
+      },
+      "reports": {
+        "title": "Automatic reports",
+        "description": "Every week, a clear summary of hours spent on each project, ready to invoice."
+      },
+      "team": {
+        "title": "Team collaboration",
+        "description": "Invite your team and see at a glance what everyone is working on right now."
+      }
+    },
+    "pricing": {
+      "tag": "Pricing",
+      "title": "A genuinely free plan, and a Pro plan with no surprises",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save": "Save",
+      "year": "year",
+      "month": "month",
+      "free": {
+        "name": "Free",
+        "description": "To try Foco out, or for anyone working solo on a couple of projects.",
+        "cta": "Start for free"
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most popular",
+        "description": "For teams that need unlimited projects and detailed reporting.",
+        "cta": "Try Pro for 14 days"
+      }
+    },
+    "comparison": {
+      "projects": "Active projects",
+      "members": "Team members",
+      "tracking": "Time tracking",
+      "reports": "Reports and export",
+      "integrations": "Integrations",
+      "support": "Support",
+      "unlimited": "Unlimited",
+      "supportEmail": "Email",
+      "supportPriority": "Priority"
+    },
+    "integrations": {
+      "tag": "Integrations",
+      "title": "Foco connects with the tools you already use",
+      "intro": "No duplicated work between apps: Foco syncs with the tools your team already has open every day."
+    },
+    "testimonios": {
+      "tag": "Who's already using it",
+      "title": "Teams that stopped wasting hours on spreadsheets",
+      "t1": {
+        "text": "We stopped losing our Fridays reconciling hours by hand. The report is already ready by Monday now.",
+        "author": "Marina Solís",
+        "role": "Design studio, 4 people"
+      },
+      "t2": {
+        "text": "We tried it for free and within two weeks we'd migrated every project. Very easy to explain to the team.",
+        "author": "Adrián Ferrer",
+        "role": "Freelance consultant"
+      },
+      "t3": {
+        "text": "The reporting alone saves us a full day of admin work every month.",
+        "author": "Laura Gómez",
+        "role": "Marketing agency, 12 people"
+      }
+    },
+    "faq": {
+      "tag": "Common questions",
+      "title": "Before you sign up",
+      "q1": {
+        "question": "Do I need a credit card for the free plan?",
+        "answer": "No, the Free plan is genuinely free and doesn't ask for any payment method. You'll only need one if you decide to upgrade to Pro."
+      },
+      "q2": {
+        "question": "Can I change plans later?",
+        "answer": "Yes, you can upgrade or downgrade whenever you like from your account settings, with no lock-in."
+      },
+      "q3": {
+        "question": "Is my clients' data secure?",
+        "answer": "Yes, all information is stored encrypted and is never shared with third parties or used for advertising."
+      }
+    },
+    "ctaFinal": {
+      "title": "Start tracking your time today",
+      "text": "The free plan never expires and doesn't ask for a card. You can be up and running in under two minutes.",
+      "cta": "Create free account"
+    }
   }
 }

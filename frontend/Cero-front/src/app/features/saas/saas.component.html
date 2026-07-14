@@ -1,1 +1,208 @@
-<p>saas works!</p>
+<section class="saas-entero">
+
+  <!-- Hero -->
+  <div class="hero-saas">
+    <div class="saas-alineacion hero-contenido">
+      <span class="hero-tag">{{ 'saas.hero.tag' | translate }}</span>
+      <h1>{{ 'saas.hero.title' | translate }}</h1>
+      <p class="hero-lead">{{ 'saas.hero.subtitle' | translate }}</p>
+
+      <div class="hero-acciones">
+        <button type="button" class="boton-principal">{{ 'saas.hero.cta' | translate }}</button>
+        <span class="hero-nota">{{ 'saas.hero.note' | translate }}</span>
+      </div>
+    </div>
+
+    <!-- Mockup simple del panel de la app -->
+    <div class="saas-alineacion">
+      <div class="hero-mockup">
+        <div class="mockup-barra">
+          <span class="mockup-punto"></span>
+          <span class="mockup-punto"></span>
+          <span class="mockup-punto"></span>
+        </div>
+        <div class="mockup-cuerpo">
+          <div class="mockup-fila">
+            <span class="mockup-tarea">Diseño landing cliente Vidal</span>
+            <span class="mockup-tiempo">02:14:08</span>
+          </div>
+          <div class="mockup-fila">
+            <span class="mockup-tarea">Revisión de presupuesto Q3</span>
+            <span class="mockup-tiempo">00:48:32</span>
+          </div>
+          <div class="mockup-fila mockup-fila--activa">
+            <span class="mockup-tarea">Reunión semanal de equipo</span>
+            <span class="mockup-tiempo mockup-tiempo--activo">00:12:57</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Características -->
+  <div class="saas-bloque">
+    <div class="saas-alineacion">
+      <span class="bloque-etiqueta">{{ 'saas.features.tag' | translate }}</span>
+      <h2>{{ 'saas.features.title' | translate }}</h2>
+
+      <div class="caracteristicas-grid">
+        @for (caracteristica of caracteristicas; track caracteristica.numero) {
+          <div class="caracteristica-tarjeta">
+            <span class="caracteristica-numero">{{ caracteristica.numero }}</span>
+            <h3>{{ caracteristica.titleKey | translate }}</h3>
+            <p>{{ caracteristica.descKey | translate }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Precios -->
+  <div class="saas-bloque saas-bloque--alt">
+    <div class="saas-alineacion">
+      <span class="bloque-etiqueta">{{ 'saas.pricing.tag' | translate }}</span>
+      <h2>{{ 'saas.pricing.title' | translate }}</h2>
+
+      <div class="facturacion-switch">
+        <span [class.facturacion-activa]="!facturacionAnual()">{{ 'saas.pricing.monthly' | translate }}</span>
+        <button type="button" class="switch-boton" [class.switch-boton--activo]="facturacionAnual()" (click)="toggleFacturacion()">
+          <span class="switch-circulo"></span>
+        </button>
+        <span [class.facturacion-activa]="facturacionAnual()">{{ 'saas.pricing.yearly' | translate }}</span>
+        <span class="facturacion-ahorro">{{ 'saas.pricing.save' | translate }} {{ ahorroAnual() }}€/{{ 'saas.pricing.year' | translate }}</span>
+      </div>
+
+      <div class="planes-grid">
+
+        <div class="plan-tarjeta">
+          <span class="plan-nombre">{{ 'saas.pricing.free.name' | translate }}</span>
+          <div class="plan-precio">
+            <span class="precio-numero">0€</span>
+            <span class="precio-periodo">/{{ 'saas.pricing.month' | translate }}</span>
+          </div>
+          <p class="plan-desc">{{ 'saas.pricing.free.description' | translate }}</p>
+          <button type="button" class="plan-boton plan-boton--secundario">{{ 'saas.pricing.free.cta' | translate }}</button>
+        </div>
+
+        <div class="plan-tarjeta plan-tarjeta--destacado">
+          <span class="plan-destacado-etiqueta">{{ 'saas.pricing.pro.badge' | translate }}</span>
+          <span class="plan-nombre">{{ 'saas.pricing.pro.name' | translate }}</span>
+          <div class="plan-precio">
+            <span class="precio-numero">{{ precioMes() }}€</span>
+            <span class="precio-periodo">/{{ 'saas.pricing.month' | translate }}</span>
+          </div>
+          <p class="plan-desc">{{ 'saas.pricing.pro.description' | translate }}</p>
+          <button type="button" class="plan-boton">{{ 'saas.pricing.pro.cta' | translate }}</button>
+        </div>
+
+      </div>
+
+      <!-- Tabla comparativa -->
+      <div class="comparativa-tabla">
+        <div class="comparativa-fila comparativa-cabecera">
+          <span></span>
+          <span>{{ 'saas.pricing.free.name' | translate }}</span>
+          <span>{{ 'saas.pricing.pro.name' | translate }}</span>
+        </div>
+        @for (fila of comparativa; track fila.labelKey) {
+          <div class="comparativa-fila">
+            <span class="comparativa-label">{{ fila.labelKey | translate }}</span>
+
+            @if (esBooleano(fila.free)) {
+              <span class="comparativa-valor">
+                @if (fila.free) {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icono-si"><path d="m5 13 4 4L19 7"/></svg>
+                } @else {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icono-no"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                }
+              </span>
+            } @else {
+              <span class="comparativa-valor">{{ $any(fila.free).includes('.') ? (fila.free | translate) : fila.free }}</span>
+            }
+
+            @if (esBooleano(fila.pro)) {
+              <span class="comparativa-valor">
+                @if (fila.pro) {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icono-si"><path d="m5 13 4 4L19 7"/></svg>
+                } @else {
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icono-no"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                }
+              </span>
+            } @else {
+              <span class="comparativa-valor">{{ $any(fila.pro).includes('.') ? (fila.pro | translate) : fila.pro }}</span>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Integraciones -->
+  <div class="saas-bloque">
+    <div class="saas-alineacion">
+      <span class="bloque-etiqueta">{{ 'saas.integrations.tag' | translate }}</span>
+      <h2>{{ 'saas.integrations.title' | translate }}</h2>
+      <p class="bloque-intro">{{ 'saas.integrations.intro' | translate }}</p>
+
+      <div class="integraciones-fila">
+        @for (integracion of integraciones; track integracion.nombre) {
+          <span class="integracion-chip">{{ integracion.nombre }}</span>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonios -->
+  <div class="saas-bloque saas-bloque--alt">
+    <div class="saas-alineacion">
+      <span class="bloque-etiqueta">{{ 'saas.testimonios.tag' | translate }}</span>
+      <h2>{{ 'saas.testimonios.title' | translate }}</h2>
+
+      <div class="testimonios-grid">
+        @for (testimonio of testimonios; track testimonio.authorKey) {
+          <div class="testimonio-tarjeta">
+            <p class="testimonio-texto">{{ testimonio.textKey | translate }}</p>
+            <div class="testimonio-autor-bloque">
+              <span class="testimonio-autor">{{ testimonio.authorKey | translate }}</span>
+              <span class="testimonio-rol">{{ testimonio.roleKey | translate }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="saas-bloque">
+    <div class="saas-alineacion faq-alineacion">
+      <span class="bloque-etiqueta">{{ 'saas.faq.tag' | translate }}</span>
+      <h2>{{ 'saas.faq.title' | translate }}</h2>
+
+      <div class="faq-lista">
+        @for (pregunta of preguntas; track pregunta.questionKey; let i = $index) {
+          <div class="faq-item" [class.faq-item--abierto]="preguntaAbierta() === i">
+            <button type="button" class="faq-pregunta" (click)="toggleFaq(i)">
+              <span>{{ pregunta.questionKey | translate }}</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-flecha">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            @if (preguntaAbierta() === i) {
+              <p class="faq-respuesta">{{ pregunta.answerKey | translate }}</p>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA final -->
+  <div class="saas-cta-final">
+    <div class="saas-alineacion cta-final-contenido">
+      <h2>{{ 'saas.ctaFinal.title' | translate }}</h2>
+      <p>{{ 'saas.ctaFinal.text' | translate }}</p>
+      <button type="button" class="boton-principal boton-principal--claro">{{ 'saas.ctaFinal.cta' | translate }}</button>
+    </div>
+  </div>
+
+</section>

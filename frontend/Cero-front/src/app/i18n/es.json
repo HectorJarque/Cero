@@ -592,5 +592,110 @@
       "days3": "Lunes",
       "closed": "Cerrado"
     }
+  },
+  "saas": {
+    "hero": {
+      "tag": "> foco.app",
+      "title": "El seguimiento de tiempo que tu equipo sí va a usar",
+      "subtitle": "Foco registra en qué se va el tiempo de cada proyecto, sin fichajes pesados ni hojas de cálculo interminables.",
+      "cta": "Empezar gratis",
+      "note": "Sin tarjeta de crédito · Cancela cuando quieras"
+    },
+    "features": {
+      "tag": "Funcionalidades",
+      "title": "Todo lo que necesitas, nada de lo que sobra",
+      "tracking": {
+        "title": "Seguimiento en un clic",
+        "description": "Arranca y para el cronómetro desde cualquier pantalla, sin perder de vista en qué tarea estás trabajando."
+      },
+      "tasks": {
+        "title": "Tareas por proyecto",
+        "description": "Organiza el trabajo de cada cliente en tareas, con fechas límite y responsables asignados."
+      },
+      "reports": {
+        "title": "Informes automáticos",
+        "description": "Cada semana, un resumen claro de las horas dedicadas a cada proyecto, listo para facturar."
+      },
+      "team": {
+        "title": "Trabajo en equipo",
+        "description": "Invita a tu equipo y ve de un vistazo en qué está trabajando cada persona ahora mismo."
+      }
+    },
+    "pricing": {
+      "tag": "Precios",
+      "title": "Un plan gratuito de verdad, y un Pro sin sorpresas",
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "save": "Ahorra",
+      "year": "año",
+      "month": "mes",
+      "free": {
+        "name": "Free",
+        "description": "Para probar Foco o para quien trabaja solo en un par de proyectos.",
+        "cta": "Empezar gratis"
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Más popular",
+        "description": "Para equipos que necesitan proyectos ilimitados e informes detallados.",
+        "cta": "Probar Pro 14 días"
+      }
+    },
+    "comparison": {
+      "projects": "Proyectos activos",
+      "members": "Miembros del equipo",
+      "tracking": "Seguimiento de tiempo",
+      "reports": "Informes y exportación",
+      "integrations": "Integraciones",
+      "support": "Soporte",
+      "unlimited": "Ilimitados",
+      "supportEmail": "Por correo",
+      "supportPriority": "Prioritario"
+    },
+    "integrations": {
+      "tag": "Integraciones",
+      "title": "Foco se conecta con las herramientas que ya usas",
+      "intro": "Sin duplicar trabajo entre aplicaciones: Foco se sincroniza con las herramientas que tu equipo ya tiene abiertas cada día."
+    },
+    "testimonios": {
+      "tag": "Quien ya lo usa",
+      "title": "Equipos que han dejado de perder horas en hojas de cálculo",
+      "t1": {
+        "text": "Dejamos de perder los viernes cuadrando horas manualmente. Ahora el informe ya está listo el lunes.",
+        "author": "Marina Solís",
+        "role": "Estudio de diseño, 4 personas"
+      },
+      "t2": {
+        "text": "Lo probamos gratis y en dos semanas ya habíamos migrado todos los proyectos. Muy sencillo de explicar al equipo.",
+        "author": "Adrián Ferrer",
+        "role": "Consultora freelance"
+      },
+      "t3": {
+        "text": "La parte de informes nos ahorra un día entero de trabajo administrativo cada mes.",
+        "author": "Laura Gómez",
+        "role": "Agencia de marketing, 12 personas"
+      }
+    },
+    "faq": {
+      "tag": "Dudas frecuentes",
+      "title": "Antes de registrarte",
+      "q1": {
+        "question": "¿Necesito tarjeta de crédito para el plan gratuito?",
+        "answer": "No, el plan Free es gratis de verdad y no pide ningún método de pago. Solo lo necesitas si decides pasarte a Pro."
+      },
+      "q2": {
+        "question": "¿Puedo cambiar de plan más adelante?",
+        "answer": "Sí, puedes subir o bajar de plan cuando quieras desde los ajustes de tu cuenta, sin compromisos de permanencia."
+      },
+      "q3": {
+        "question": "¿Los datos de mis clientes están seguros?",
+        "answer": "Sí, toda la información se guarda cifrada y nunca se comparte con terceros ni se usa con fines publicitarios."
+      }
+    },
+    "ctaFinal": {
+      "title": "Empieza a medir tu tiempo hoy mismo",
+      "text": "El plan gratuito no caduca y no pide tarjeta. Puedes tenerlo listo en menos de dos minutos.",
+      "cta": "Crear cuenta gratis"
+    }
   }
 }
