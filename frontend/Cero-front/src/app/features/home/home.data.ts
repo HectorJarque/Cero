@@ -1,3 +1,21 @@
+import { PROYECTO_REAL_URL } from '../../shared/config/site-config';
+
+export interface ProyectoReal {
+  url: string;
+  tagKey: string;
+  titleKey: string;
+  descKey: string;
+  tech: string[];
+}
+
+export const PROYECTO_REAL: ProyectoReal = {
+  url: PROYECTO_REAL_URL,
+  tagKey: 'home.realProject.tag',
+  titleKey: 'home.realProject.title',
+  descKey: 'home.realProject.description',
+  tech: ['Angular', 'Kotlin', 'Spring Boot', 'MongoDB']
+};
+
 export type IconoProyecto =
   | 'portfolio' | 'informativa' | 'ecommerce'
   | 'dashboard' | 'blog' | 'landing' | 'reservas' | 'saas';

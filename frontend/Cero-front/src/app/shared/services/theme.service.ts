@@ -4,7 +4,7 @@ export type Tema = 'claro' | 'oscuro';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
-  tema = signal<Tema>('claro');
+  tema = signal<Tema>('oscuro');
 
   constructor() {
     effect(() => {

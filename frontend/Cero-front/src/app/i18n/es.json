@@ -6,7 +6,6 @@
       "examples": "Ejemplos"
     }
   },
-
   "footer": {
     "brand": "Kallik",
     "tagline": "Desarrollo web hecho a medida, desde Valencia. Cada proyecto se construye pensando en el negocio que hay detrás.",
@@ -26,6 +25,16 @@
     "saas": "SaaS"
   },
   "home": {
+    "realProject": {
+      "tag": "Proyecto real · Web híbrida",
+      "title": "Mi portfolio personal",
+      "description": "Construido con Angular, Kotlin, Spring Boot y MongoDB. Incluye formulario de contacto funcional y soporte multiidioma. Este sí es un proyecto real, no una demo.",
+      "cta": "Ver proyecto",
+      "previewHint": "Ver web en directo"
+    },
+    "examplesLabel": "El resto de esta página",
+    "examplesTitle": "Ejemplos de otros tipos de web",
+    "examplesSubtitle": "Estas ocho demos muestran distintos tipos de proyecto, para que veas el rango de cosas que se pueden construir.",
     "kicker": "Ejemplos de partida",
     "examples": "Ejemplos de páginas web",
     "description": "Ocho demostraciones para que veas de un vistazo qué tipo de web encaja mejor con tu negocio. Ninguna está pensada para usarse tal cual: son un punto de partida para hablar de lo que necesitas.",
@@ -220,10 +229,22 @@
     },
     "categorias": {
       "title": "Explora por categoría",
-      "jarrones": { "title": "Jarrones", "count": "8 piezas" },
-      "tazas": { "title": "Tazas y vasos", "count": "14 piezas" },
-      "vajilla": { "title": "Vajilla", "count": "11 piezas" },
-      "decoracion": { "title": "Decoración", "count": "9 piezas" }
+      "jarrones": {
+        "title": "Jarrones",
+        "count": "8 piezas"
+      },
+      "tazas": {
+        "title": "Tazas y vasos",
+        "count": "14 piezas"
+      },
+      "vajilla": {
+        "title": "Vajilla",
+        "count": "11 piezas"
+      },
+      "decoracion": {
+        "title": "Decoración",
+        "count": "9 piezas"
+      }
     },
     "productos": {
       "title": "Lo más reciente del taller",
@@ -303,20 +324,55 @@
     "subtitle": "Así va la tienda esta semana, de un vistazo.",
     "searchPlaceholder": "Buscar pedido o cliente",
     "userName": "Kallik",
-    "menu": { "resumen": "Resumen", "pedidos": "Pedidos", "productos": "Productos", "clientes": "Clientes", "ajustes": "Ajustes" },
-    "stats": { "ingresos": "Ingresos totales", "pedidos": "Pedidos", "clientes": "Clientes distintos", "ticketMedio": "Ticket medio" },
-    "dias": { "lun": "Lun", "mar": "Mar", "mie": "Mié", "jue": "Jue", "vie": "Vie", "sab": "Sáb", "dom": "Dom" },
-    "chart": { "title": "Ventas de la semana" },
+    "menu": {
+      "resumen": "Resumen",
+      "pedidos": "Pedidos",
+      "productos": "Productos",
+      "clientes": "Clientes",
+      "ajustes": "Ajustes"
+    },
+    "stats": {
+      "ingresos": "Ingresos totales",
+      "pedidos": "Pedidos",
+      "clientes": "Clientes distintos",
+      "ticketMedio": "Ticket medio"
+    },
+    "dias": {
+      "lun": "Lun",
+      "mar": "Mar",
+      "mie": "Mié",
+      "jue": "Jue",
+      "vie": "Vie",
+      "sab": "Sáb",
+      "dom": "Dom"
+    },
+    "chart": {
+      "title": "Ventas de la semana"
+    },
     "orders": {
       "subtitle": "Todos los pedidos recibidos, con opción de buscar y filtrar por estado.",
       "title": "Últimos pedidos",
-      "id": "Pedido", "customer": "Cliente", "date": "Fecha", "total": "Total", "status": "Estado",
+      "id": "Pedido",
+      "customer": "Cliente",
+      "date": "Fecha",
+      "total": "Total",
+      "status": "Estado",
       "noResults": "No hay pedidos que coincidan con esta búsqueda o filtro."
     },
-    "status": { "todos": "Todos", "pendiente": "Pendiente", "enviado": "Enviado", "entregado": "Entregado", "cancelado": "Cancelado" },
+    "status": {
+      "todos": "Todos",
+      "pendiente": "Pendiente",
+      "enviado": "Enviado",
+      "entregado": "Entregado",
+      "cancelado": "Cancelado"
+    },
     "productos": {
       "subtitle": "Estado actual del inventario del taller.",
-      "name": "Producto", "category": "Categoría", "stock": "Stock", "price": "Precio", "units": "uds.",
+      "name": "Producto",
+      "category": "Categoría",
+      "stock": "Stock",
+      "price": "Precio",
+      "units": "uds.",
       "categorias": {
         "jarrones": "Jarrones",
         "tazas": "Tazas y vasos",
@@ -326,7 +382,10 @@
     },
     "clientes": {
       "subtitle": "Clientes que han comprado alguna vez en la tienda.",
-      "name": "Nombre", "email": "Correo", "orders": "Pedidos", "spent": "Total gastado"
+      "name": "Nombre",
+      "email": "Correo",
+      "orders": "Pedidos",
+      "spent": "Total gastado"
     },
     "ajustes": {
       "subtitle": "Preferencias generales de la tienda.",
