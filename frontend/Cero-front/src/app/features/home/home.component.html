@@ -12,41 +12,22 @@
   <!-- Proyecto real, destacado -->
   <div class="home-alineacion">
     <div class="proyecto-real">
+      <span class="proyecto-real-tag">{{ proyectoReal.tagKey | translate }}</span>
+      <h2>{{ proyectoReal.titleKey | translate }}</h2>
+      <p>{{ proyectoReal.descKey | translate }}</p>
 
-      <div class="proyecto-real-texto">
-        <span class="proyecto-real-tag">{{ proyectoReal.tagKey | translate }}</span>
-        <h2>{{ proyectoReal.titleKey | translate }}</h2>
-        <p>{{ proyectoReal.descKey | translate }}</p>
-
-        <div class="proyecto-real-tech">
-          @for (t of proyectoReal.tech; track t) {
-            <span class="tech-chip">{{ t }}</span>
-          }
-        </div>
-
-        <a [href]="proyectoReal.url" target="_blank" rel="noopener" class="proyecto-real-boton">
-          {{ 'home.realProject.cta' | translate }}
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M7 17 17 7M7 7h10v10" />
-          </svg>
-        </a>
+      <div class="proyecto-real-tech">
+        @for (t of proyectoReal.tech; track t) {
+          <span class="tech-chip">{{ t }}</span>
+        }
       </div>
 
-      <!-- Previsualización real de la web -->
-      <a [href]="proyectoReal.url" target="_blank" rel="noopener" class="proyecto-real-preview">
-        <div class="preview-frame-contenedor">
-          <iframe
-            [src]="proyectoRealUrlSegura"
-            class="preview-frame"
-            title="Vista previa del proyecto real"
-            loading="lazy">
-          </iframe>
-        </div>
-        <div class="preview-overlay">
-          <span class="preview-overlay-texto">{{ 'home.realProject.previewHint' | translate }}</span>
-        </div>
+      <a [href]="proyectoReal.url" target="_blank" rel="noopener" class="proyecto-real-boton">
+        {{ 'home.realProject.cta' | translate }}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17 17 7M7 7h10v10" />
+        </svg>
       </a>
-
     </div>
   </div>
 
